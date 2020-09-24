@@ -7,7 +7,7 @@
 #define IMAGE "imgs\portada.paa"                    // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "Arribando..."                  // Colocar descripcion de la mision entre las comillas
 
-author = "Shaggy & Vultur";                         // Editor (Pone tu nombre)
+author = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
 IMG_LOGO = "imgs\logo.paa";                         // Nota: Las imagenes deberian estar en
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px

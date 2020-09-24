@@ -12,7 +12,7 @@ call compile preprocessFileLineNumbers "core\events\initServer.sqf";
                           Realizado por |ArgA|Vultur|Cbo¹
 *******************************************************************************/
 
-0 = [] execVM "scripts\inicio.sqf";
+execVM "scripts\inicio.sqf";
 
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹

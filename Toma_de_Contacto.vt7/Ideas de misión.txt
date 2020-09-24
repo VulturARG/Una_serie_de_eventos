@@ -1,0 +1,15 @@
+-La tropa tiene que ser invulnerable y con setCaptive = 1 cuando se suben a los vehículos (getInVehicles.sqf)
+
+Cuando se activa la emboscada
+    -Aparece uno o más helicópteros que vuelan cerca del convoy (Shaggy)
+    -Pasa un tiempo
+    -Empiezan a explotar alternativamente. Poner setDamage en 0.9 (explodeVehicles.sqf)
+    -Los vehículos que están en base desaparecen. (emboscada.sqf)
+    -Aparecen los atacantes a ambos lados de los vehículos a unos 100/150 m
+    -Los jugadores se vuelven vulnerables y pierden el setCaptive 10 segundos después de bajar del hunvee (getOutVehicle.sqf)
+    -Se recibe la orden de regresar a la base
+    -Después de 10 o 15 minutos llegan más enemigos a nuestra posición (Ver si es necesario hacer el activador más ancho)
+
+
+¿Qué pasa si hay un vehículo con alguien que entró tarde en un punto más retrasado que el convoy?
+
