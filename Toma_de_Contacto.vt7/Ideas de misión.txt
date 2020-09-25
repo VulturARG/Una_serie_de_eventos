@@ -10,6 +10,9 @@ Cuando se activa la emboscada
     -Se recibe la orden de regresar a la base
     -Después de 10 o 15 minutos llegan más enemigos a nuestra posición (Ver si es necesario hacer el activador más ancho)
 
+Hacer un segundo activador de emergencia sin retardo
+
 
 ¿Qué pasa si hay un vehículo con alguien que entró tarde en un punto más retrasado que el convoy?
+Actualmente, lo mismo que los otros vehículos
 

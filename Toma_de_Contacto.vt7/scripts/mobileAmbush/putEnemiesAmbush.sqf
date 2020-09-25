@@ -2,14 +2,11 @@
                           Realizado por |ArgA|Vultur|Cbo¹
 *******************************************************************************/
 AMBUSH_enemiesPosition = {
-	params ["_position","_direction","_spawnDistance","_angle"];
+	params ["_spawnPosition","_direction","_spawnDistance","_angle","_desviationAngle"];
 
-	private _dir_attack_1 = _direction + 90 + (random _angle) - _angle/2;
-	private _dir_attack_2 = _direction - 90 + (random _angle) - _angle/2;
-	private _spawnPosition = [];
+	private _dir_attack = _direction + _desviationAngle + (random _angle) - _angle/2;
 	
-	_spawnPosition append [[_position, _spawnDistance, _dir_attack_1] call BIS_fnc_relPos];
-	_spawnPosition append [[_position, _spawnDistance, _dir_attack_2] call BIS_fnc_relPos];
+	_spawnPosition = [_spawnPosition, _spawnDistance, _dir_attack] call BIS_fnc_relPos;
 
 	_spawnPosition
 };
@@ -26,43 +23,41 @@ AMBUSH_waypoints ={
 	_getToMarker
 };
 
-params["_vehiclesPosition","_vehiclesDirection"];
-
-private _angle 		   = 40;
-private _spawnDistance = 100 + random 25;
-private _enemySize     = [2,4];
-private _side          = east;
+params["_vehiclesPosition","_vehiclesDirection","_side","_enemySize","_spawnDistance","_angle","_desviationAngle","_sideAttack"];
 
 {
-	private _position        = [];
 	private _positionVehicle = _vehiclesPosition select _forEachIndex;
-	private _ambushData      = [_positionVehicle,_x,_spawnDistance,_angle];
-	private _spawnPosition   = _ambushData call AMBUSH_enemiesPosition;
+	private _ambushData      = [];
+	private _spawnPosition   = [];
 	private _grp             = [];
 
-	//["_ambushData:", _ambushData] call MIV_fnc_log;
-	//["_spawnPosition:", _spawnPosition] call MIV_fnc_log;
-
-    {
-		//["_x:", _x] call MIV_fnc_log;
-		_position = _x;
-		while {(surfaceiswater _x)} do {
-			_position = _ambushData call AMBUSH_enemiesPosition;
-			//["_position:", _position] call MIV_fnc_log;
+    for "_sideAtt" from 1 to _sideAttack do {
+		if (_sideAtt == 2) then { _desviationAngle = -1 * _desviationAngle;};
+		_ambushData    = [_positionVehicle,_x,_spawnDistance,_angle,_desviationAngle,_sideAttack];
+		_spawnPosition = _ambushData call AMBUSH_enemiesPosition;
+		
+		private _safeDistance = _spawnDistance;
+		while { count (allPlayers select { _x distance _spawnPosition <= _spawnDistance}) > 0} do {
+			_safeDistance  = _safeDistance + 25;
+			_ambushData    = [_positionVehicle,_x,_safeDistance,_angle,_desviationAngle,_sideAttack];
+			_spawnPosition = _ambushData call AMBUSH_enemiesPosition;
+		};
+		while {surfaceiswater _spawnPosition} do {
+			_spawnPosition = _ambushData call AMBUSH_enemiesPosition;
 		};		
 		for "_counter" from 0 to 20 do {
-			_newPosition = [_position,0,50,5,0,20,0] call BIS_fnc_findSafePos;
-			if ((_position distance _newPosition) < 55) exitWith {
-				_x = _newPosition;
+			_newPosition = [_spawnPosition,0,50,5,0,20,0] call BIS_fnc_findSafePos;
+			if ((_spawnPosition distance _newPosition) < 55) exitWith {
+				_spawnPosition = _newPosition;
 			};
 		};
-		_grp = [_x,_enemySize,_side] call compile preprocessFileLineNumbers 'scripts\mobileAmbush\spawnUnits.sqf';
+		_grp = [_spawnPosition,_enemySize,_side] call compile preprocessFileLineNumbers 'scripts\mobileAmbush\spawnUnits.sqf';
 		[_grp,_positionVehicle] call AMBUSH_waypoints;
-		
-	} forEach _spawnPosition;
-	
+	};
+
 } forEach _vehiclesDirection;
 
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹
 *******************************************************************************/
+//["_spawnPosition WATER:", _spawnPosition] call MIV_fnc_log;
