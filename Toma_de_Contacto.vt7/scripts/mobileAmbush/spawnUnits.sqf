@@ -14,7 +14,7 @@ _randomDifference = floor(random _difference);
 _grpSize = _randomDifference + _grpMin;
 
 private _tempArray=[];
-private _InfPool=	["LOP_IRA_Infantry_SL","LOP_IRA_Infantry_Rifleman","LOP_IRA_Infantry_AR","LOP_IRA_Infantry_Rifleman","LOP_IRA_Infantry_Rifleman","LOP_IRA_Infantry_Rifleman"];
+private _InfPool=	["O_crew_F"];
 
 for "_i" from 0 to 5 do {
 	_unit = _InfPool select(floor(random(count _InfPool)));
@@ -22,7 +22,6 @@ for "_i" from 0 to 5 do {
 };
 
 _pool = _tempArray;
-
 
 _grp=createGroup _side;
 
@@ -33,8 +32,7 @@ for "_x" from 1 to _grpSize do {
 	_unit removeMagazines "HandGrenade";
 	_unit removeMagazines "MiniGrenade";
 	
-	//TODO Hacer bien esta funcion
-	//_unit=[_unit,_unitType] call compile preprocessFileLineNumbers 'scripts\mobileAmbush\spawnUnits.sqf';
+	_unit = [_unit,_unitType] call compile preprocessFileLineNumbers "scripts\eos\functions\infantry_inventory.sqf";
 
 };
 

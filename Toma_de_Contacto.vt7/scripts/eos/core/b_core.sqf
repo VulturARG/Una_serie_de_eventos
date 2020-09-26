@@ -115,6 +115,14 @@ for "_counter" from 1 to _PApatrols do {
 	_dir_atk=_mkrAgl+(random _angle)-_angle/2;
 	_Place=(_PAminDist + random 75);
 	_pos = [_mPos, _Place, _dir_atk] call BIS_fnc_relPos;
+	
+	private _spawnDistance = 200;
+	private _safeDistance = _spawnDistance;
+	while { count (allPlayers select { _x distance _pos <= _spawnDistance}) > 0} do {
+		_safeDistance  = _safeDistance + 25;
+		_dir_atk=_mkrAgl+(random _angle)-_angle/2;
+		_pos = [_mPos, _safeDistance, _dir_atk] call BIS_fnc_relPos;
+	};
 	while {(surfaceiswater _pos)} do {
 		_dir_atk=_mkrAgl+(random _angle)-_angle/2;
 		_pos = [_mPos, _Place, _dir_atk] call BIS_fnc_relPos;

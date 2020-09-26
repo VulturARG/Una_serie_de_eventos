@@ -79,7 +79,8 @@ _tempArray=[];
 };
 // ADD CLASSNAMES
 	if (_faction==5) then {
-	_InfPool=	["LOP_IRA_Infantry_SL","LOP_IRA_Infantry_Rifleman","LOP_IRA_Infantry_AR","LOP_IRA_Infantry_Rifleman","LOP_IRA_Infantry_Rifleman","LOP_IRA_Infantry_Rifleman"];
+	//_InfPool=	["LOP_IRA_Infantry_SL","LOP_IRA_Infantry_Rifleman","LOP_IRA_Infantry_AR","LOP_IRA_Infantry_Rifleman","LOP_IRA_Infantry_Rifleman","LOP_IRA_Infantry_Rifleman"];
+	_InfPool=	["O_crew_F"];
 	_ArmPool=	["LOP_IRA_Infantry_SL","LOP_IRA_Infantry_Rifleman","LOP_IRA_Infantry_AR"];
 	_MotPool=	["LOP_IRA_Offroad_M2"];
 	_ACHPool=	["B_Truck_01_transport_F"];
@@ -94,7 +95,8 @@ _tempArray=[];
 
 // ADD CLASSNAMES
 	if (_faction==6) then {
-	_InfPool=	["rhs_vdv_machinegunner","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman"];
+	//_InfPool=	["rhs_vdv_machinegunner","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman"];
+	_InfPool=	["I_soldier_F"];
 	_ArmPool=	["LOP_SYR_T72BA","LOP_SYR_T55"];
 	//_ArmPool=	["LOP_AFR_OPF_T55"];
 	_MotPool=	["rhs_btr60_msv"];
@@ -112,7 +114,8 @@ _tempArray=[];
 
 // ADD CLASSNAMES
 	if (_faction==7) then {
-	_InfPool=	[];
+	//_InfPool=	["C_man_hunter_1_F","C_scientist_F","C_Marshal_F","C_man_polo_1_F","C_man_p_beggar_F","C_man_p_fugitive_F"];
+	_InfPool=	["C_scientist_F"];
 	_ArmPool=	[];
 	_MotPool=	[];
 	_ACHPool=	[];

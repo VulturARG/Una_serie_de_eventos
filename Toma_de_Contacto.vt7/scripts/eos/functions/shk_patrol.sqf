@@ -44,12 +44,12 @@ _grp setBehaviour "SAFE";
 //_grp setBehaviour "COMBAT";
 //_grp setBehaviour "AWARE";
 _grp setSpeedMode "LIMITED";
-//_grp setCombatMode "YELLOW";
-_grp setCombatMode "RED";
+_grp setCombatMode "YELLOW";
+//_grp setCombatMode "RED";
 _grp setFormation(["STAG COLUMN", "WEDGE", "ECH LEFT", "ECH RIGHT", "VEE", "DIAMOND", "LINE"] call BIS_fnc_selectRandom);
 
 if (IsVCOM_MOD) then {
-    _wp = [_grp, _marker, "random"] call FNC_newWaypoint;
+    _wp = [_grp, _marker, "random","SAD","LIMITED","SAFE","SAFE","NO CHANGE","YELLOW"] call FNC_newWaypoint;
     _mPos = markerpos _marker;
     getMarkerSize _marker params["_mkrX", "_mkrY"];
     _mkrSize = 0;

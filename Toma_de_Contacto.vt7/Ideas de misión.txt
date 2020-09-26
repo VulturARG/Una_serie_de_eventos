@@ -16,3 +16,19 @@ Hacer un segundo activador de emergencia sin retardo
 ¿Qué pasa si hay un vehículo con alguien que entró tarde en un punto más retrasado que el convoy?
 Actualmente, lo mismo que los otros vehículos
 
+["Base_ArgA"] execVM "scripts\mobileAmbush\ambush.sqf";
+
+this execVM 'scripts\mobileAmbush\getInVehicles.sqf';
+
+["Base_ArgA"] execVM "scripts\mobileAmbush\ambush.sqf"
+
+
+-----------------------------------------------------------
+
+Hacer el corte a las 2:30 hs de comenzada la misión
+Cambiar color GPS
+Afinar primer zona civil
+
+Activar las zonas de combate desde emboscada
+
+

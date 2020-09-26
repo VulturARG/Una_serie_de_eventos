@@ -4,7 +4,7 @@
 
 params["_marker"];
 
-sleep 10;
+sleep 1;
 
 [_marker] execVM "scripts\mobileAmbush\ambush.sqf";
 

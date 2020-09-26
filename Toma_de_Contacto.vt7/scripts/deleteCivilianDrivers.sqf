@@ -2,11 +2,14 @@
                           Realizado por |ArgA|Vultur|Cbo¹
 *******************************************************************************/
 
-params["_unit"];
+params ["_drivers"];
 
-sleep 15;
-//TODO Descomentar
-_unit allowDamage true;
+if (typeName _drivers != "ARRAY" ) exitWith {};
+
+{
+	deleteVehicle _x;
+
+} forEach _drivers;
 
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹
