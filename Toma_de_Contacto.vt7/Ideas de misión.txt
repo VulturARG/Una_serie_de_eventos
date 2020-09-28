@@ -24,11 +24,14 @@ this execVM 'scripts\mobileAmbush\getInVehicles.sqf';
 
 
 -----------------------------------------------------------
+TODO 
+
+Hacer intro Personalizada (Falta música)
+Hacer el script con la orden de regresar a la base (falta sonido)
 
 Hacer el corte a las 2:30 hs de comenzada la misión
-Cambiar color GPS
-Afinar primer zona civil
 
-Activar las zonas de combate desde emboscada
+
+
 
 

@@ -5,20 +5,20 @@
 #define NAME "Toma de Contacto"                     // Colocar nombre de mision
 #define COMPLETE_NAME "Toma de Contacto v1"         // Nombre y versión de la misión
 #define IMAGE "imgs\portada.paa"                    // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
-#define DESCRIPTION "Arribando..."                  // Colocar descripcion de la mision entre las comillas
+#define DESCRIPTION "Llegó ArgA"                    // Colocar descripcion de la mision entre las comillas
 
 author = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
 IMG_LOGO = "imgs\logo.paa";                         // Nota: Las imagenes deberian estar en
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-INTRO_PERSONALIZADA = 0;                            // 1 Si la deseas cargar una intro personalizada (propia)
+INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-INTRO = 0;                                          // Intros: 1 y 2. Para desactivar: 0
+INTRO = "scripts\intro_campania.sqf";                                          // Intros: 1 y 2. Para desactivar: 0
 
 MAX_DIST_VISION = 2500;
-MIN_DIST_VISION = 800;                              // Distancia de visión reducida por marcador
+MIN_DIST_VISION =  800;                             // Distancia de visión reducida por marcador
 DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;          // Equipamiento guardado en arsenal virtual. 0: activado, 1: desactivado
 ACTIVAR_COMPUTADORA_ARTILLERIA = 1;                 // Habilita computadora artilleria poner 1. Para que no aparezca poner 0
 ACTIVAR_ROL_AUTOMATICO = 1;                         // Habilita la carga de rol al entrar a la misión por descripción de rol
@@ -45,7 +45,7 @@ EQUIPAMIENTO
          Las opciones Personalizada y No editar pueden llevar a comportamientos inesperados.
          Por lo que el editor queda a cargo de checkear y revisar el correcto funcionamiento.
 */
-CAMUFLAJE = ["Negro", "Multicam"];
+CAMUFLAJE = ["Bosque", "Multicam"];
 GAFAS_INICIALES = "";
 UNIFORME_PERSONALIZADO = "";
 CASCO_PERSONALIZADO = "";

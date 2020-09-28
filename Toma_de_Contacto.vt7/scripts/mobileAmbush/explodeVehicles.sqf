@@ -6,7 +6,7 @@ params ["_vehicle"];
 
 if (typeName _vehicle != "OBJECT") exitWith { };
 
-sleep random [2,7,16];
+sleep random [2,7,14];
 "M_Mo_82mm_AT_LG" createVehicle getPos _vehicle;
 sleep 0.5;
 private _fireAndSmoke = "test_EmptyObjectForFireBig" createVehicle getPos _vehicle; 
@@ -19,4 +19,4 @@ deletevehicle _fireAndSmoke;
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹
 *******************************************************************************/
-//["VEHICULOS:",typeName _x, _x] call MIV_fnc_log;
+//["EXPLODE_VEHICLES:",_dataVehicle] call MIV_fnc_log;

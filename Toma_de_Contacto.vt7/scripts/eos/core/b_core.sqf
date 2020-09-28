@@ -1,5 +1,7 @@
 params ["_mkr","_infantry","_LVeh","_AVeh","_SVeh","_PTrooper","_HAtrooper","_settings","_basSettings","_angle",["_initialLaunch",false]];
+
 if (!isServer) exitWith {};
+
 private ["_ptGroup","_fGroup","_cargoType","_vehType","_CHside","_mkrAgl","_pause","_eosZone","_hints","_waves","_aGroup","_side"];
 private ["_actCond","_enemyFaction","_mAH","_mAN","_distance","_grp","_cGroup","_bGroup","_CHType","_time","_timeout","_faction"];
 private ["_troupsPA","_troupsLV","_troupsAV","_troupsHT","_troupsPT","_troupsHA"];

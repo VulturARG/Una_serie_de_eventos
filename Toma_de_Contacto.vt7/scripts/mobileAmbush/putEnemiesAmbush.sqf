@@ -15,11 +15,12 @@ AMBUSH_waypoints ={
 	params ["_group","_position",["_wpType","SAD"],["_wpSpeed","LIMITED"],["_wpBehaviour","COMBAT"],["_wpFormation","LINE"],["_wpCombatMode","RED"]];
 				
 	_getToMarker = _group addWaypoint [_position, 0];
-	_getToMarker setWaypointType _wpType;
-	_getToMarker setWaypointSpeed _wpSpeed;
-	_getToMarker setWaypointBehaviour _wpBehaviour;
-	_getToMarker setWaypointFormation _wpFormation;
+	_getToMarker setWaypointType       _wpType;
+	_getToMarker setWaypointSpeed      _wpSpeed;
+	_getToMarker setWaypointBehaviour  _wpBehaviour;
+	_getToMarker setWaypointFormation  _wpFormation;
 	_getToMarker setWaypointCombatMode _wpCombatMode;
+	_getToMarker setWaypointPosition [_position, 50];
 	_getToMarker
 };
 

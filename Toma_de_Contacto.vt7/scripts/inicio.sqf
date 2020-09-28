@@ -18,14 +18,14 @@ private _humanPlayers = allPlayers - _headlessClients;
 _Nro_Jugadores = count _humanPlayers;
 */
 
-//[_vehiclesConvoy] execVM 'scripts\mobileAmbush\getInVehicles.sqf';
-//[_vehiclesConvoy] call compile preprocessFileLineNumbers 'scripts\mobileAmbush\getInVehicles.sqf';
 
 [_drivers] execVM "scripts\deleteCivilianDrivers.sqf";
 
 // Activo la zona EOS
 //_markers,_waves,_jugadores,_angle
-["M_Panagia_EOS",0,_Nro_Jugadores,90] execVM "scripts\eos\OpenMe.sqf";
+["",0,_Nro_Jugadores,90] execVM "scripts\eos\OpenMe.sqf";
+
+execVM "scripts\screenOrderFinish.sqf";
 
 
 /*******************************************************************************

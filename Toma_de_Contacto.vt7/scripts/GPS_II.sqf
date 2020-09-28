@@ -91,7 +91,8 @@ player_markers_main_loop_handle = _this spawn {
 	};
 
 	_getMarkerColor = {
-		[(((side _this) call bis_fnc_sideID) call bis_fnc_sideType),true] call bis_fnc_sidecolor;
+		//[(((side _this) call bis_fnc_sideID) call bis_fnc_sideType),true] call bis_fnc_sidecolor;
+		[blufor,  true] call BIS_fnc_sideColor;
 	};
 
 	_isPlayer = { // BUG? it is possible that isPlayer _x returns false but _x in allPlayers returns true

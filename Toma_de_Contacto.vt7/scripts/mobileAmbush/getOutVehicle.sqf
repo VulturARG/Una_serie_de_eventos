@@ -5,7 +5,7 @@
 params["_unit"];
 
 sleep 15;
-//TODO Descomentar
+
 _unit allowDamage true;
 
 /*******************************************************************************

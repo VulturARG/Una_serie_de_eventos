@@ -78,12 +78,9 @@ EOS_KILLCOUNTER=FALSE;		// Counts killed units
 // 6: Independientes
 // 7: Civiles
 
-private _enemyMarkers   = ["Enemigos_10","Enemigos_12","Enemigos_14","Enemigos_4","Enemigos_5","Enemigos_6","Enemigos_7","Enemigos_8","Enemigos_9","Enemigos_11","Enemigos_13","Enemigos_2","Enemigos_3"];
+["OPEN_ME_ATTACK:"] call MIV_fnc_log;
 
+private _enemyMarkers = ["Bosques_1","Bosques_2","Bosques_3","Bosques_4","Bosques_5","Bosques_6","Bosques_7","Bosques_8","Bosques_9","Bosques_10","Bosques_11","Bosques_12","Bosques_13","Bosques_14","Bosques_15","Bosques_16","Bosques_17","Bosques_18","Bosques_19"];
+private _angle = 100;
 
-//null = [_enemyMarkers,[4,3,500],[0,2,500],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[5,1,EAST,FALSE,FALSE],[30,_waves,300,FALSE,FALSE],_angle] call Bastion_Spawn;
-
-
-// */
-//////////////////////////////////////////////////////////////////
-
+[_enemyMarkers,[3,1,200+random 100],[0,2,500],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[5,1,EAST,FALSE,FALSE],[10,1,300,FALSE,FALSE],_angle] call Bastion_Spawn;

@@ -89,7 +89,6 @@ private _activationDistance = 600;
 [_civilMarkers,[0,4,100],[8,1,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,CIVILIAN,false]] call EOS_Spawn;
 {
   _randomSide = _unknownSide call BIS_fnc_selectRandom;
-  ["MARKER:", _x,"SIDE:",_randomSide] call MIV_fnc_log;
   _randomFaction = if (_randomSide == EAST) then { 5 } else { 7 };
   [[_x],[1,2,100],[10,1,100],[0,0,0],[0,0],[0],[0,0,00],[_randomFaction,1,_activationDistance,_randomSide,false]] call EOS_Spawn;
 
@@ -135,5 +134,5 @@ if (_jugadores > 30) then {
 };
 // */
 //////////////////////////////////////////////////////////////////
-// TODO 
-// Ver que no se desactive la zona
+
+//["MARKER:", _x,"SIDE:",_randomSide] call MIV_fnc_log;
