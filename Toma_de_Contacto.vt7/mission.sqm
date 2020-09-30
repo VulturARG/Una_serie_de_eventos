@@ -81,7 +81,6 @@ addons[]=
 	"A3_Soft_F_Offroad_01",
 	"rhsgref_c_weapons",
 	"A3_Weapons_F_Pistols_Rook40",
-	"jsrs_soundmod_complete_edition",
 	"ace_ballistics",
 	"ace_smallarms",
 	"po_factions_eu",
@@ -96,7 +95,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=58;
+		items=57;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -420,60 +419,53 @@ class AddonsMetaData
 		};
 		class Item49
 		{
-			className="A3_Sounds_F";
-			name="Arma 3 - Sound Effects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item50
-		{
 			className="ace_ballistics";
 			name="ACE3 - Ballistics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item51
+		class Item50
 		{
 			className="ace_smallarms";
 			name="ACE3 - Small Arms";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item52
+		class Item51
 		{
 			className="po_factions_eu";
 			name="po_factions_eu";
 			author="Leight, Keeway";
 		};
-		class Item53
+		class Item52
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item54
+		class Item53
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item55
+		class Item54
 		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item56
+		class Item55
 		{
 			className="A3_Soft_F_Enoch";
 			name="Arma 3 Enoch - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item57
+		class Item56
 		{
 			className="A3_Soft_F_Orange";
 			name="Arma 3 Orange - Unarmored Land Vehicles";
@@ -654,7 +646,7 @@ class Mission
 			alpha=0;
 			a=750;
 			b=150;
-			angle=226.79018;
+			angle=226.79016;
 			id=59;
 		};
 		class Item8
