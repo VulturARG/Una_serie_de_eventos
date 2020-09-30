@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1289;
+		nextID=1293;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={921.95026,20.345589,3002.6914};
-		dir[]={-0.31684104,-0.42719114,-0.84684527};
-		up[]={-0.14970528,0.90414667,-0.40013};
-		aside[]={-0.93660438,1.7498678e-007,0.35042426};
+		pos[]={1024.5845,117.23926,2967.1538};
+		dir[]={-0.58181232,-0.78179514,0.22441535};
+		up[]={-0.7294293,0.62351304,0.28135377};
+		aside[]={0.35988742,7.0402166e-007,0.93303376};
 	};
 };
 binarizationWanted=0;
@@ -533,7 +533,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=366;
+		items=369;
 		class Item0
 		{
 			dataType="Marker";
@@ -646,7 +646,7 @@ class Mission
 			alpha=0;
 			a=750;
 			b=150;
-			angle=226.79016;
+			angle=226.79015;
 			id=59;
 		};
 		class Item8
@@ -22140,6 +22140,40 @@ class Mission
 			type="mil_start";
 			colorName="ColorWEST";
 			id=1288;
+		};
+		class Item366
+		{
+			dataType="Trigger";
+			position[]={2017.291,19.209473,1289.8719};
+			class Attributes
+			{
+				effectMusic="Music_Tension_Loop_01";
+			};
+			id=1289;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item367
+		{
+			dataType="Trigger";
+			position[]={2332.1621,20.658884,1218.311};
+			class Attributes
+			{
+				effectMusic="CUP_A2_Insertion";
+			};
+			id=1291;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item368
+		{
+			dataType="Trigger";
+			position[]={2222.4351,27.812162,1514.099};
+			class Attributes
+			{
+				effectMusic="LeadTrack03_F";
+			};
+			id=1292;
+			type="EmptyDetectorAreaR50";
+			atlOffset=1.9073486e-006;
 		};
 	};
 	class Connections
