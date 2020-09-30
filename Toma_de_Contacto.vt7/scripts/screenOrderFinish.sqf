@@ -13,6 +13,7 @@ _text = format["%1<t color='#ff0000' size = '.6'>Corto</t>",_text];
 _text = format["%1</t>",_text];
 
 for "_i" from 1 to 2 do {
+	playsound "Beeper2";
 	[_text,-0.65,1.1,14,1,0,789] spawn BIS_fnc_dynamicText;
 	sleep 30;
 };

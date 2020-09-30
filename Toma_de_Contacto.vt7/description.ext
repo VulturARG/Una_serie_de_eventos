@@ -13,6 +13,16 @@ class CfgFunctions {
 class CfgSounds {
 	sounds[] = {};
   #include "core\sounds.hpp"
+  class Beeper2{
+    name = "Beeper2"; 
+    sound[] = {\sounds\Beeper2.ogg, 1, 1.0};
+    titles[] = {0, ""};
+  };
+  class intro{
+    name = "intro"; 
+    sound[] = {\sounds\effect_intro.ogg, 1, 1.0};
+    titles[] = {0, ""};
+  };
 };
 
 #include "core\post_description.hpp"

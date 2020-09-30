@@ -12,15 +12,18 @@ private _author       = getMissionConfigValue ["author", "ArgA"];
 titleCut ["", "BLACK FADED", 999];
 
 sleep 2;
+playsound "intro";
 ["<t size='3' color='#00B3FF'>CLAN ARGA</t>",0,0.4,1,2,0.0] spawn bis_fnc_dynamictext;
 sleep 6;
 
 if (_isCampaign == 1) then {    
     ["<t font = 'PuristaSemiBold' size='1.5' color='#FFFFFF'>Presenta</t>",0,0.4,1,2,0.0] spawn bis_fnc_dynamictext;
     sleep 5;
+    playsound "intro";
     ["<t size='1' color='#FFFFFF'>Campaña<br/><t font = 'PuristaSemiBold' size='2' color='#00B3FF'>"+_campaignName+"</t>",0,0.4,1,2,0.0] spawn bis_fnc_dynamictext;
 	sleep 5;
 };
+playsound "intro";
 ["<t size='1' color='#FFFFFF'>Misión<br/><t font = 'PuristaSemiBold' size='2' color='#00B3FF'>"+_mission+"</t></t>",0,0.4,1,2,0.0] spawn bis_fnc_dynamictext;
 sleep 5;
 ["<t font = 'PuristaSemiBold' size='2.0' color='#00B3FF'>"+_author+"</t>",0,0.4,1,2,0.0] spawn bis_fnc_dynamictext;

@@ -37,8 +37,6 @@ private _sideAttack        = 2;
     
 } forEach _vehiclesInBase;
 
-execVM "scripts\screenOrderAmbush.sqf";
-
 sleep 30;
 private _vehiclesPositionAux  = [];
 private _vehiclesDirectionAux = [];
@@ -54,6 +52,8 @@ if (count _vehiclesPosition  <= count _vehiclesPositionAux)  then { _vehiclesPos
 if (count _vehiclesDirection <= count _vehiclesDirectionAux) then { _vehiclesDirection = _vehiclesDirectionAux };
  
 [_vehiclesPosition,_vehiclesDirection,_side,_enemySize,_spawnDistance,_angle,_desviationAngle,_sideAttack] execVM 'scripts\mobileAmbush\putEnemiesAmbush.sqf';
+
+execVM "scripts\screenOrderAmbush.sqf";
 
 sleep _delayStartWaves;
 

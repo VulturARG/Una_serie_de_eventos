@@ -4,7 +4,7 @@
 
 #define NAME "Toma de Contacto"                     // Colocar nombre de mision
 #define COMPLETE_NAME "Toma de Contacto v1"         // Nombre y versión de la misión
-#define IMAGE "imgs\portada.paa"                    // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
+#define IMAGE "imgs\portada_TDC.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "Llegó ArgA"                    // Colocar descripcion de la mision entre las comillas
 
 author = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
@@ -61,16 +61,16 @@ BRIEFING
 */
 ACTIVAR_BRIEFING = 1;
 CARACTER = "Oficial";
-HORARIO = "";
-FECHA = "";
-CLIMA = "";
-UBICACION = "";
-SITUACION = [""];               
-SITUACION_HISTORICA = [""];     
-EXTRACTO_INTELIGENCIA = [""];
-OBJETIVOS = ["", ""];
-RECURSOS = ["", ""];
-ENEMIGOS = ["", ""];
+HORARIO = "0730 hs.";
+FECHA = "01/10/2020";
+CLIMA = "Despejado";
+UBICACION = "Vihrolati";
+SITUACION = ["La orden del Alto Mando conjunto internacional es patrullar las 2 rutas R.N 13 y R.N. 18, para finalmente ingresar en simultaneo a la ciudad fronteriza de Virojoki desde los accesos Norte y Sur de la misma. Deberán contactar con las fuerzas locales.","No deberán traspasar la frontera por ningún motivo, ni devolver un eventual fuego de las tropas de Duesia","ArgA no tiene permitido el fuego a excepción de respuesta."];
+SITUACION_HISTORICA = ["La República de Viro, es un territorio estratégico cuya parte continental posee abundantes recursos naturales y a su vez contiene una serie de islas ubicadas estratégicamente. Debido a la diversidad geográfica y los cambios políticos nunca consolidó un sentimiento nacional único.","Actualmente el estado atraviesa una tensa calma después de la guerra civil que aconteció hace más de 5 años atrás en una situación que fue aprovechada por su vecino del norte, Duesia, una potencia regional. Una antigua provincia de Duesia, que desde la caída de la V.P.C.C. bajo administración de Viro, limítrofe a su anterior nación y con mayoría étnica de esta potencia fue donde se encendió la mecha de la guerra civil. Se sospecha que era apoyada estrechamente con armas y provisiones por Duesia. Se cree que nunca cesó ese apoyo. Una coalición internacional puso fin a la guerra civil y desde entonces mantiene presencia en todo el país para evitar que la historia se repita.","ArgA ha sido recientemente desplegado en la subprefectura de Virolahti, zona donde comenzó la guerra civil, sin embargo, ha permanecido relativamente calmada los últimos tiempos pese a la permisividad del mando anterior las de fuerzas internacionales."];
+EXTRACTO_INTELIGENCIA = ["Los civiles no tienen un sentimiento nacional, responden a los intereses del momento. Son fieles a su ciudad y clan. Hacen y deshacen alianzas todo el tiempo. Pueden venir a desayunar a tu mesa a la mañana, combatir contra ti al medio día y traer carne para hacer un asado a la noche.","Existen patrullas armadas de vecinos en diferentes localidades."];
+OBJETIVOS = ["Patrullar mediante convoy a lo largo de la R.N 13 y R.N. 18 desde las intersecciones con la R.P.R. 135 hasta la localidad de Virojoki.","No responder fuego de fuerzas regulares del país limítrofe.","Solo abrir fuego eventualmente a modo de respuesta contra guerrilla local."];
+RECURSOS = ["Múltiples Humvees.", "Arsenal Limitado."];
+ENEMIGOS = ["No hay enemigos definidos."];
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Borrado de IAs enemigas muertas y vehículos destruidos */

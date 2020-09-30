@@ -95,15 +95,13 @@ _tempArray=[];
 
 // ADD CLASSNAMES
 	if (_faction==6) then {
-	//_InfPool=	["rhs_vdv_machinegunner","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_rifleman"];
 	_InfPool=	["I_soldier_F"];
 	_ArmPool=	["LOP_SYR_T72BA","LOP_SYR_T55"];
 	//_ArmPool=	["LOP_AFR_OPF_T55"];
 	_MotPool=	["rhs_btr60_msv"];
-	//_MotPool=	["rhs_kamaz5350_open_msv"];
 	_ACHPool=	["RHS_Mi24P_vdv"];
-	//_CHPool=	["I_Heli_Light_03_unarmed_F"];
-	_CHPool=	["RHS_Mi8T_vdv"];
+	_CHPool=	["I_Heli_Light_03_unarmed_F","rhsgref_cdf_b_reg_Mi8amt"];
+	//_CHPool=	["RHS_Mi8T_vdv"];
 	_uavPool=	[];
 	_stPool=	[];
 	_shipPool=	[];

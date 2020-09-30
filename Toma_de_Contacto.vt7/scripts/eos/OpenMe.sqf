@@ -79,9 +79,9 @@ EOS_KILLCOUNTER=FALSE;		// Counts killed units
 // 7: Civiles
 
 private _civilMarkers       = ["Civil_1","Civil_2","Civil_3","Civil_4","Civil_5"];
-private _unknownMarkers     = ["Indecisos_10","Indecisos_11","Indecisos_3","Indecisos_4","Indecisos_5","Indecisos_7","Indecisos_8","Indecisos_9"];
+private _unknownMarkers     = ["Indecisos_1","Indecisos_10","Indecisos_11","Indecisos_2","Indecisos_3","Indecisos_4","Indecisos_5","Indecisos_6","Indecisos_7","Indecisos_8","Indecisos_9"];
 private _unknownSide        = [EAST,EAST,CIVILIAN];
-private _enemyMarkers       = ["Enemigos_10","Enemigos_12","Enemigos_15","Enemigos_14","Enemigos_4","Enemigos_5","Enemigos_6","Enemigos_7","Enemigos_8","Enemigos_9","Enemigos_11","Enemigos_13","Enemigos_2","Enemigos_3"];
+private _enemyMarkers       = ["Enemigos_10","Enemigos_14","Enemigos_4","Enemigos_5","Enemigos_6","Enemigos_7","Enemigos_8","Enemigos_9","Enemigos_1","Enemigos_11","Enemigos_12","Enemigos_13","Enemigos_15","Enemigos_2","Enemigos_3"];
 private _randomSide         = EAST;
 private _randomFaction      = 5;
 private _activationDistance = 600;
@@ -90,49 +90,17 @@ private _activationDistance = 600;
 {
   _randomSide = _unknownSide call BIS_fnc_selectRandom;
   _randomFaction = if (_randomSide == EAST) then { 5 } else { 7 };
-  [[_x],[1,2,100],[10,1,100],[0,0,0],[0,0],[0],[0,0,00],[_randomFaction,1,_activationDistance,_randomSide,false]] call EOS_Spawn;
+  [[_x],[0,2,100],[10,1,100],[0,0,0],[0,0],[0],[0,0,00],[_randomFaction,1,_activationDistance,_randomSide,false]] call EOS_Spawn;
 
 } forEach _unknownMarkers;
 // Ciudad principal en la frontera
 [["Enemigos_1"],[0,2,100],[15,3,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
 [_enemyMarkers,[1,2,100],[8,2,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
-/*/ Potencia
+// Potencia
 [["Potencia_1"],[0,2,100],[15,3,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
 [["Potencia_2"],[0,4,100],[6,2,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
 
-
-/*null = [["ZM_1","ZM_2","ZM_3","ZM_4","ZM_5","ZM_6","ZM_7","ZM_8"],[4,3,500],[0,2,500],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[5,1,_EOS_FACCION,FALSE,FALSE],[30,_waves,300,FALSE,FALSE],_angle] call Bastion_Spawn;
-
-
-
-//PLAYER SIDECHAT (format ["Marker %1",_marker]);
-/*ZSU addEventHandler ["Killed", {
-  null = [["ZM_1","ZM_2","ZM_3","ZM_4","ZM_5","ZM_6"],[["patrullas_H",50,"Hospital"],["Hospital",0,""]],EAST] call Bastion_Redirect_WP;//
-  null = [["Hospital"],[5,2,150],[0,2,1000],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[5,1,EAST,FALSE,FALSE],[90,5,300,FALSE,FALSE],360] call Bastion_Spawn;
-}];*/
-
-
-
-/*
-if (_jugadores <= 10) then {
-};
-
-if (_jugadores > 10 && _jugadores <= 15) then {
-
-};
-if (_jugadores > 15 && _jugadores <= 20) then {
-
-};
-if (_jugadores > 20 && _jugadores <= 25) then {
-
-};
-if (_jugadores > 25 && _jugadores <= 30) then {
-
-};
-if (_jugadores > 30) then {
-
-};
-// */
-//////////////////////////////////////////////////////////////////
-
+/*******************************************************************************
+                            Modify by |ArgA|Vultur|Cbo¹
+*******************************************************************************/
 //["MARKER:", _x,"SIDE:",_randomSide] call MIV_fnc_log;
