@@ -7,7 +7,13 @@ params ["_vehicle"];
 if (typeName _vehicle != "OBJECT") exitWith { };
 
 sleep random [2,7,14];
-"M_Mo_82mm_AT_LG" createVehicle getPos _vehicle;
+
+if (_vehicle != V_12) then {
+    "M_Mo_82mm_AT_LG" createVehicle getPos _vehicle;
+} else {
+    "R_60mm_HE" createVehicle getPos _vehicle;
+};
+
 sleep 0.5;
 private _fireAndSmoke = "test_EmptyObjectForFireBig" createVehicle getPos _vehicle; 
 _fireAndSmoke attachTo [_vehicle, [0, 2, 0]];

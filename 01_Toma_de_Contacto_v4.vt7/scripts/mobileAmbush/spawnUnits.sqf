@@ -9,12 +9,12 @@ if (!isServer) exitWith {};
 private ["_grp","_unit","_pool"];
 
 _grpSize params["_grpMin","_grpMax"];
-_difference = _grpMax-_grpMin;
+_difference = _grpMax - _grpMin;
 _randomDifference = floor(random _difference);
 _grpSize = _randomDifference + _grpMin;
 
-private _tempArray=[];
-private _InfPool=	["O_crew_F"];
+private _tempArray = [];
+private _InfPool   = ["O_crew_F"];
 
 for "_i" from 0 to 5 do {
 	_unit = _InfPool select(floor(random(count _InfPool)));
