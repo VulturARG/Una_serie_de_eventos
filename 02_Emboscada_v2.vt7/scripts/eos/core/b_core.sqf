@@ -97,7 +97,7 @@ if (_pause > 0 and !_initialLaunch) then {
 	};
 
 	//Borro las unidades que estan a mas de una determinada distancia 
-	_enemigos = allUnits select {side _x == _side && _x iskindof "Man" && (_mPos distance2D _x) > 950}; 
+	/*_enemigos = allUnits select {side _x == _side && _x iskindof "Man" && (_mPos distance2D _x) > 950}; 
 	if (_debugLog) then {[[_mkr,"Wave", _waves,"IAs>950",count _enemigos,_side]] call EOS_VUL_Debug;};
 	{ 
 		if (!(isPlayer _x))then { 
@@ -107,7 +107,7 @@ if (_pause > 0 and !_initialLaunch) then {
 	if (_debugLog) then {
 		_enemigos = allUnits select {side _x == _side && _x iskindof "Man" && (_mPos distance2D _x) > 950}; 
 		[[_mkr,"Wave", _waves,"IAs>950(Post)",count _enemigos,_side]] call EOS_VUL_Debug;
-	}
+	}*/
 };
 
 // SPAWN PATROLS
@@ -404,6 +404,7 @@ if (_waves >= 1) then {
 	};
 
 	//Borro las unidades que estan a mas de una determinada distancia 
+	/*
 	_enemigos = allUnits select {side _x == _side && _x iskindof "Man" && (_mPos distance2D _x) > 950}; 
 	if (_debugLog) then {[[_mkr,"Wave", _waves,"IAs>950_2",count _enemigos,_side]] call EOS_VUL_Debug;};
 	{ 
@@ -414,7 +415,7 @@ if (_waves >= 1) then {
 	if (_debugLog) then {
 		_enemigos = allUnits select {side _x == _side && _x iskindof "Man" && (_mPos distance2D _x) > 950}; 
 		[[_mkr,"Wave", _waves,"IAs>950(Post)_2",count _enemigos,_side]] call EOS_VUL_Debug;
-	}
+	}*/
 };
 
 if (triggeractivated _bastActive and triggeractivated _bastClear and (_waves < 1) ) then{

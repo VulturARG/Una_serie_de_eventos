@@ -2,10 +2,10 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Toma de Contacto"                     // Colocar nombre de mision
-#define COMPLETE_NAME "Toma de Contacto v4"         // Nombre y versión de la misión
+#define NAME "Emboscada"                            // Colocar nombre de mision
+#define COMPLETE_NAME "Emboscada v1"                // Nombre y versión de la misión
 #define IMAGE "imgs\portada_EMB.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
-#define DESCRIPTION "Llegó ArgA"                    // Colocar descripcion de la mision entre las comillas
+#define DESCRIPTION "En el medio de la nada"                    // Colocar descripcion de la mision entre las comillas
 
 author = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
 IMG_LOGO = "imgs\logoArgA.jpg";                         // Nota: Las imagenes deberian estar en

@@ -78,7 +78,7 @@ EOS_KILLCOUNTER=FALSE;		// Counts killed units
 // 6: Independientes
 // 7: Civiles
 
-["OPEN_ME_ATTACK:"] call MIV_fnc_log;
+//["OPEN_ME_ATTACK:"] call MIV_fnc_log;
 
 private _enemyMarkers = ["Bosques_1","Bosques_2","Bosques_3","Bosques_4","Bosques_5","Bosques_6","Bosques_7","Bosques_8","Bosques_9","Bosques_10","Bosques_11","Bosques_12","Bosques_13","Bosques_14","Bosques_15","Bosques_16","Bosques_17","Bosques_18","Bosques_19","Bosques_20","Bosques_21","Bosques_22","Bosques_23","Bosques_24","Bosques_25","Bosques_26","Bosques_27","Bosques_28","Bosques_29","Bosques_30","Bosques_31"];
 private _angle = 100;
