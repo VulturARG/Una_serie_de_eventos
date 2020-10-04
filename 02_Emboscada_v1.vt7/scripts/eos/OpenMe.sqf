@@ -1,5 +1,5 @@
 /*******************************************************************************
-                            Modify by |ArgA|Vultur|Cbo¹
+                            Modify by |ArgA|Vultur|Sgt
 *******************************************************************************/
 /* EOS 1.98 by BangaBob
 GROUP SIZES
@@ -84,23 +84,40 @@ private _unknownSide        = [EAST,EAST,CIVILIAN];
 private _enemyMarkers       = ["Enemigos_10","Enemigos_14","Enemigos_4","Enemigos_5","Enemigos_6","Enemigos_7","Enemigos_8","Enemigos_9","Enemigos_1","Enemigos_11","Enemigos_12","Enemigos_13","Enemigos_15","Enemigos_2","Enemigos_3"];
 private _randomSide         = EAST;
 private _randomFaction      = 5;
-private _activationDistance = 600;
+private _activationDistance = 400;
 
+// Aliados
 [_civilMarkers,[0,4,100],[8,1,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,CIVILIAN,false]] call EOS_Spawn;
+
+// Indecisos
 {
   _randomSide = _unknownSide call BIS_fnc_selectRandom;
   _randomFaction = if (_randomSide == EAST) then { 5 } else { 7 };
   [[_x],[0,2,100],[10,1,100],[0,0,0],[0,0],[0],[0,0,00],[_randomFaction,1,_activationDistance,_randomSide,false]] call EOS_Spawn;
 
 } forEach _unknownMarkers;
+
 // Ciudad principal en la frontera
 [["Enemigos_1"],[0,2,100],[15,3,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
 [_enemyMarkers,[1,2,100],[8,2,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
+
 // Potencia
 [["Potencia_1"],[0,2,100],[15,3,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
 [["Potencia_2"],[0,4,100],[6,2,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
 
+_unknownSide = [EAST,EAST,EAST,EAST,CIVILIAN];
+private _enemyMarkers = ["Bosques_1","Bosques_2","Bosques_3","Bosques_4","Bosques_5","Bosques_6","Bosques_7","Bosques_8","Bosques_9","Bosques_10","Bosques_11","Bosques_12","Bosques_13","Bosques_14","Bosques_15","Bosques_16","Bosques_17","Bosques_18","Bosques_19","Bosques_20","Bosques_21","Bosques_22","Bosques_23","Bosques_24","Bosques_25","Bosques_26","Bosques_27","Bosques_28","Bosques_29","Bosques_30","Bosques_31"];
+private _angle = 100;
+
+// Bosque
+{
+  _randomSide = _unknownSide call BIS_fnc_selectRandom;
+  _randomFaction = if (_randomSide == EAST) then { 5 } else { 7 };
+  [[_x],[3,1,200+random 100],[0,2,500],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[_randomFaction,1,_randomSide,FALSE,FALSE],[10,1,300,FALSE,FALSE],_angle] call Bastion_Spawn;
+  //["MARKER:", _x,"SIDE:",_randomSide,_randomFaction] call MIV_fnc_log;
+} forEach _enemyMarkers;
+
 /*******************************************************************************
-                            Modify by |ArgA|Vultur|Cbo¹
+                            Modify by |ArgA|Vultur|Sgt
 *******************************************************************************/
 //["MARKER:", _x,"SIDE:",_randomSide] call MIV_fnc_log;

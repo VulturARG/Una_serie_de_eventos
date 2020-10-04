@@ -499,7 +499,7 @@ class CustomAttributes
 							"BOOL"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -884,7 +884,7 @@ class Mission
 			colorName="ColorYellow";
 			a=500;
 			b=200;
-			angle=359.15674;
+			angle=359.15659;
 			id=85;
 			atlOffset=-18.521364;
 		};
@@ -931,7 +931,7 @@ class Mission
 		class Item29
 		{
 			dataType="Trigger";
-			position[]={6033.4448,17.021324,8514.8564};
+			position[]={6448.4033,14.129898,8675.7813};
 			angle=4.318119;
 			class Attributes
 			{
@@ -946,7 +946,6 @@ class Mission
 			};
 			id=89;
 			type="EmptyDetectorArea10x10";
-			atlOffset=-3.0499992;
 		};
 		class Item30
 		{
@@ -11088,7 +11087,7 @@ class Mission
 		class Item286
 		{
 			dataType="Trigger";
-			position[]={2994.147,19.721447,11990.435};
+			position[]={2617.8262,44.604908,11575.168};
 			angle=3.6868148;
 			class Attributes
 			{
@@ -11102,7 +11101,6 @@ class Mission
 			};
 			id=1136;
 			type="EmptyDetectorArea10x10";
-			atlOffset=-7.8490009;
 		};
 		class Item287
 		{
@@ -17586,7 +17584,7 @@ class Mission
 					};
 					id=1325;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
-					atlOffset=-1.9073486e-006;
+					atlOffset=-3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17659,6 +17657,7 @@ class Mission
 					};
 					id=1326;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=-1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
