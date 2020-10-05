@@ -2,8 +2,6 @@
                           Realizado por |ArgA|Vultur|Cbo¹
 *******************************************************************************/
 
-waitUntil { time > 9000};
-
 private _text = "<t align='left'>";
 _text = format["%1<t color='#ff0000' align='left' size = '.6'>Atento ARGA, Mando llama</t><br/>",_text];
 _text = format["%1<t color='#ffffff' size = '.6'>Busque un lugar seguro para esperar traslado a base</t><br/>",_text];

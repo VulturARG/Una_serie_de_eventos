@@ -1,5 +1,7 @@
 params ["_JIPmkr","_infantry","_LVeh","_AVeh","_SVeh","_PTrooper","_HAtrooper","_settings","_basSettings","_angle"];
 
+//["b_launch:", _JIPmkr] call MIV_fnc_log;
+
 if (isServer) then {
 	private ["_PAgroupArray","_LVgroupArray","_CHgroupArray","_PTgroupArray","_HAgroupArray"];
 
@@ -49,6 +51,7 @@ if (isServer) then {
 		if (isnil "_eosMarkers") then {_eosMarkers=[];};
 		_eosMarkers set [count _eosMarkers,_x];
 		server setvariable ["EOSmarkers",_eosMarkers,true];
+		//["b_launch:", _x] call MIV_fnc_log;
 		null = [_x,[_PApatrols,_PAgroupArray,_PAminDist],[_LVehGroups,_LVgroupArray,_LVminDist],[_AVehGroups,_AVminDist],[_CHGroups,_CHgroupArray,_CHminDist],[_PTGroups,_PTgroupArray,_PTminDist,_PTAltSalto],[_HAGroups,_HAgroupArray,_HAminDist,_HAAltSalto],_settings,_basSettings,_angle] execVM "scripts\eos\core\b_core.sqf";
 	}foreach _JIPmkr;
 

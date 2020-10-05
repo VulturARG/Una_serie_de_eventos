@@ -113,7 +113,7 @@ private _angle = 100;
 {
   _randomSide = _unknownSide call BIS_fnc_selectRandom;
   _randomFaction = if (_randomSide == EAST) then { 5 } else { 7 };
-  [[_x],[3,1,200+random 100],[0,2,500],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[_randomFaction,1,_randomSide,FALSE,FALSE],[10,1,300,FALSE,FALSE],_angle] call Bastion_Spawn;
+  [[_x],[3,1,250+random 150],[0,2,500],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[_randomFaction,1,_randomSide,FALSE,FALSE],[10,1,300,FALSE,FALSE],_angle] call Bastion_Spawn;
   //["MARKER:", _x,"SIDE:",_randomSide,_randomFaction] call MIV_fnc_log;
 } forEach _enemyMarkers;
 

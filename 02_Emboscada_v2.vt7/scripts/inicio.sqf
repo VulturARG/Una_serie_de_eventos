@@ -16,9 +16,7 @@ _Nro_Jugadores = count _humanPlayers;
 //_markers,_waves,_jugadores,_angle
 ["",0,_Nro_Jugadores,90] execVM "scripts\eos\OpenMe.sqf";
 
-execVM "scripts\eos\OpenMeAttack.sqf";
-
-execVM "scripts\screenOrderFinish.sqf";
+execVM "scripts\timeOrderFinish.sqf";
 
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹

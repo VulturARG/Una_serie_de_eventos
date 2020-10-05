@@ -113,7 +113,9 @@ if (_pause > 0 and !_initialLaunch) then {
 // SPAWN PATROLS
 _aGroup=[];
 _troupsPA = 0;
+//["_PApatrols:", _PApatrols,_mkr] call MIV_fnc_log;
 for "_counter" from 1 to _PApatrols do {
+	//["_counter:", _counter] call MIV_fnc_log;
 	_dir_atk=_mkrAgl+(random _angle)-_angle/2;
 	_Place=(_PAminDist + random 75);
 	_pos = [_mPos, _Place, _dir_atk] call BIS_fnc_relPos;
@@ -316,6 +318,7 @@ if (_debugLog) then {
 	_getToMarker setWaypointBehaviour "AWARE";
 	_getToMarker setWaypointFormation (["STAG COLUMN", "WEDGE", "ECH LEFT", "ECH RIGHT", "VEE", "DIAMOND", "LINE"] call BIS_fnc_selectRandom);
 	_getToMarker setWaypointCompletionRadius 15;
+	_getToMarker setWaypointPosition [_position, random 100];
 	_getToMarker setWaypointCombatMode "RED";
 }foreach _aGroup;
 
@@ -366,7 +369,7 @@ if (_debugLog) then {
 
 waituntil {triggeractivated _bastActive};
 
-_waves=(_waves - 1);
+_waves = (_waves - 1);
 if (_waves >= 1) then {
 	if (_debugLog) then {[[_mkr,"Wave", _waves,"Inicio_Espera_proximo_ataque","-",_side]] call EOS_VUL_Debug;};
 	
@@ -434,12 +437,23 @@ if (triggeractivated _bastActive and triggeractivated _bastClear and (_waves < 1
 waituntil {getmarkercolor _mkr == "colorblack" OR getmarkercolor _mkr == VictoryColor OR getmarkercolor _mkr == hostileColor or !triggeractivated  _bastActive};
 if (_debug) then {systemChat "delete units";};
 
+waituntil {!triggeractivated  _bastActive};
+
+//["b_core:", _mkr] call MIV_fnc_log;
+
+{
+    {
+        //["b_core: _x", _X] call MIV_fnc_log;
+		deleteVehicle _x;
+
+    } foreach units _x;
+
+} foreach _aGroup;
+
 //hint "Ataques finalizados"; //TODO Borrar
 
-//if (_debug) then {systemChat "delete wp";};
 
-
-//TODO los para cuando termina la ola no al final de las olas
+//TODO 
 // Borro los wp de las unidades
 /*_todos = allGroups select {side _x isEqualTo _side};//returns all groups of _side
 //systemChat (format ["_selection: %1",count _todos]);
@@ -532,6 +546,7 @@ hint "Borro Helis PT";
 
 
 // */
+
 deletevehicle _bastActive;
 deletevehicle _bastClear;
 deletevehicle _basActivated;
