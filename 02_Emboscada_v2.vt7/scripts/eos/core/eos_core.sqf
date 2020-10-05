@@ -1,7 +1,7 @@
 params ["_mkr","_HouseInfantry","_infantry","_LVeh","_vehicles","_settings",["_cache",false]];
 if (!isServer) exitWith {};
 private ["_newpos","_cargoType","_vehType","_dGrp","_mkrAgl","_bGroup","_civZone","_bGrp",
-		 "_eGrp","_fGrp","_aMin","_aGrp","_bMin","_units","_trig","_cache","_grp","_crew",
+		 "_eGrp","_fGrp","_aMin","_aGrp","_bMin","_units","_trig","_grp","_crew",
 		 "_vehicle","_actCond","_mAN","_mAH","_mA","_cGrp","_taken","_clear","_enemyFaction",
 		 "_n","_eosAct","_eosActivated","_mPos","_mkrX","_mkrY"
 		];
@@ -262,10 +262,7 @@ if (!(getmarkercolor _mkr == "colorblack")) then {
     _taken setTriggerActivation["ANY", "PRESENT", true];
     _taken setTriggerStatements["{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 5} count allUnits > 0", "", ""];
     _eosAct = true;
-    while {
-        _eosAct
-    }
-    do {
+    while { _eosAct } do {
         // IF PLAYER LEAVES THE AREA OR ZONE DEACTIVATED
         if (!triggeractivated _eosActivated || getmarkercolor _mkr == "colorblack") exitwith {
             if (_debug) then {
@@ -281,26 +278,22 @@ if (!(getmarkercolor _mkr == "colorblack")) then {
                     _vehicle = _x select 0;
                     _crew = _x select 1;
                     _grp = _x select 2;
-                    if (!alive _vehicle || {!alive _x
-                        }
-                        foreach _crew) then {
+                    if (!alive _vehicle || {!alive _x } foreach _crew) then {
                         _cGrps = _cGrps - 1;
-                    }; {
+                    }; 
+                    {
                         deleteVehicle _x
-                    }
-                    forEach(_crew);
+                    } forEach(_crew);
                     if (!(vehicle player == _vehicle)) then {
                         {
                             deleteVehicle _x
-                        }
-                        forEach[_vehicle];
-                    }; {
+                        } forEach[_vehicle];
+                    }; 
+                    {
                         deleteVehicle _x
-                    }
-                    foreach units _grp;
+                    } foreach units _grp;
                     deleteGroup _grp;
-                }
-                foreach _cGrp;
+                } foreach _cGrp;
                 if (_debug) then {
                     player sidechat format["ID:c%1", _cGrps];
                 };

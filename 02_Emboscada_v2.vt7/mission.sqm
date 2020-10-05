@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=447;
+		nextID=448;
 	};
 	class MarkerIDProvider
 	{
@@ -89,26 +89,13 @@ addons[]=
 	"A3_Weapons_F_Exp",
 	"A3_Structures_F_Wrecks",
 	"CUP_Misc3_Config",
-	"acfaa_Redd_Tank_e_m230g_wolf",
-	"A3_Structures_F_Ind_PowerLines",
-	"acfaa_unif",
-	"A3_Weapons_F_Rifles_MX",
-	"ace_scopes",
-	"A3_Weapons_F_Acc",
-	"ace_laserpointer",
-	"A3_Weapons_F_Pistols_P07",
-	"fm12_respirator",
-	"ace_nightvision",
-	"A3_Weapons_F_Items",
-	"ace_attach",
-	"ace_chemlights",
-	"acre_sys_prc152"
+	"acfaa_Redd_Tank_e_m230g_wolf"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=65;
+		items=57;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -485,59 +472,6 @@ class AddonsMetaData
 			className="acfaa_Redd_Tank_e_m230g_wolf";
 			name="acfaa_Redd_Tank_e_m230g_wolf";
 		};
-		class Item57
-		{
-			className="acfaa_unif";
-			name="acfaa_unif";
-			author="FAA mod";
-		};
-		class Item58
-		{
-			className="ace_scopes";
-			name="ACE3 - Scopes";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item59
-		{
-			className="ace_laserpointer";
-			name="ACE3 - Laser Pointer";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item60
-		{
-			className="fm12_respirator";
-			name="fm12_respirator";
-		};
-		class Item61
-		{
-			className="ace_nightvision";
-			name="ACE3 - Night Vision";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item62
-		{
-			className="ace_attach";
-			name="ACE3 - Attach";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item63
-		{
-			className="ace_chemlights";
-			name="ace_chemlights";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item64
-		{
-			className="acre_sys_prc152";
-			name="ACRE2 - AN/PRC-152";
-			author="ACRE2Team";
-			url="https://github.com/IDI-Systems/acre2";
-		};
 	};
 };
 randomSeed=944568;
@@ -598,7 +532,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=344;
+		items=341;
 		class Item0
 		{
 			dataType="Marker";
@@ -948,7 +882,7 @@ class Mission
 			colorName="ColorYellow";
 			a=500;
 			b=200;
-			angle=225.08823;
+			angle=225.08818;
 			id=25;
 		};
 		class Item26
@@ -1061,7 +995,7 @@ class Mission
 			colorName="ColorOrange";
 			a=300;
 			b=150;
-			angle=224.82164;
+			angle=224.82159;
 			id=33;
 			atlOffset=-19.868;
 		};
@@ -22189,218 +22123,6 @@ class Mission
 			type="hd_pickup";
 			colorName="ColorWEST";
 			id=438;
-		};
-		class Item341
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={2410.0947,38.514194,11860.747};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=443;
-			type="Land_PowerPoleWooden_F";
-			atlOffset=-0.00017166138;
-		};
-		class Item342
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={2412.5244,38.650299,11860.31};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=444;
-			type="Land_PowerPoleWooden_F";
-			atlOffset=-0.00016403198;
-		};
-		class Item343
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2411.3145,33.367947,11862.27};
-						angles[]={0,3.1965182,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="arifle_MX_F";
-								optics="optic_Aco";
-								flashlight="acc_pointer_IR";
-								class primaryMuzzleMag
-								{
-									name="30Rnd_65x39_caseless_mag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="hgun_P07_F";
-								class primaryMuzzleMag
-								{
-									name="16Rnd_9x21_Mag";
-									ammoLeft=17;
-								};
-							};
-							class uniform
-							{
-								typeName="UCAC_CAMO_MULTICAM";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="30Rnd_65x39_caseless_mag";
-										count=2;
-										ammoLeft=30;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="V_PlateCarrier1_rgr";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=6;
-									class Item0
-									{
-										name="30Rnd_65x39_caseless_mag";
-										count=7;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="16Rnd_9x21_Mag";
-										count=2;
-										ammoLeft=17;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="Chemlight_green";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item5
-									{
-										name="HandGrenade";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							goggles="avon_fm12";
-							hmd="NVGoggles";
-							headgear="H_HelmetB";
-						};
-					};
-					id=446;
-					type="UCAC_UNIFORM_MULTICAM";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male12ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=445;
 		};
 	};
 	class Connections
