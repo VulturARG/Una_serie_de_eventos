@@ -19,7 +19,7 @@ class EditorData
 		pos[]={2411.2405,58.43148,11833.828};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -663,7 +663,7 @@ class Mission
 			colorName="ColorYellow";
 			a=500;
 			b=250;
-			angle=105.73891;
+			angle=105.7389;
 			id=9;
 		};
 		class Item10
@@ -882,7 +882,7 @@ class Mission
 			colorName="ColorYellow";
 			a=500;
 			b=200;
-			angle=225.08818;
+			angle=225.08817;
 			id=25;
 		};
 		class Item26
@@ -995,7 +995,7 @@ class Mission
 			colorName="ColorOrange";
 			a=300;
 			b=150;
-			angle=224.82159;
+			angle=224.82158;
 			id=33;
 			atlOffset=-19.868;
 		};
