@@ -3,8 +3,10 @@ if (!isServer) exitWith {};
 private ["_newpos","_cargoType","_vehType","_dGrp","_mkrAgl","_bGroup","_civZone","_bGrp",
 		 "_eGrp","_fGrp","_aMin","_aGrp","_bMin","_units","_trig","_grp","_crew",
 		 "_vehicle","_actCond","_mAN","_mAH","_mA","_cGrp","_taken","_clear","_enemyFaction",
-		 "_n","_eosAct","_eosActivated","_mPos","_mkrX","_mkrY"
+		 "_n","_eosAct","_eosActivated","_mPos","_mkrX","_mkrY","_mkrShape"
 		];
+
+private _isRectangle = false;
 
 _HouseInfantry params["_aGrps","_aSize"];
 _infantry params["_bGrps","_bSize"];
@@ -12,10 +14,14 @@ _LVeh params["_cGrps","_cSize"];
 _vehicles params["_dGrps","_eGrps","_fGrps","_fSize"];
 _settings params["_faction","_mA","_distance","_side",["_heightLimit",false],["_debug",false]];
 
-_mPos=markerpos _mkr;
+_mPos = markerpos _mkr;
 getMarkerSize _mkr params ["_mkrX","_mkrY"];
-_mkrAgl=markerDir _mkr;
-
+_mkrAgl = markerDir _mkr;
+_mkrShape = markerShape _mkr;
+if (toUpper _mkrShape == "RECTANGLE") then {
+	_isRectangle = true;
+};
+hint format["%1",_isRectangle];
 _aMin=_aSize select 0;
 _bMin=_bSize select 0;
 
@@ -47,7 +53,7 @@ if (!_cache) then {
     };
 
     _eosActivated = createTrigger["EmptyDetector", _mPos];
-    _eosActivated setTriggerArea[(_distance + _mkrX), (_distance + _mkrY), _mkrAgl, FALSE];
+    _eosActivated setTriggerArea[(_distance + _mkrX), (_distance + _mkrY), _mkrAgl, _isRectangle];
     _eosActivated setTriggerActivation["ANY", "PRESENT", true];
     _eosActivated setTriggerTimeout[1, 1, 1, true];
     _eosActivated setTriggerStatements[_actCond, "", ""];
@@ -62,17 +68,15 @@ if (!(getmarkercolor _mkr == VictoryColor)) then { //IF MARKER IS GREEN DO NOT C
     _mkr setmarkercolor hostileColor;
 };
 
-waituntil {
-    triggeractivated _eosActivated
-}; //WAIT UNTIL PLAYERS IN ZONE
+waituntil { triggeractivated _eosActivated }; //WAIT UNTIL PLAYERS IN ZONE
+
 if (!(getmarkercolor _mkr == "colorblack")) then {
     if (!(getmarkercolor _mkr == VictoryColor)) then {
         _mkr setmarkerAlpha _mAH;
     };
 
     // SPAWN HOUSE PATROLS
-    for "_counter"
-    from 1 to _aGrps do {
+    for "_counter" from 1 to _aGrps do {
         if (isnil "_aGrp") then {
             _aGrp = [];
         };
@@ -103,8 +107,7 @@ if (!(getmarkercolor _mkr == "colorblack")) then {
     };
 
     // SPAWN PATROLS
-    for "_counter"
-    from 1 to _bGrps do {
+    for "_counter" from 1 to _bGrps do {
         if (isnil "_bGrp") then {
             _bGrp = [];
         };
@@ -134,8 +137,7 @@ if (!(getmarkercolor _mkr == "colorblack")) then {
     };
 
     //SPAWN LIGHT VEHICLES
-    for "_counter"
-    from 1 to _cGrps do {
+    for "_counter" from 1 to _cGrps do {
         if (isnil "_cGrp") then {
             _cGrp = [];
         };
@@ -167,8 +169,7 @@ if (!(getmarkercolor _mkr == "colorblack")) then {
     };
 
     //SPAWN ARMOURED VEHICLES
-    for "_counter"
-    from 1 to _dGrps do {
+    for "_counter" from 1 to _dGrps do {
         if (isnil "_dGrp") then {
             _dGrp = [];
         };
@@ -194,8 +195,7 @@ if (!(getmarkercolor _mkr == "colorblack")) then {
     };
 
     //SPAWN STATIC PLACEMENTS
-    for "_counter"
-    from 1 to _eGrps do {
+    for "_counter" from 1 to _eGrps do {
         if (surfaceiswater _mPos) exitwith {};
         if (isnil "_eGrp") then {
             _eGrp = [];
@@ -216,8 +216,7 @@ if (!(getmarkercolor _mkr == "colorblack")) then {
     };
 
     //SPAWN CHOPPER
-    for "_counter"
-    from 1 to _fGrps do {
+    for "_counter" from 1 to _fGrps do {
         if (isnil "_fGrp") then {
             _fGrp = [];
         };
@@ -254,11 +253,11 @@ if (!(getmarkercolor _mkr == "colorblack")) then {
 
     //SPAWN ALT TRIGGERS
     _clear = createTrigger["EmptyDetector", _mPos];
-    _clear setTriggerArea[_mkrX, _mkrY, _mkrAgl, FALSE];
+    _clear setTriggerArea[_mkrX, _mkrY, _mkrAgl, _isRectangle];
     _clear setTriggerActivation[_enemyFaction, "NOT PRESENT", true];
     _clear setTriggerStatements["this", "", ""];
     _taken = createTrigger["EmptyDetector", _mPos];
-    _taken setTriggerArea[_mkrX, _mkrY, _mkrAgl, FALSE];
+    _taken setTriggerArea[_mkrX, _mkrY, _mkrAgl, _isRectangle];
     _taken setTriggerActivation["ANY", "PRESENT", true];
     _taken setTriggerStatements["{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 5} count allUnits > 0", "", ""];
     _eosAct = true;
@@ -449,10 +448,7 @@ if (!(getmarkercolor _mkr == "colorblack")) then {
             _dGrps = 0;
             _eGrps = 0;
             _fGrps = 0;
-            while {
-                triggeractivated _eosActivated AND!(getmarkercolor _mkr == "colorblack")
-            }
-            do {
+            while { triggeractivated _eosActivated AND!(getmarkercolor _mkr == "colorblack")} do {
                 if (!triggeractivated _clear) then {
                     _mkr setmarkercolor hostileColor;
                     _mkr setmarkerAlpha _mAH;

@@ -5,11 +5,19 @@ if (!isServer) exitWith {};
 private ["_ptGroup","_fGroup","_cargoType","_vehType","_CHside","_mkrAgl","_pause","_eosZone","_hints","_waves","_aGroup","_side"];
 private ["_actCond","_enemyFaction","_mAH","_mAN","_distance","_grp","_cGroup","_bGroup","_CHType","_time","_timeout","_faction"];
 private ["_troupsPA","_troupsLV","_troupsAV","_troupsHT","_troupsPT","_troupsHA"];
-private ["_enemigos","_inconcientes"];
+private ["_enemigos","_inconcientes","_mkrShape"];
 
-_mPos=getMarkerPos _mkr;
+private _clearDistance = 300;
+private _isRectangle = false;
+
+_mPos = getMarkerPos _mkr;
 getMarkerSize _mkr params ["_mkrX","_mkrY"];
-_mkrAgl=markerDir _mkr;
+_mkrAgl = markerDir _mkr;
+_mkrShape = markerShape _mkr;
+if (toUpper _mkrShape == "RECTANGLE") then {
+	_isRectangle = true;
+};
+
 
 _infantry params["_PApatrols","_PAgroupSize","_PAminDist"];
 _LVeh params["_LVehGroups","_LVgroupSize","_LVminDist"];
@@ -29,8 +37,8 @@ if (_mA==0) then {_mAH = 1;_mAN = 0.5;};
 if (_mA==1) then {_mAH = 0;_mAN = 0;};
 if (_mA==2) then {_mAH = 0.5;_mAN = 0.5;};
 
-if (_side==EAST) then {_enemyFaction="east";};
-if (_side==WEST) then {_enemyFaction="west";};
+if (_side==EAST) then {_enemyFaction="east"};
+if (_side==WEST) then {_enemyFaction="west"};
 if (_side==INDEPENDENT) then {_enemyFaction="GUER";};
 if (_side==CIVILIAN) then {_enemyFaction="civ";};
 
@@ -49,7 +57,7 @@ if ismultiplayer then {
 };
 
 _basActivated = createTrigger ["EmptyDetector",_mPos];
-_basActivated setTriggerArea [_mkrX,_mkrY,_mkrAgl,FALSE];
+_basActivated setTriggerArea [_mkrX,_mkrY,_mkrAgl,_isRectangle];
 _basActivated setTriggerActivation ["ANY","PRESENT",true];
 _basActivated setTriggerStatements [_actCond,"",""];
 
@@ -61,15 +69,20 @@ _mkr setmarkercolor bastionColor;
 _mkr setmarkeralpha _mAH;
 
 _bastActive = createTrigger ["EmptyDetector",_mPos];
-_bastActive setTriggerArea [_mkrX,_mkrY,_mkrAgl,FALSE];
+_bastActive setTriggerArea [_mkrX,_mkrY,_mkrAgl,_isRectangle];
 _bastActive setTriggerActivation ["any","PRESENT",true];
 _bastActive setTriggerTimeout [1, 1, 1, true];
 _bastActive setTriggerStatements [_actCond,"",""];
 
 _bastClear = createTrigger ["EmptyDetector",_mPos];
-_bastClear setTriggerArea [(_mkrX+(_Placement*0.3)),(_mkrY+(_Placement*0.3)),_mkrAgl,FALSE];
+_bastClear setTriggerArea [(_mkrX+(_Placement*0.3)),(_mkrY+(_Placement*0.3)),_mkrAgl,_isRectangle];
 _bastClear setTriggerActivation [_enemyFaction,"NOT PRESENT",true];
 _bastClear setTriggerStatements ["this","",""];
+
+_clear = createTrigger["EmptyDetector", _mPos];
+_clear setTriggerArea[_mkrX+_clearDistance, _mkrY+_clearDistance, _mkrAgl, _isRectangle];
+_clear setTriggerActivation["ANYPLAYER", "PRESENT", true];
+_clear setTriggerStatements["this", "", ""];
 
 // PAUSE IF REQUESTED
 if (_pause > 0 and !_initialLaunch) then {
@@ -318,7 +331,7 @@ if (_debugLog) then {
 	_getToMarker setWaypointBehaviour "AWARE";
 	_getToMarker setWaypointFormation (["STAG COLUMN", "WEDGE", "ECH LEFT", "ECH RIGHT", "VEE", "DIAMOND", "LINE"] call BIS_fnc_selectRandom);
 	_getToMarker setWaypointCompletionRadius 15;
-	_getToMarker setWaypointPosition [_position, random 100];
+	_getToMarker setWaypointPosition [_mPos, random 100];
 	_getToMarker setWaypointCombatMode "RED";
 }foreach _aGroup;
 
@@ -437,9 +450,10 @@ if (triggeractivated _bastActive and triggeractivated _bastClear and (_waves < 1
 waituntil {getmarkercolor _mkr == "colorblack" OR getmarkercolor _mkr == VictoryColor OR getmarkercolor _mkr == hostileColor or !triggeractivated  _bastActive};
 if (_debug) then {systemChat "delete units";};
 
-waituntil {!triggeractivated  _bastActive};
+waituntil {!triggeractivated  _clear};
 
 //["b_core:", _mkr] call MIV_fnc_log;
+//hint "Fuera del aerea";
 
 {
     {
@@ -449,7 +463,7 @@ waituntil {!triggeractivated  _bastActive};
     } foreach units _x;
 
 } foreach _aGroup;
-
+// */
 //hint "Ataques finalizados"; //TODO Borrar
 
 
