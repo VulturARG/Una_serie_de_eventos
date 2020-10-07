@@ -81,15 +81,16 @@ EOS_KILLCOUNTER=FALSE;		// Counts killed units
 private _civilMarkers       = ["Civil_1","Civil_2","Civil_3","Civil_4","Civil_5"];
 private _unknownMarkers     = ["Indecisos_1","Indecisos_10","Indecisos_11","Indecisos_2","Indecisos_3","Indecisos_4","Indecisos_5","Indecisos_6","Indecisos_7","Indecisos_8","Indecisos_9"];
 private _unknownSide        = [EAST,EAST,CIVILIAN];
-private _enemyMarkers       = ["Enemigos_10","Enemigos_14","Enemigos_4","Enemigos_5","Enemigos_6","Enemigos_7","Enemigos_8","Enemigos_9","Enemigos_1","Enemigos_11","Enemigos_12","Enemigos_13","Enemigos_15","Enemigos_2","Enemigos_3"];
+private _enemyMarkers       = ["Enemigos_10","Enemigos_14","Enemigos_4","Enemigos_5","Enemigos_6","Enemigos_7","Enemigos_8","Enemigos_9","Enemigos_1","Enemigos_11","Enemigos_12","Enemigos_13","Enemigos_15","Enemigos_16","Enemigos_2","Enemigos_3"];
 private _randomSide         = EAST;
 private _randomFaction      = 5;
-private _activationDistance = 400;
+private _activationDistance = 300;
 
 // Aliados
-[_civilMarkers,[0,4,100],[8,1,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,CIVILIAN,false]] call EOS_Spawn;
+[_civilMarkers,[0,4,100],[4,1,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,CIVILIAN,false]] call EOS_Spawn;
 
 // Indecisos
+
 {
   _randomSide = _unknownSide call BIS_fnc_selectRandom;
   _randomFaction = if (_randomSide == EAST) then { 5 } else { 7 };
@@ -106,7 +107,7 @@ private _activationDistance = 400;
 [["Potencia_2"],[0,4,100],[6,2,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
 
 _unknownSide = [EAST,EAST,EAST,EAST,CIVILIAN];
-private _enemyMarkers = ["Bosques_1","Bosques_2","Bosques_3","Bosques_4","Bosques_5","Bosques_6","Bosques_7","Bosques_8","Bosques_9","Bosques_10","Bosques_11","Bosques_12","Bosques_13","Bosques_14","Bosques_15","Bosques_16","Bosques_17","Bosques_18","Bosques_19","Bosques_20","Bosques_21","Bosques_22","Bosques_23","Bosques_24","Bosques_25","Bosques_26","Bosques_27","Bosques_28","Bosques_29","Bosques_30","Bosques_31"];
+private _enemyMarkers = ["Bosques_1","Bosques_2","Bosques_3","Bosques_4","Bosques_5","Bosques_6","Bosques_7","Bosques_8","Bosques_9","Bosques_10","Bosques_11","Bosques_12","Bosques_13","Bosques_14","Bosques_15","Bosques_16","Bosques_17","Bosques_18","Bosques_19","Bosques_20","Bosques_21","Bosques_22","Bosques_23","Bosques_24","Bosques_25","Bosques_26","Bosques_27","Bosques_28","Bosques_29","Bosques_30","Bosques_31","Bosques_32","Bosques_33"];
 private _angle = 100;
 
 // Bosque

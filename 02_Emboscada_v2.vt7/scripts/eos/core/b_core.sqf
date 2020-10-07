@@ -7,7 +7,7 @@ private ["_actCond","_enemyFaction","_mAH","_mAN","_distance","_grp","_cGroup","
 private ["_troupsPA","_troupsLV","_troupsAV","_troupsHT","_troupsPT","_troupsHA"];
 private ["_enemigos","_inconcientes","_mkrShape"];
 
-private _clearDistance = 300;
+private _clearDistance = 250;
 private _isRectangle = false;
 
 _mPos = getMarkerPos _mkr;

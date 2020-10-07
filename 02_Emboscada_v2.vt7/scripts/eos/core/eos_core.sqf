@@ -21,7 +21,6 @@ _mkrShape = markerShape _mkr;
 if (toUpper _mkrShape == "RECTANGLE") then {
 	_isRectangle = true;
 };
-hint format["%1",_isRectangle];
 _aMin=_aSize select 0;
 _bMin=_bSize select 0;
 
