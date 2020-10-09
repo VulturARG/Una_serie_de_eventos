@@ -1,0 +1,117 @@
+/*******************************************************************************
+                          Realizado por |ArgA|MIV
+*******************************************************************************/
+
+#define NAME "Emboscada"                            // Colocar nombre de mision
+#define COMPLETE_NAME "Emboscada v3"                // Nombre y versión de la misión
+#define IMAGE "imgs\portada_EMB.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
+#define DESCRIPTION "En el medio de la nada"        // Colocar descripcion de la mision entre las comillas
+
+author = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
+IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberian estar en
+COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
+ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
+NOMBRE_CAMPANIA = "Una Serie de Eventos...";
+INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+                                                    // y en el parametro INTRO la dirección del archivo entre comillas
+                                                    // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
+INTRO = "scripts\intro_campania.sqf";                                          // Intros: 1 y 2. Para desactivar: 0
+
+MAX_DIST_VISION = 2500;
+MIN_DIST_VISION =  800;                             // Distancia de visión reducida por marcador
+DESACTIVAR_EQUIPAMIENTO_PERSONALIZADO = 1;          // Equipamiento guardado en arsenal virtual. 0: activado, 1: desactivado
+ACTIVAR_COMPUTADORA_ARTILLERIA = 1;                 // Habilita computadora artilleria poner 1. Para que no aparezca poner 0
+ACTIVAR_ROL_AUTOMATICO = 1;                         // Habilita la carga de rol al entrar a la misión por descripción de rol
+                                                    // Para verificar que los roles estan bien escritos activar todas las IAs y entrar
+COLOCAR_GPS = 0;                                    // Agrega GPS vanilla en rol automático o caja. 1: agrega, 0: remueve
+
+ACTIVAR_INSIGNIA_AUTOMATICO = 1;                    // Añade insignias por pelotón o médicas. 1: Añade, 0: No Añade
+INSIGNIA_IR = 0;                                    // Establece si las insignias son IR (1) o normales (0).
+
+ACTIVAR_SETUP_PERSONALIZADO_RADIOS = 1;             // Activa el setup de las radios de ACRE2. 1: activado, 0: desactivado
+
+
+/* 
+EQUIPAMIENTO
+    Camuflajes disponibles:          Tipos disponibles:
+       - Bosque                        - Multicam 
+       - Desierto                      - Marpat
+       - Selva                         - Liso
+       - Negro
+
+       - Personalizado (se debe ingresar mas abajo la clase del uniforme, chaleco, casco y mochila)
+       - No editar (no se le modificara ninguna de las 4 cosas al jugador, solo arma y equipo interno)
+
+         Las opciones Personalizada y No editar pueden llevar a comportamientos inesperados.
+         Por lo que el editor queda a cargo de checkear y revisar el correcto funcionamiento.
+*/
+CAMUFLAJE = ["Bosque", "Multicam"];
+GAFAS_INICIALES = "";
+UNIFORME_PERSONALIZADO = "";
+CASCO_PERSONALIZADO = "";
+CHALECO_PERSONALIZADO = "";
+MOCHILA_PERSONALIZADO = "";
+MOCHILA_CHICA_PERSONALIZADO = "";
+////////////////////////////////////////////////////////////////////////////////
+
+/* 
+BRIEFING
+    Cada elemento del array es un parrafo
+    Ejemplo: ["Primer parrafo", "Segundo parrafo"] 
+*/
+ACTIVAR_BRIEFING = 1;
+CARACTER = "Oficial";
+HORARIO = "0932 hs.";
+FECHA = "01/10/2020";
+CLIMA = "Despejado";
+UBICACION = "Vihrolati";
+SITUACION = ["Hemos sido emboscados.","Pudimos controlar la situación, pero hemos perdido todos los vehículos y la mayor parte de los suministros que cargaban. Solo alcanzamos a salvar algunos suministros médicos y unas pocas radios.","Previo al ataque se observaron dos helicópteros. Uno con rumbo de sur a norte y al rato otro de norte a sur. No tenían marcas, pero eran claramente militares. Solo pueden pertenecer a Duecia.","Sufrimos una interferencia en nuestras comunicaciones radiales. Todavía no podemos contactarnos con la Base Internacional, pero estamos recuperando las comunicaciones de corto y mediano alcance. Los locales no tienen ni por asomo nada que pueda causar esto.","Condor quedó en el punto inicio (020 127 k4). La mayor parte de Yaguar está en el cruce de caminos de las rutas 13 y 135. Comandancia, escoltada por Y3, fue atacada en un punto intermedio de la R135. No reportaron su posición todavía, pero sí que no sufrieron bajas."];
+SITUACION_HISTORICA = ["La República de Viro, es un territorio estratégico cuya parte continental posee abundantes recursos naturales y a su vez contiene una serie de islas ubicadas estratégicamente. Debido a la diversidad geográfica y los cambios políticos nunca consolidó un sentimiento nacional único.","Actualmente el estado atraviesa una tensa calma después de la guerra civil que aconteció hace más de 5 años atrás en una situación que fue aprovechada por su vecino del norte, Duesia, una potencia regional. Una antigua provincia de Duesia, que desde la caída de la V.P.C.C. bajo administración de Viro, limítrofe a su anterior nación y con mayoría étnica de esta potencia fue donde se encendió la mecha de la guerra civil. Se sospecha que era apoyada estrechamente con armas y provisiones por Duesia. Se cree que nunca cesó ese apoyo. Una coalición internacional puso fin a la guerra civil y desde entonces mantiene presencia en todo el país para evitar que la historia se repita.","ArgA ha sido recientemente desplegado en la subprefectura de Virolahti, zona donde comenzó la guerra civil, sin embargo, ha permanecido relativamente calmada los últimos tiempos pese a la permisividad del mando anterior las de fuerzas internacionales."];
+EXTRACTO_INTELIGENCIA = ["Hechos:","Cruzamos patrullas armadas de vecinos en diferentes localidades. Pese a no resultar amigables, no combatieron contra nosotros.","Observamos helicópteros no identificados haciendo vuelos sobre los que no teníamos información.","Sufrimos una fuerte interferencia radial, solo posible mediante sofisticada tecnología, no disponible por los locales.","Fuimos atacados simultáneamente en tres puntos alejados entre sí.","Si bien fuimos atacados por civiles, los habitantes de las ciudades vecinas a nuestras posiciones huyeron del combate. Incluso elementos armados.","Conclusión: Esto no fue un hecho al azar organizado por las milicias locales."];
+OBJETIVOS = ["Dada la situación, debemos emprender el regreso a la Base internacional.","No podemos distinguir quien es amigo, o por lo menos los que no nos van a disparar de los que sí, por su indumentaria.","Debemos extremar precauciones. Los que nos dejaron pasar previamente pueden hacerlo o no hacerlo ahora.","De acuerdo a las reglas de combate estamos autorizados a incautar cualquier elemento perteneciente a los civiles que nos atacan.","Los civiles neutrales nos venderán cualquier cosa que necesitemos por un precio exorbitante. Tomemos lo necesario sin preguntar. Ellos irán a cobrar a la Base posteriormente","Ahora más que nunca es necesario no hacernos nuevos enemigos. Es por eso que debemos mantener estas dos reglas de combate con las que salimos de la base:","No disparar o responder fuego de fuerzas regulares del país limítrofe. Aunque se encuentren en territorio de Viro.","Solo abrir fuego a modo de respuesta contra civiles armados."];
+RECURSOS = ["Lo que cargamos", "Radios extra y algunos insumos médicos."];
+ENEMIGOS = ["Posibles milicanos armados"];
+////////////////////////////////////////////////////////////////////////////////
+
+/* Borrado de IAs enemigas muertas y vehículos destruidos */
+ACTIVAR_RECOLECTOR_BASURA = 1;                      // Activa la funcion que borra las IAs muertas y vehículos destruidos. 1: Activado, 0: Desactivado
+RB_TIEMPO_ESPERA_HOMBRES = 120;                     // Tiempo en segundos de espera para eliminar soldados enemigos. 0 Desactiva el borrado de enemigos
+RB_TIEMPO_ESPERA_VEHICULOS = 0;                     // Tiempo en segundos de espera para eliminar vehículos enemigos. 0 Desactiva el borrado de vehículos
+RB_TIEMPO_ESPERA_BLINDADOS = 0;                     // Tiempo en segundos de espera para eliminar blindados enemigos. 0 Desactiva el borrado de blindados
+RB_TIEMPO_ESPERA_AEREOS = 0;                        // Tiempo en segundos de espera para eliminar aereos enemigos. 0 Desactiva el borrado de aereos
+RB_DISTANCIA_JUGADORES = 0;                         // Distancia en metros a los jugadores a partir de la cual se borra. 0 desactiva el borrado por distancia
+////////////////////////////////////////////////////////////////////////////////
+
+/* Camuflaje */
+ACTIVAR_COEFICIENTES_CAMUFLAJE = 0;                 // 1 Activa esta función. 0 la desactiva.
+COEFICIENTE_AUDICION = 1;                           // Valores menores hacen al jugador mas difícil de escuchar. Valores decimales ente 0 y 1.
+COEFICIENTE_CAMUFLAJE = 1;                          // Valores menores hacen al jugador mas difícil de detectar. Valores decimales ente 0 y 1.
+////////////////////////////////////////////////////////////////////////////////
+
+/* IA - CONFIGURACION */
+DESACTIVAR_IA_DE_GRUPO = 1;                         // 0 No desactiva la IA del Grupo de los jugadores, 1 la desactiva.
+DESACTIVAR_TODO_BLUFOR = 0;                         // 0 No desactiva la IA del Blufor, 1 la desactiva.
+DIFICULTAD_IA_PERSONALIZADA = 0;
+AIMING_ACCURACY = 0.20;                             //precision de apuntado
+AIMING_SHAKE = 0.90; 	                            //dispersión de apuntado
+AIMING_SPEED = 0.20; 	                            //velocidad de apuntado
+SPOT_DISTANCE = 0.30; 	                            //distancia de avistamiento
+SPOT_TIME = 0.50; 		                            //tiempo de avistamiento
+COURAGE = 0.25; 		                            //coraje
+RELOAD_SPEED = 0.25; 	                            //velocidad de recarga
+COMMANDING = 0.75; 		                            //liderazgo
+////////////////////////////////////////////////////////////////////////////////
+
+/* Modificar desde los define que estan arriba de todo.
+NO TOCAR LO QUE ESTA ABAJO DE ESTA LINEA             */
+onLoadName = NAME;	                                // Nombre de carga
+briefingName = COMPLETE_NAME;                       // Nombre en briefing
+onLoadMission = DESCRIPTION;                        // Pie de carga
+overviewText = DESCRIPTION;                         // Pie en seleccion de mision
+overviewPicture = IMAGE;                            // Imagen en seleccion de mision
+loadScreen = IMAGE;                                 // Imagen en carga
+////////////////////////////////////////////////////////////////////////////////
+
+/*******************************************************************************
+                         Realizado por |ArgA|MIV
+*******************************************************************************/
