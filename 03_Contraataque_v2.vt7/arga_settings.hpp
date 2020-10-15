@@ -3,9 +3,9 @@
 *******************************************************************************/
 
 #define NAME "Contrataque"                          // Colocar nombre de mision
-#define COMPLETE_NAME "Contrataque v3"              // Nombre y versión de la misión
+#define COMPLETE_NAME "Contrataque v2"              // Nombre y versión de la misión
 #define IMAGE "imgs\portada_CAT.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
-#define DESCRIPTION "Devolviendo favores"        // Colocar descripcion de la mision entre las comillas
+#define DESCRIPTION "Devolviendo favores"           // Colocar descripcion de la mision entre las comillas
 
 author = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
 IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberian estar en

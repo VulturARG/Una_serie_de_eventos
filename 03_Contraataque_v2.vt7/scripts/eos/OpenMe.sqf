@@ -71,7 +71,7 @@ hostileColor="colorOPFOR";	// Default colour when enemies active
 bastionColor="colorBLUFOR";	// Colour for bastion marker
 
 EOS_DAMAGE_MULTIPLIER=1;	// 1 is default
-EOS_KILLCOUNTER=FALSE;		// Counts killed units
+EOS_KILLCOUNTER=false;		// Counts killed units
 
 // Facciones
 // 5: OPFOR
@@ -88,14 +88,14 @@ private _randomFaction      = 5;
 private _activationDistance = 400;
 
 // Aliados
-[_civilMarkers,[0,4,100],[4,1,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,CIVILIAN,false]] call EOS_Spawn;
+[_civilMarkers,[0,4,100],[4,1,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,CIVILIAN,true]] call EOS_Spawn;
 
 // Indecisos
 
 {
   _randomSide = _unknownSide call BIS_fnc_selectRandom;
   _randomFaction = if (_randomSide == EAST) then { 5 } else { 7 };
-  [[_x],[0,2,100],[10,1,100],[0,0,0],[0,0],[0],[0,0,00],[_randomFaction,1,_activationDistance,_randomSide,false]] call EOS_Spawn;
+  [[_x],[0,2,100],[10,1,100],[0,0,0],[0,0],[0],[0,0,00],[_randomFaction,1,_activationDistance,_randomSide,true]] call EOS_Spawn;
 
 } forEach _unknownMarkers;
 
@@ -120,7 +120,7 @@ private _angle = 100;
 {
   _randomSide = _unknownSide call BIS_fnc_selectRandom;
   _randomFaction = if (_randomSide == EAST) then { 5 } else { 7 };
-  [[_x],[3,1,250+random 150],[0,2,500],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[_randomFaction,1,_randomSide,FALSE,FALSE],[10,1,300,FALSE,FALSE],_angle] call Bastion_Spawn;
+  [[_x],[3,1,250+random 150],[0,2,500],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[_randomFaction,1,_randomSide,true,false],[10,1,300,false,false],_angle] call Bastion_Spawn;
   //["MARKER:", _x,"SIDE:",_randomSide,_randomFaction] call MIV_fnc_log;
 } forEach _enemyMarkers;
 
