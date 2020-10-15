@@ -2,20 +2,11 @@
                           Realizado por |ArgA|Vultur|Cbo¹
 *******************************************************************************/
 
-private _Nro_Jugadores = 0;
-//Cuento los jugadores a los 10 minutos de iniciado la partida
-//TODO poner el tiempo en 600
-//waitUntil { time > 600};
-/*
-_Nro_Jugadores = call MIV_fnc_countAlivePlayers;
-*/
+params["_marker"];
 
-// Activo la zona EOS
-//_markers,_waves,_jugadores,_angle
-["",0,_Nro_Jugadores,90] execVM "scripts\eos\OpenMe.sqf";
+private _playerInMarker = (allPlayers select {alive _x}) inAreaArray _marker;
 
-
-execVM "scripts\timeOrderFinish.sqf";
+count _playerInMarker
 
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹

@@ -654,6 +654,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=700;
 			b=300;
 			angle=202.84697;
@@ -668,9 +669,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=400;
 			b=350;
-			angle=185.36028;
+			angle=185.36018;
 			id=1;
 		};
 		class Item2
@@ -681,6 +683,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorCIV";
+			alpha=0;
 			a=500;
 			b=300;
 			angle=16.359999;
@@ -694,6 +697,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorCIV";
+			alpha=0;
 			a=300;
 			b=70;
 			angle=134.201;
@@ -707,9 +711,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorCIV";
+			alpha=0;
 			a=400;
 			b=250;
-			angle=252.49596;
+			angle=252.49591;
 			id=4;
 		};
 		class Item5
@@ -720,9 +725,10 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorCIV";
+			alpha=0;
 			a=400;
 			b=200;
-			angle=206.61159;
+			angle=206.6115;
 			id=5;
 			atlOffset=1.1325941;
 		};
@@ -734,6 +740,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorYellow";
+			alpha=0;
 			a=250;
 			b=300;
 			angle=186.05107;
@@ -747,6 +754,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorCIV";
+			alpha=0;
 			a=200;
 			b=60;
 			angle=144.23097;
@@ -760,6 +768,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorYellow";
+			alpha=0;
 			a=400;
 			b=200;
 			angle=158.74792;
@@ -773,6 +782,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="rectangle";
 			colorName="ColorEAST";
+			alpha=0;
 			a=700;
 			b=500;
 			angle=223.3203;
@@ -782,15 +792,17 @@ class Mission
 		class Item10
 		{
 			dataType="Marker";
-			position[]={15085.143,7.755137,14908.685};
+			position[]={15085.143,7.7550001,14908.685};
 			name="Potencia_1";
 			markerType="RECTANGLE";
 			type="rectangle";
 			colorName="ColorGUER";
+			alpha=0;
 			a=1300;
 			b=350;
-			angle=43.126797;
+			angle=43.126999;
 			id=10;
+			atlOffset=-0.00013685226;
 		};
 		class Item11
 		{
@@ -800,6 +812,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="rectangle";
 			colorName="ColorEAST";
+			alpha=0;
 			a=500;
 			b=200;
 			angle=223.3203;
@@ -814,6 +827,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="rectangle";
 			colorName="ColorEAST";
+			alpha=0;
 			a=280;
 			b=100;
 			angle=11.958997;
@@ -823,16 +837,17 @@ class Mission
 		class Item13
 		{
 			dataType="Marker";
-			position[]={13532.912,11.283014,15422.119};
+			position[]={13532.912,11.283,15422.119};
 			name="Potencia_2";
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorGUER";
+			alpha=0;
 			a=650;
 			b=350;
 			angle=43.126999;
 			id=13;
-			atlOffset=-0.00014972687;
+			atlOffset=-0.00016403198;
 		};
 		class Item14
 		{
@@ -842,6 +857,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorEAST";
+			alpha=0;
 			a=600;
 			b=400;
 			angle=63.996979;
@@ -856,6 +872,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorEAST";
+			alpha=0;
 			a=600;
 			b=400;
 			angle=63.996979;
@@ -870,6 +887,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorEAST";
+			alpha=0;
 			a=800;
 			b=500;
 			angle=79.05101;
@@ -884,6 +902,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorEAST";
+			alpha=0;
 			a=400;
 			b=200;
 			angle=1.4919996;
@@ -898,6 +917,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorEAST";
+			alpha=0;
 			a=400;
 			b=200;
 			angle=63.133991;
@@ -912,6 +932,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorEAST";
+			alpha=0;
 			a=300;
 			b=200;
 			angle=93.685974;
@@ -926,6 +947,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorEAST";
+			alpha=0;
 			a=500;
 			b=300;
 			angle=344.35483;
@@ -940,6 +962,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorYellow";
+			alpha=0;
 			a=1250;
 			b=900;
 			angle=263.51801;
@@ -954,6 +977,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorYellow";
+			alpha=0;
 			a=1000;
 			b=800;
 			angle=54.611961;
@@ -968,6 +992,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorYellow";
+			alpha=0;
 			a=500;
 			b=200;
 			angle=209.75113;
@@ -982,6 +1007,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorYellow";
+			alpha=0;
 			a=300;
 			b=200;
 			angle=236.31096;
@@ -995,9 +1021,10 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=550;
 			b=200;
-			angle=248.17696;
+			angle=248.17691;
 			id=25;
 			atlOffset=-5.531311e-005;
 		};
@@ -1009,6 +1036,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=350;
 			b=250;
 			angle=309.767;
@@ -1023,6 +1051,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=200;
 			b=150;
 			angle=14.865274;
@@ -5491,11 +5520,12 @@ class Mission
 		class Item86
 		{
 			dataType="Marker";
-			position[]={1087.2471,13.16,2829.6421};
+			position[]={1087.2469,13.16,2829.6421};
 			name="MarkVision";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorPink";
+			alpha=0;
 			a=500;
 			b=500;
 			id=92;
@@ -5564,6 +5594,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=400;
 			angle=322.17685;
@@ -5578,6 +5609,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=300;
 			b=200;
 			angle=221.14175;
@@ -5592,6 +5624,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=400;
 			b=500;
 			angle=26.710991;
@@ -5606,6 +5639,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=200;
 			angle=359.07806;
@@ -5634,6 +5668,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=300;
 			b=100;
 			angle=37.784306;
@@ -6965,9 +7000,10 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=700;
 			b=300;
-			angle=215.08397;
+			angle=215.08382;
 			id=171;
 			atlOffset=-10.817299;
 		};
@@ -7773,6 +7809,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=400;
 			b=200;
 			angle=358.4808;
@@ -7787,6 +7824,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=400;
 			b=200;
 			angle=57.667995;
@@ -7951,6 +7989,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=333;
 			b=150;
 			angle=32.773983;
@@ -7965,6 +8004,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=200;
 			angle=359.07806;
@@ -8314,6 +8354,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorYellow";
+			alpha=0;
 			a=350;
 			b=270;
 			angle=217.82281;
@@ -12476,6 +12517,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorYellow";
+			alpha=0;
 			a=500;
 			b=350;
 			angle=258.80801;
@@ -20072,6 +20114,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=400;
 			angle=24.573996;
@@ -20085,6 +20128,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=200;
 			angle=359.07782;
@@ -20099,6 +20143,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=300;
 			b=200;
 			angle=212.616;
@@ -23228,6 +23273,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=400;
 			b=300;
 			angle=200.73897;
@@ -23242,6 +23288,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=325;
 			angle=59.242996;
@@ -23256,6 +23303,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=300;
 			angle=11.997034;
@@ -23270,6 +23318,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=100;
 			angle=11.824093;
@@ -23284,6 +23333,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=100;
 			angle=300.26987;
@@ -23297,6 +23347,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=100;
 			angle=252.79756;
@@ -23310,6 +23361,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=150;
 			b=100;
 			angle=98.410286;
@@ -23324,6 +23376,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=400;
 			b=200;
 			angle=268.82138;
@@ -23337,6 +23390,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorOrange";
+			alpha=0;
 			a=300;
 			b=275;
 			angle=319.59613;
@@ -23351,6 +23405,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorYellow";
+			alpha=0;
 			a=400;
 			b=200;
 			angle=185.25729;
@@ -26075,13 +26130,13 @@ class Mission
 		class Item309
 		{
 			dataType="Trigger";
-			position[]={1061.1975,8.1414185,6867.5962};
+			position[]={1061.198,8.1414337,6867.5962};
 			angle=0.27900833;
 			class Attributes
 			{
 				sizeA=1100;
 				sizeB=800;
-				sizeC=150;
+				sizeC=25;
 				activationBy="ANYPLAYER";
 				isRectangle=1;
 			};
@@ -26091,13 +26146,13 @@ class Mission
 		class Item310
 		{
 			dataType="Trigger";
-			position[]={2665.6565,5.8513331,6224.4873};
-			angle=3.532284;
+			position[]={2665.656,5.8512526,6224.4868};
+			angle=3.5322838;
 			class Attributes
 			{
 				sizeA=700;
 				sizeB=700;
-				sizeC=150;
+				sizeC=25;
 				activationBy="ANYPLAYER";
 				isRectangle=1;
 			};
@@ -26108,7 +26163,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={1454.642,5.5043511,7042.7451};
-			angle=3.4909027;
+			angle=3.4909015;
 			class Attributes
 			{
 				sizeA=200;
@@ -27932,6 +27987,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=450;
 			b=375;
 			angle=231.22597;
@@ -27946,6 +28002,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorCIV";
+			alpha=0;
 			a=250;
 			b=60;
 			angle=134.201;
@@ -31782,6 +31839,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=90;
 			b=60;
 			angle=36.622986;
@@ -31795,6 +31853,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=240;
 			b=160;
 			angle=356.13693;
@@ -31809,6 +31868,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=75;
 			b=50;
 			angle=339.38693;
@@ -31823,6 +31883,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=150;
 			b=75;
 			angle=93.59697;
@@ -31837,6 +31898,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=300;
 			b=130;
 			angle=91.230965;
@@ -31850,6 +31912,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=150;
 			b=75;
 			angle=90.261665;
@@ -31864,6 +31927,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=150;
 			b=75;
 			angle=90.261665;
@@ -31877,6 +31941,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=150;
 			b=75;
 			angle=90.261665;
@@ -31890,6 +31955,7 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
+			alpha=0;
 			a=150;
 			b=75;
 			angle=90.261665;
@@ -36954,7 +37020,7 @@ class Mission
 			fillName="SolidFull";
 			a=9;
 			b=5;
-			angle=310.45505;
+			angle=310.45502;
 			id=609;
 		};
 		class Item433
@@ -42524,11 +42590,12 @@ class Mission
 		class Item452
 		{
 			dataType="Trigger";
-			position[]={13271.184,11.428836,6567.5176};
+			position[]={13271.184,11.428815,6567.5181};
 			class Attributes
 			{
 				sizeA=100;
 				sizeB=100;
+				sizeC=25;
 				activationBy="ANYPLAYER";
 			};
 			id=727;
