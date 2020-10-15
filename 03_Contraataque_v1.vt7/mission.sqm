@@ -7003,7 +7003,7 @@ class Mission
 			alpha=0;
 			a=700;
 			b=300;
-			angle=215.08382;
+			angle=215.0838;
 			id=171;
 			atlOffset=-10.817299;
 		};
