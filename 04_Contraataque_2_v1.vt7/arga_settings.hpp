@@ -2,8 +2,8 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Contrataque"                          // Colocar nombre de mision
-#define COMPLETE_NAME "Contrataque V3"              // Nombre y versión de la misión
+#define NAME "Contrataque 2"                          // Colocar nombre de mision
+#define COMPLETE_NAME "Contrataque 2 v1"              // Nombre y versión de la misión
 #define IMAGE "imgs\portada_CAT.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "Devolviendo favores"           // Colocar descripcion de la mision entre las comillas
 
