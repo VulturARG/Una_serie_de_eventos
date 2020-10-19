@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=847;
+		nextID=850;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={641.20587,86.491066,10293.139};
-		dir[]={-0.07312198,-0.46601018,0.88180017};
-		up[]={-0.038512506,0.88477033,0.46443501};
-		aside[]={0.99662119,-1.9700383e-007,0.082645051};
+		pos[]={12017.287,27.343115,6277.937};
+		dir[]={0.33273849,-0.4249557,0.84185392};
+		up[]={0.15620536,0.90521306,0.39521185};
+		aside[]={0.93000329,6.1118044e-010,-0.36757967};
 	};
 };
 binarizationWanted=0;
@@ -671,7 +671,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=480;
+		items=483;
 		class Item0
 		{
 			dataType="Marker";
@@ -682,7 +682,7 @@ class Mission
 			colorName="ColorEAST";
 			a=200;
 			b=125;
-			angle=55.114052;
+			angle=55.114033;
 			id=0;
 			atlOffset=-3.8943148;
 		};
@@ -696,7 +696,7 @@ class Mission
 			colorName="ColorEAST";
 			a=200;
 			b=150;
-			angle=145.04031;
+			angle=145.04027;
 			id=1;
 			atlOffset=-0.93173599;
 		};
@@ -3261,7 +3261,7 @@ class Mission
 			};
 			id=74;
 			type="rhsgref_hidf_m1025";
-			atlOffset=0.10900021;
+			atlOffset=0.10899973;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3360,6 +3360,7 @@ class Mission
 			};
 			id=75;
 			type="rhsgref_hidf_m1025";
+			atlOffset=-0.0068058968;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7228,7 +7229,7 @@ class Mission
 			colorName="ColorEAST";
 			a=400;
 			b=150;
-			angle=215.08397;
+			angle=215.08389;
 			id=171;
 		};
 		class Item166
@@ -12745,6 +12746,7 @@ class Mission
 					};
 					id=273;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12812,7 +12814,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11741.822,3.194345,6333.5376};
+						position[]={12026.04,4.2794046,6324.2998};
 						angles[]={0,4.1574492,0};
 					};
 					side="West";
@@ -12831,7 +12833,7 @@ class Mission
 					};
 					id=274;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
-					atlOffset=2.0439219;
+					atlOffset=1.9853156;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12899,8 +12901,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11740.033,1.1771529,6336.8677};
-						angles[]={6.2718124,3.8582304,0.0045412821};
+						position[]={12024.251,2.2954621,6327.6299};
+						angles[]={6.2809215,3.8582304,0.0068272259};
 					};
 					side="West";
 					flags=4;
@@ -12987,6 +12989,7 @@ class Mission
 				init="call{{_x addPrimaryWeaponItem ""acc_flashlight"";}foreach units this}";
 			};
 			id=272;
+			atlOffset=4.7683716e-007;
 		};
 		class Item263
 		{
@@ -13000,7 +13003,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11739.519,1.155162,6334.6343};
+						position[]={12023.736,2.2865756,6325.3965};
 						angles[]={0,0.55952758,0};
 					};
 					side="West";
@@ -13092,8 +13095,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11740.615,1.0797493,6322.7422};
-						angles[]={0,3.4679003,0};
+						position[]={12021.188,2.2413769,6323.6465};
+						angles[]={0,3.9681852,0};
 					};
 					side="West";
 					flags=5;
@@ -13116,6 +13119,7 @@ class Mission
 					};
 					id=278;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13221,7 +13225,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11727.558,1.1263595,6343.5};
+						position[]={12011.775,2.2614388,6334.2622};
 						angles[]={0,5.1892929,0};
 					};
 					side="West";
@@ -13312,7 +13316,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11732.813,1.0626595,6326.561};
+						position[]={12017.031,2.1840146,6317.3232};
 						angles[]={0,3.978169,0};
 					};
 					side="West";
@@ -13403,7 +13407,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11726.291,1.0703841,6336.1016};
+						position[]={12010.509,2.2318854,6326.8638};
 						angles[]={0,4.4395852,0};
 					};
 					side="West";
@@ -13427,6 +13431,7 @@ class Mission
 					};
 					id=281;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=-2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13551,8 +13556,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11738.269,1.0804379,6323.6201};
-						angles[]={0,3.3221703,0};
+						position[]={12028.388,2.2923827,6315.25};
+						angles[]={0,2.6607962,0};
 					};
 					side="West";
 					flags=5;
@@ -13575,6 +13580,7 @@ class Mission
 					};
 					id=282;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13699,8 +13705,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11739.553,1.0828549,6323.1973};
-						angles[]={0,3.5508709,0};
+						position[]={12029.661,2.2964096,6315.7051};
+						angles[]={0,2.8894968,0};
 					};
 					side="West";
 					flags=5;
@@ -13885,7 +13891,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11726.575,1.0616878,6334.9336};
+						position[]={12010.793,2.2200458,6325.6958};
 						angles[]={0,4.5305781,0};
 					};
 					side="West";
@@ -13909,6 +13915,7 @@ class Mission
 					};
 					id=284;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=-2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13976,8 +13983,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11737.173,1.0758456,6324.043};
-						angles[]={0,3.3221879,0};
+						position[]={12027.264,2.2931552,6314.9106};
+						angles[]={0,2.6608138,0};
 					};
 					side="West";
 					flags=5;
@@ -14067,7 +14074,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11725.986,1.0779037,6337.1563};
+						position[]={12010.204,2.2432454,6327.9185};
 						angles[]={0,4.4395814,0};
 					};
 					side="West";
@@ -14091,6 +14098,7 @@ class Mission
 					};
 					id=286;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=-2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14158,7 +14166,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11734.659,1.0642904,6325.0688};
+						position[]={12018.877,2.2024202,6315.8311};
 						angles[]={0,3.7428875,0};
 					};
 					side="West";
@@ -14249,7 +14257,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11726.948,1.1127279,6341.1357};
+						position[]={12011.166,2.2547629,6331.8979};
 						angles[]={0,5.0454054,0};
 					};
 					side="West";
@@ -14340,7 +14348,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11727.341,1.1223153,6342.373};
+						position[]={12011.559,2.2607455,6333.1353};
 						angles[]={0,5.0454054,0};
 					};
 					side="West";
@@ -14431,7 +14439,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11733.785,1.0637362,6325.8247};
+						position[]={12018.003,2.1939366,6316.5869};
 						angles[]={0,3.862536,0};
 					};
 					side="West";
@@ -14522,7 +14530,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11726.746,1.0511459,6333.6465};
+						position[]={12010.964,2.2089171,6324.4087};
 						angles[]={0,4.4395843,0};
 					};
 					side="West";
@@ -14546,6 +14554,7 @@ class Mission
 					};
 					id=291;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14613,8 +14622,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11755.907,1.2099276,6331.9282};
-						angles[]={0,1.9234848,0};
+						position[]={12034.127,2.3551753,6330.6152};
+						angles[]={0,0.84570414,0};
 					};
 					side="West";
 					flags=5;
@@ -14637,7 +14646,6 @@ class Mission
 					};
 					id=292;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
-					atlOffset=-1.1920929e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14743,7 +14751,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11748.911,1.2919295,6350.6323};
+						position[]={12033.129,2.2369545,6341.3945};
 						angles[]={0,0.56637537,0};
 					};
 					side="West";
@@ -14767,6 +14775,7 @@ class Mission
 					};
 					id=293;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14834,7 +14843,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11756.311,1.2291329,6333.2935};
+						position[]={12040.528,2.3374083,6324.0557};
 						angles[]={0,2.0121679,0};
 					};
 					side="West";
@@ -14858,6 +14867,7 @@ class Mission
 					};
 					id=294;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14925,7 +14935,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11741.17,1.2611068,6353.1626};
+						position[]={12025.388,2.2574973,6343.9248};
 						angles[]={0,6.0306025,0};
 					};
 					side="West";
@@ -15073,7 +15083,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11755.499,1.2730489,6342.646};
+						position[]={12039.717,2.32847,6333.4082};
 						angles[]={0,1.2315085,0};
 					};
 					side="West";
@@ -15221,7 +15231,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11739.779,1.251423,6353.0112};
+						position[]={12023.997,2.2512207,6343.7734};
 						angles[]={0,6.0677872,0};
 					};
 					side="West";
@@ -15245,6 +15255,7 @@ class Mission
 					};
 					id=297;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15312,7 +15323,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11755.081,1.2836996,6343.8667};
+						position[]={12039.299,2.3062434,6334.6289};
 						angles[]={0,1.3186908,0};
 					};
 					side="West";
@@ -15498,7 +15509,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11742.729,1.2682064,6353.2925};
+						position[]={12026.946,2.2696164,6344.0547};
 						angles[]={0,6.0306172,0};
 					};
 					side="West";
@@ -15589,7 +15600,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11755.965,1.2718222,6341.2065};
+						position[]={12040.183,2.334343,6331.9688};
 						angles[]={0,1.2315261,0};
 					};
 					side="West";
@@ -15613,6 +15624,7 @@ class Mission
 					};
 					id=300;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15680,7 +15692,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11756.255,1.2751814,6340.02};
+						position[]={12040.473,2.3370421,6330.7822};
 						angles[]={0,1.2315085,0};
 					};
 					side="West";
@@ -15704,6 +15716,7 @@ class Mission
 					};
 					id=301;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15771,7 +15784,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11746.859,1.2792196,6351.7495};
+						position[]={12031.077,2.254554,6342.5117};
 						angles[]={0,0.42250529,0};
 					};
 					side="West";
@@ -15862,7 +15875,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11747.81,1.2831917,6351.2485};
+						position[]={12032.027,2.2416711,6342.0107};
 						angles[]={0,0.42248765,0};
 					};
 					side="West";
@@ -15886,6 +15899,7 @@ class Mission
 					};
 					id=303;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15953,7 +15967,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11756.722,1.2457272,6334.4624};
+						position[]={12040.939,2.3400948,6325.2246};
 						angles[]={0,2.0185566,0};
 					};
 					side="West";
@@ -16044,7 +16058,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11750.113,1.300499,6350.0718};
+						position[]={12034.331,2.2369027,6340.834};
 						angles[]={0,0.42249098,0};
 					};
 					side="West";
@@ -22086,7 +22100,7 @@ class Mission
 			colorName="ColorRed";
 			a=700;
 			b=30;
-			angle=108.99998;
+			angle=108.99994;
 			id=359;
 			atlOffset=1.4759979;
 		};
@@ -23732,6 +23746,7 @@ class Mission
 			};
 			id=378;
 			type="rhsgref_hidf_m1025";
+			atlOffset=0.021393299;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24218,7 +24233,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11746.123,1.1564364,6331.6606};
+						position[]={12018.986,2.2822981,6333.9561};
 						angles[]={0,2.4972155,0};
 					};
 					side="West";
@@ -24347,7 +24362,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11747.419,1.1667221,6332.6245};
+						position[]={12020.282,2.291146,6334.9199};
 						angles[]={0,2.4972155,0};
 					};
 					side="West";
@@ -24371,6 +24386,7 @@ class Mission
 					};
 					id=383;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24501,7 +24517,7 @@ class Mission
 			colorName="ColorOrange";
 			a=150;
 			b=200;
-			angle=78.184494;
+			angle=78.184471;
 			id=387;
 			atlOffset=-3.1437421;
 		};
@@ -24554,7 +24570,7 @@ class Mission
 			colorName="ColorOrange";
 			a=150;
 			b=100;
-			angle=144.6741;
+			angle=144.67409;
 			id=391;
 		};
 		class Item297
@@ -24567,7 +24583,7 @@ class Mission
 			colorName="ColorOrange";
 			a=150;
 			b=250;
-			angle=98.409988;
+			angle=98.409958;
 			id=392;
 			atlOffset=-5.4385481;
 		};
@@ -27238,7 +27254,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={665.06799,12.863087,7470.127};
-			angle=3.0691438;
+			angle=3.0691435;
 			class Attributes
 			{
 				sizeA=200;
@@ -28388,7 +28404,7 @@ class Mission
 			colorName="ColorEAST";
 			a=450;
 			b=300;
-			angle=150.01797;
+			angle=150.01796;
 			id=436;
 			atlOffset=-5.79249;
 		};
@@ -30022,16 +30038,16 @@ class Mission
 		class Item382
 		{
 			dataType="Marker";
-			position[]={13611.08,9.0222168,6274.1685};
+			position[]={13612.136,8.9815674,6268.7559};
 			name="few_enemies_8";
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorEAST";
 			a=150;
-			b=75;
-			angle=90.261665;
+			b=150;
+			angle=90.261993;
 			id=546;
-			atlOffset=-0.5738287;
+			atlOffset=-0.59044075;
 		};
 		class Item383
 		{
@@ -41708,8 +41724,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11742.07,3.9148564,6338.5581};
-				angles[]={6.2763581,2.4386423,0.0045412821};
+				position[]={12026.288,5.0144739,6329.3203};
+				angles[]={0.0022375863,5.493228,0};
 			};
 			side="Empty";
 			flags=4;
@@ -44944,7 +44960,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={1927.1619,0,6247.9067};
-			angle=2.5362945;
+			angle=2.536294;
 			class Attributes
 			{
 				sizeA=500;
@@ -46736,16 +46752,16 @@ class Mission
 		class Item472
 		{
 			dataType="Marker";
-			position[]={11741.131,0,6338.8682};
+			position[]={12028.895,1.0423584,6322.2798};
 			name="marker_92";
 			text="LZ";
 			type="hd_flag";
-			colorName="ColorEAST";
+			colorName="ColorWEST";
 			a=0.80000001;
 			b=0.80000001;
-			angle=9.9999981;
+			angle=9.9999962;
 			id=837;
-			atlOffset=-1.1982154;
+			atlOffset=-1.2523036;
 		};
 		class Item473
 		{
@@ -47044,7 +47060,7 @@ class Mission
 			fillName="DiagGrid";
 			a=650;
 			b=700;
-			angle=108.99999;
+			angle=108.99995;
 			id=841;
 			atlOffset=-3.1803112;
 		};
@@ -47152,6 +47168,47 @@ class Mission
 			};
 			id=846;
 			type="Land_IndustrialShed_01_ruins_F";
+		};
+		class Item480
+		{
+			dataType="Marker";
+			position[]={13362.564,4.4123535,6681.3262};
+			name="Enemigos_13";
+			markerType="ELLIPSE";
+			type="rectangle";
+			colorName="ColorEAST";
+			a=800;
+			b=500;
+			angle=79.05101;
+			id=847;
+			atlOffset=-6.9545212;
+		};
+		class Item481
+		{
+			dataType="Marker";
+			position[]={13486.312,7.4343262,6619.4502};
+			name="few_enemies_15";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorEAST";
+			a=200;
+			b=75;
+			angle=90.261993;
+			id=848;
+			atlOffset=-0.5967865;
+		};
+		class Item482
+		{
+			dataType="Marker";
+			position[]={13655.962,6.0318065,6605.481};
+			name="few_enemies_16";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorEAST";
+			a=175;
+			b=75;
+			angle=90.261993;
+			id=849;
 		};
 	};
 	class Connections
