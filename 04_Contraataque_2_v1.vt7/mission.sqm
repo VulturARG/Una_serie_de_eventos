@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12017.287,27.343115,6277.937};
-		dir[]={0.33273849,-0.4249557,0.84185392};
-		up[]={0.15620536,0.90521306,0.39521185};
-		aside[]={0.93000329,6.1118044e-010,-0.36757967};
+		pos[]={1692.9937,33.077503,6882.5059};
+		dir[]={-0.95116884,-0.2506423,0.18019071};
+		up[]={-0.24626882,0.96808106,0.046652962};
+		aside[]={0.18613286,9.7206794e-009,0.98253375};
 	};
 };
 binarizationWanted=0;
@@ -682,7 +682,7 @@ class Mission
 			colorName="ColorEAST";
 			a=200;
 			b=125;
-			angle=55.114033;
+			angle=55.114025;
 			id=0;
 			atlOffset=-3.8943148;
 		};
@@ -7229,7 +7229,7 @@ class Mission
 			colorName="ColorEAST";
 			a=400;
 			b=150;
-			angle=215.08389;
+			angle=215.08386;
 			id=171;
 		};
 		class Item166
@@ -13119,7 +13119,7 @@ class Mission
 					};
 					id=278;
 					type="rhsusf_usmc_marpat_d_rifleman_light";
-					atlOffset=2.3841858e-007;
+					atlOffset=-1.4305115e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22100,7 +22100,7 @@ class Mission
 			colorName="ColorRed";
 			a=700;
 			b=30;
-			angle=108.99994;
+			angle=108.99992;
 			id=359;
 			atlOffset=1.4759979;
 		};
@@ -41735,6 +41735,7 @@ class Mission
 			};
 			id=741;
 			type="RHS_UH60M_d";
+			atlOffset=-0.00015497208;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47060,7 +47061,7 @@ class Mission
 			fillName="DiagGrid";
 			a=650;
 			b=700;
-			angle=108.99995;
+			angle=108.99993;
 			id=841;
 			atlOffset=-3.1803112;
 		};
