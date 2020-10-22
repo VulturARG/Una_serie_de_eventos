@@ -4,7 +4,7 @@
 
 #define NAME "Contrataque 2"                          // Colocar nombre de mision
 #define COMPLETE_NAME "Contrataque 2 v1"              // Nombre y versión de la misión
-#define IMAGE "imgs\portada_CAT.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
+#define IMAGE "imgs\portada_CAT2.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "Devolviendo favores"           // Colocar descripcion de la mision entre las comillas
 
 author = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
@@ -12,13 +12,13 @@ IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberi
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-//INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-//INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
+INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
 
-INTRO_PERSONALIZADA = 0;
-INTRO = 0;
+//INTRO_PERSONALIZADA = 0;
+//INTRO = 0;
 
 MAX_DIST_VISION = 2500;
 MIN_DIST_VISION =  800;                             // Distancia de visión reducida por marcador
@@ -66,16 +66,16 @@ BRIEFING
 */
 BRIEFING = 1;                                       // 1: Muestra, 0: No muestra
 CARACTER = "Oficial";
-HORARIO = "1400 hs.";
+HORARIO = "1700 hs.";
 FECHA = "01/10/2020";
 CLIMA = "Despejado";
 UBICACION = "Vihrolati";
-SITUACION = ["ArgA ha logrado regresar a base desde los puntos donde fueron emboscaron. Hubo enfrentamientos con milicianos armados, sobre todo cruzando Klamila. Esta ciudad es un paso estratégico. Es la única vía de salida terrestre de la base internacional. Permitir que la guerrilla lo controle es inaceptable.","Todos los poblados al sur de Skippari han manifestado su apoyo a la fuerza internacional. No darán soporte armado al asalto de ArgA. Mantendrán patrullas armadas en sus pueblos para defenderse de eventuales ataque de sus vecinos."];
+SITUACION = ["ArgA ha estado combatiendo duramente las últimas 3 horas.", "Cóndor registró el pueblo de Korpela, encontrando resistencia armada y neutralizando la misma. Ha aterrizado en las inmediaciones de Kirkonkylä para proceder al registro de la ciudad.", "Yaguar registró los poblados de Kouki y Klamina encontrando y neutralizando la resistencia armada. Informó la presencia de un arsenal perteneciente a la guerrilla y lo detonó. En su avance hacia Sorapelto recibió un fuerte contrataque de los insurgentes, por lo que efectuó un repliegue estratégico hacia Klamina. Punto Foxtrot", "Comandancia continua en la Base Internacional."];
 SITUACION_HISTORICA = ["La República de Viro, es un territorio estratégico cuya parte continental posee abundantes recursos naturales y a su vez contiene una serie de islas ubicadas estratégicamente. Debido a la diversidad geográfica y los cambios políticos nunca consolidó un sentimiento nacional único.","Actualmente el estado atraviesa una tensa calma después de la guerra civil que aconteció hace más de 5 años atrás en una situación que fue aprovechada por su vecino del norte, Duesia, una potencia regional. Una antigua provincia de Duesia, que desde la caída de la V.P.C.C. bajo administración de Viro, limítrofe a su anterior nación y con mayoría étnica de esta potencia fue donde se encendió la mecha de la guerra civil. Se sospecha que era apoyada estrechamente con armas y provisiones por Duesia. Se cree que nunca cesó ese apoyo. Una coalición internacional puso fin a la guerra civil y desde entonces mantiene presencia en todo el país para evitar que la historia se repita.","ArgA ha sido recientemente desplegado en la subprefectura de Virolahti, zona donde comenzó la guerra civil, sin embargo, ha permanecido relativamente calmada los últimos tiempos pese a la permisividad del mando anterior las de fuerzas internacionales."];
-EXTRACTO_INTELIGENCIA = ["En el paso por Klamila y localidades vecinas se encontró fuerte resistencia armada.","Se ha detectado que los vuelos de helicópteros sin identificación, se realizaron entre los poblados de Korpela y Kirkonkylä.","Los pueblos de Skippari y los que están al sur de este se consideran aliados o al menos neutrales."];
-OBJETIVOS = ["Yaguar deberá asegurar la libre circulación de las fuerzas internacionales dentro del sector marcado en mapa comprendido por los pueblos de Kouki, Klamina y Sorapelto.","Cóndor deberá hacer un asalto aerotransportado a las localidades de Korpela (003103) y Kirkonkylä (134065) registrando las mismas y los alrededores, en busca de inteligencia, acopio de armas y/o elementos de combate.","Reglas de Combate:","Se presume que las fuerzas en dichos sectores son hostiles. Sin embargo, no se puede disparar primero. En caso confirmar hostilidad se debe neutralizar toda amenaza. Si los civiles armados no atacan deberán ser arrestados y dejados en el lugar. Otras fuerzas se encargarán de ellos posteriormente.","Se deberá destruir todo acopio de armamento y/o vehículos adaptados para el combate.","No disparar o responder fuego de fuerzas regulares del país limítrofe. Aunque se encuentren en territorio de Viro."];
-RECURSOS = ["Aparecemos armados y listos para el combate.","Arsenal limitado.","Vehículos terrestres para Yaguar:","-1 Humvee artillado.","-3 Humvees transporte.","-1 Humvee médico.","-1 Vehículo artillado, 2 transportes de personal y 1 camión. Todos civiles capturados.","-1 Blindado liviano M1117 cedido por la Fuerza Internacional.","Vehículos para Cóndor:","-2 Blackhawk artillados cedidos por la Fuerza Internacional.","-1 Camión para reabastecimiento y reparaciónes."];
-ENEMIGOS = ["Posibles milicanos armados"];
+EXTRACTO_INTELIGENCIA = ["Civiles armados en Korpela dispararon contra Cóndor. Se descubrieron 2 depósitos de vehículos artillados, un arsenal clandestino en la comisaría y otro arsenal camuflado en el bosque. Todo este equipo fue destruido.", "Yaguar encontró una situación similar en Kouki y Klamina.", "Helicópteros de transporte observaron movimientos de civiles armados hacia áreas boscosas en el sector marcado de Yaguar.", "Asimismo, divisaron una columna importante de vehículos en ruta Nº 13 hacia el oeste a medio camino entre Kirkonkylä y Klamina. Se presume que es un contrataque dirigido hacia Klamina.", "El anochecer ocurre cerca de las 1820hs, por lo que se prevé que el ataque enemigo será antes de esa hora, por no contar con equipos de visión nocturna.", "Los pueblos de Skippari y los que están al sur de este se consideran aliados o al menos neutrales."];
+OBJETIVOS = ["Cóndor continuará el asalto a la localidad de Kirkonkylä desde el LZ actual. Deberá registrar la misma y sus alrededores, en busca de inteligencia, acopio de armas y/o elementos de combate. Deberá enviar un piloto para reparar provisoriamente el helicóptero dañado ubicado en 020 099. Concluidas las reparaciones parciales deberá llevarlo a la Base Internacional para una mejor reparación.", "Yaguar deberá registrar en búsqueda de arsenales todo sector de las áreas marcadas en tableta GPS. Estas indican los núcleos de movimiento de guerrilla aportados por inteligencia.", "Reglas de Combate:", "Se consideran hostiles, todos los civiles armados en los objetivos de Cóndor y Yaguar.", "Todo civil armado fuera de dichas zonas debe ser considerado hostil solamente si abre fuego sin provocación contra ArgA. Disparar en presencia de civiles, aunque sea al aire o en otra dirección puede ser considerado una provocación. No disparar en presencia de civiles bajo ninguna circunstancia si estos no disparan primero.", "Se deberá destruir todo acopio de armamento y/o vehículos adaptados para el combate.", "No disparar o responder fuego de fuerzas regulares del país limítrofe. Aunque se encuentren en territorio de Viro."];
+RECURSOS = ["Aparecemos armados y listos para el combate.","Arsenal limitado.","Vehículos terrestres para Yaguar en Klamina::","-1 Humvee artillado con municion practicamente agotada.","-2 Humvees transporte.","-0 Humvee médico.","-1 Vehículo artillado","2 transportes de personal y 1 Furgón. Todos civiles capturados en Base.","-0 Blindado liviano M1117 cedido por la Fuerza Internacional.","Vehículos para Cóndor:","-1 Blackhawk artillado. 1 Blackhawk artillado averiado en 020 099. Cedidos por la Fuerza Internacional.","-1 Camión para reabastecimiento y reparaciónes."];
+ENEMIGOS = ["Milicanos armados"];
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Borrado de IAs enemigas muertas y vehículos destruidos */
