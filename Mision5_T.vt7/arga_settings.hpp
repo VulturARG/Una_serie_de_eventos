@@ -95,7 +95,7 @@ COEFICIENTE_CAMUFLAJE = 1;                          // Valores menores hacen al 
 
 /* IA - CONFIGURACION */
 IA_DE_GRUPO = 0;                                    // 1: No desactiva la IA del Grupo de los jugadores, 0: la desactiva.
-IA_BLUFOR = 0;                                      // 1: No desactiva la IA Blufor, 0: la desactiva.
+IA_BLUFOR = 1;                                      // 1: No desactiva la IA Blufor, 0: la desactiva.
 DIFICULTAD_IA_PERSONALIZADA = 0;                    // 1: Activada. 0: Desactivada.
 AIMING_ACCURACY = 0.01;                             // Precision de apuntado
 AIMING_SHAKE = 0.99; 	                            // Dispersión de apuntado
