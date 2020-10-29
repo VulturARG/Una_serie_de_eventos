@@ -6,7 +6,9 @@ params ["_playerUnit","_functionName"];
 
 if (!isServer) exitWith { };
 
-if (isNil "MIV_CALLED_FUNCTIONS") exitWith { };
+if (isNil "MIV_CALLED_FUNCTIONS") then {
+    MIV_CALLED_FUNCTIONS = [];
+};
 
 private _index     = -1;
 private _playerUID = getPlayerUID _playerUnit;

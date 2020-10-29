@@ -4,7 +4,7 @@
 
 #define NAME "Limpieza"                             // Colocar nombre de mision
 #define COMPLETE_NAME "Limpieza v1"                 // Nombre y versión de la misión
-#define IMAGE "imgs\portada_CAT2.jpg"               // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
+#define IMAGE "imgs\portada_LMP.jpg"               // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "Ganando corazones y mentes"    // Colocar descripcion de la mision entre las comillas
 
 author = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
@@ -66,21 +66,21 @@ BRIEFING
 */
 BRIEFING = 1;                                       // 1: Muestra, 0: No muestra
 CARACTER = "Oficial";
-HORARIO = "1700 hs.";
-FECHA = "01/10/2020";
+HORARIO = "0600 hs.";
+FECHA = "05/10/2020";
 CLIMA = "Despejado";
-UBICACION = "Vihrolati";
-SITUACION = [""];
+UBICACION = "Virolahti";
+SITUACION = ["Nuestro sector operacional se calmó tras un tenso y efectivo primer despliegue, las tareas de patrullas y el ejercer como una policía militar local es la tarea diaria.", "Recientemente, múltiples civiles denunciaron asaltos y avistamientos constantes de guerrilla en los bosques y caminos al Norte de la R.N. 18. Para evitar la propagación de esta célula guerrillera se nos ordenó iniciar una operación de limpieza. ArgA que patrullará el sector marcado en mapa de Oeste a Este hasta el LZ de recogida Hotel Zulu.", "Helicópteros de la Fuerza Internacional dejaron a ArgA en los puntos Lima Yankee (Yaguar 1 y 2), Lima Charlie (Cóndor) y Lima Mike (Y3 y Comandancia)."];
 SITUACION_HISTORICA = ["La República de Viro, es un territorio estratégico cuya parte continental posee abundantes recursos naturales y a su vez contiene una serie de islas ubicadas estratégicamente. Debido a la diversidad geográfica y los cambios políticos nunca consolidó un sentimiento nacional único.","Actualmente el estado atraviesa una tensa calma después de la guerra civil que aconteció hace más de 5 años atrás en una situación que fue aprovechada por su vecino del norte, Duesia, una potencia regional. Una antigua provincia de Duesia, que desde la caída de la V.P.C.C. bajo administración de Viro, limítrofe a su anterior nación y con mayoría étnica de esta potencia fue donde se encendió la mecha de la guerra civil. Se sospecha que era apoyada estrechamente con armas y provisiones por Duesia. Se cree que nunca cesó ese apoyo. Una coalición internacional puso fin a la guerra civil y desde entonces mantiene presencia en todo el país para evitar que la historia se repita.","ArgA ha sido recientemente desplegado en la subprefectura de Virolahti, zona donde comenzó la guerra civil, sin embargo, ha permanecido relativamente calmada los últimos tiempos pese a la permisividad del mando anterior las de fuerzas internacionales."];
-EXTRACTO_INTELIGENCIA = [""];
-OBJETIVOS = [""];
-RECURSOS = ["Aparecemos armados y listos para el combate.","",""];
+EXTRACTO_INTELIGENCIA = ["Existen en el sector civiles armados. No todos son hostiles. Es posible que miembros de la guerrilla se rendirán sin pelear. Algunos son civiles neutrales que han decidido patrullar la zona por justicia propia."];
+OBJETIVOS = ["Peinar toda la franja asignada, fotografiar cualquier armamento y destruirlo, arrestar todo personal armado.", "Reglas de Combate:","Los civiles cercanos a nuestros Limas son víctimas de la violencia guerrillera, por lo cual son aliados a nuestra causa.","Todo civil armado dentro del sector debe ser considerado hostil solamente si abre fuego sin provocación contra ArgA. Disparar en presencia de civiles, aunque sea al aire o en otra dirección puede ser considerado una provocación. No disparar en presencia de civiles bajo ninguna circunstancia si estos no disparan primero.", "No disparar o responder fuego de fuerzas regulares del país limítrofe. Aunque se encuentren en territorio de Viro."];
+RECURSOS = ["Aparecemos armados y listos para el combate.","Disponemos de extracción en Hotel Zulu por parte de fuerzas militares de Viro con 1 Ch-47 por Pelotón."];
 ENEMIGOS = ["Milicanos armados"];
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Borrado de IAs enemigas muertas y vehículos destruidos */
 RECOLECTOR_BASURA = 1;                              // Activa la funcion que borra las IAs muertas y vehículos destruidos. 1: Activado, 0: Desactivado
-RB_TIEMPO_ESPERA_HOMBRES = 120;                     // Tiempo en segundos de espera para eliminar soldados enemigos. 0 Desactiva el borrado de enemigos
+RB_TIEMPO_ESPERA_HOMBRES = 180;                     // Tiempo en segundos de espera para eliminar soldados enemigos. 0 Desactiva el borrado de enemigos
 RB_TIEMPO_ESPERA_VEHICULOS = 0;                     // Tiempo en segundos de espera para eliminar vehículos enemigos. 0 Desactiva el borrado de vehículos
 RB_TIEMPO_ESPERA_BLINDADOS = 0;                     // Tiempo en segundos de espera para eliminar blindados enemigos. 0 Desactiva el borrado de blindados
 RB_TIEMPO_ESPERA_AEREOS = 0;                        // Tiempo en segundos de espera para eliminar aereos enemigos. 0 Desactiva el borrado de aereos

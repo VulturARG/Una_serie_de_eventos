@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1415;
+		nextID=1416;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=32;
+		nextID=41;
 	};
 	class Camera
 	{
-		pos[]={6870.894,35.603973,14630.429};
-		dir[]={-0.76059788,-0.64752823,0.046970252};
-		up[]={-0.6463002,0.76203907,0.039911952};
-		aside[]={0.061636385,-2.6077032e-007,0.99810249};
+		pos[]={6828.9619,35.603973,14628.027};
+		dir[]={0.77536798,-0.22130737,0.59146225};
+		up[]={0.17595778,0.97520411,0.13422297};
+		aside[]={0.60650092,-1.937151e-007,-0.79508275};
 	};
 };
 binarizationWanted=0;
@@ -40751,10 +40751,10 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9431.8789,41.084961,15612.702};
-			angle=5.6381278;
+			angle=5.6381283;
 			class Attributes
 			{
-				condition="";
+				condition="call{this}";
 				onActivation="call{Cacique addAction [""<t color='#098505'>Despegue Yaguar</t>"", {Dyaguar = true}];" \n "Pampa addAction [""<t color='#098505'>Despegue Yaguar</t>"", {Dyaguar = true}];" \n "Condor addAction [""<t color='#098505'>Despegue Yaguar</t>"", {Dyaguar = true}];" \n "Cacique addAction [""<t color='#098505'>Despegue Condor</t>"", {Dcondor = true}];" \n "Pampa addAction [""<t color='#098505'>Despegue Condor</t>"", {Dcondor = true}];" \n "Condor addAction [""<t color='#098505'>Despegue Condor</t>"", {Dcondor = true}];}";
 				sizeA=125;
 				sizeB=125;
@@ -41113,7 +41113,7 @@ class Mission
 			angle=5.6381283;
 			class Attributes
 			{
-				condition="call{HeliC in thisList}";
+				condition="call{HeliC in thisList && this}";
 				onActivation="call{Cacique addAction [""<t color='#098505'>Despegue Yaguar</t>"", {Dyaguar = true}];" \n "Pampa addAction [""<t color='#098505'>Despegue Yaguar</t>"", {Dyaguar = true}];" \n "Condor addAction [""<t color='#098505'>Despegue Yaguar</t>"", {Dyaguar = true}];" \n "Cacique addAction [""<t color='#098505'>Despegue Condor</t>"", {Dcondor = true}];" \n "Pampa addAction [""<t color='#098505'>Despegue Condor</t>"", {Dcondor = true}];" \n "Condor addAction [""<t color='#098505'>Despegue Condor</t>"", {Dcondor = true}];}";
 				sizeA=125;
 				sizeB=125;
@@ -41179,6 +41179,7 @@ class Mission
 			};
 			id=1411;
 			type="Box_Syndicate_WpsLaunch_F";
+			atlOffset=-0.00015258789;
 			class CustomAttributes
 			{
 				class Attribute0
