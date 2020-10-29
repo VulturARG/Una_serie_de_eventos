@@ -1,3 +1,7 @@
+//TODO revisar script entrada repetida
+// GPS en Mapa
+//nul = [] execVM 'scripts\GPS_II.sqf';
+
 /*******************************************************************************
                              Realizado por |ArgA|MIV
 *******************************************************************************/

@@ -15,7 +15,7 @@ _Nro_Jugadores = call MIV_fnc_countAlivePlayers;
 ["",0,_Nro_Jugadores,90] execVM "scripts\eos\OpenMe.sqf";
 
 
-execVM "scripts\timeOrderFinish.sqf";
+//execVM "scripts\timeOrderFinish.sqf";
 
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹
