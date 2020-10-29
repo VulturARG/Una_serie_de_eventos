@@ -20,7 +20,7 @@ INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desac
 //INTRO_PERSONALIZADA = 0;
 //INTRO = 0;
 
-MAX_DIST_VISION = 2500;
+MAX_DIST_VISION = 2000;
 MIN_DIST_VISION =  800;                             // Distancia de visión reducida por marcador
 EQUIPAMIENTO_PERSONALIZADO = 1;                     // Equipamiento guardado en arsenal virtual. 1: Permite, 0: No Permite.
 COMPUTADORA_ARTILLERIA = 1;                         // Computadora artilleria. Habilita: 1. Desabilita: 0.
@@ -74,7 +74,7 @@ SITUACION = ["Nuestro sector operacional se calmó tras un tenso y efectivo prim
 SITUACION_HISTORICA = ["La República de Viro, es un territorio estratégico cuya parte continental posee abundantes recursos naturales y a su vez contiene una serie de islas ubicadas estratégicamente. Debido a la diversidad geográfica y los cambios políticos nunca consolidó un sentimiento nacional único.","Actualmente el estado atraviesa una tensa calma después de la guerra civil que aconteció hace más de 5 años atrás en una situación que fue aprovechada por su vecino del norte, Duesia, una potencia regional. Una antigua provincia de Duesia, que desde la caída de la V.P.C.C. bajo administración de Viro, limítrofe a su anterior nación y con mayoría étnica de esta potencia fue donde se encendió la mecha de la guerra civil. Se sospecha que era apoyada estrechamente con armas y provisiones por Duesia. Se cree que nunca cesó ese apoyo. Una coalición internacional puso fin a la guerra civil y desde entonces mantiene presencia en todo el país para evitar que la historia se repita.","ArgA ha sido recientemente desplegado en la subprefectura de Virolahti, zona donde comenzó la guerra civil, sin embargo, ha permanecido relativamente calmada los últimos tiempos pese a la permisividad del mando anterior las de fuerzas internacionales."];
 EXTRACTO_INTELIGENCIA = ["Existen en el sector civiles armados. No todos son hostiles. Es posible que miembros de la guerrilla se rendirán sin pelear. Algunos son civiles neutrales que han decidido patrullar la zona por justicia propia."];
 OBJETIVOS = ["Peinar toda la franja asignada, fotografiar cualquier armamento y destruirlo, arrestar todo personal armado.", "Reglas de Combate:","Los civiles cercanos a nuestros Limas son víctimas de la violencia guerrillera, por lo cual son aliados a nuestra causa.","Todo civil armado dentro del sector debe ser considerado hostil solamente si abre fuego sin provocación contra ArgA. Disparar en presencia de civiles, aunque sea al aire o en otra dirección puede ser considerado una provocación. No disparar en presencia de civiles bajo ninguna circunstancia si estos no disparan primero.", "No disparar o responder fuego de fuerzas regulares del país limítrofe. Aunque se encuentren en territorio de Viro."];
-RECURSOS = ["Aparecemos armados y listos para el combate.","Disponemos de extracción en Hotel Zulu por parte de fuerzas militares de Viro con 1 Ch-47 por Pelotón."];
+RECURSOS = ["Aparecemos armados y listos para el combate."];
 ENEMIGOS = ["Milicanos armados"];
 ////////////////////////////////////////////////////////////////////////////////
 
