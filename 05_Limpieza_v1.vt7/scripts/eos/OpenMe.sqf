@@ -113,8 +113,8 @@ _fewEnemyMarkers = _fewEnemyMarkers + ["few_enemies_31","few_enemies_32"/*,"few_
 [_fewEnemyMarkers,[0,3,100],[6,1,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
 
 // Potencia
-[["Potencia_1"],[0,2,100],[15,3,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
-[["Potencia_2"],[0,4,100],[6,2,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
+[["Potencia_1"],[0,2,100],[15,3,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,independent,false]] call EOS_Spawn;
+[["Potencia_2"],[0,4,100],[6,2,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,independent,false]] call EOS_Spawn;
 
 _unknownSide = [EAST,EAST,EAST,EAST,CIVILIAN];
 private _angle = 100;
