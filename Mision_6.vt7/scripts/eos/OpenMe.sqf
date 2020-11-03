@@ -78,14 +78,18 @@ EOS_KILLCOUNTER=false;		// Counts killed units
 // 6: Independientes
 // 7: Civiles
 
-private _civilMarkers       = ["Civil_1","Civil_2","Civil_3","Civil_4","Civil_5","Civil_6","Civil_7"];
+private _civilMarkers       = ["Civil_1","Civil_2","Civil_3","Civil_4","Civil_5","Civil_6","Civil_7","Civil_8"];
 private _unknownMarkers     = ["Indecisos_1","Indecisos_10","Indecisos_11","Indecisos_2","Indecisos_3","Indecisos_4","Indecisos_5","Indecisos_6","Indecisos_7","Indecisos_8","Indecisos_9"];
 private _unknownSide        = [EAST,EAST,CIVILIAN];
 private _enemyMarkers       = ["Enemigos_10","Enemigos_12","Enemigos_13","Enemigos_4","Enemigos_5","Enemigos_6","Enemigos_8","Enemigos_9","Enemigos_0","Enemigos_1","Enemigos_11","Enemigos_2","Enemigos_3","Enemigos_7"];
-private _fewEnemyMarkers    = ["few_enemies_1","few_enemies_2","few_enemies_3","few_enemies_4","few_enemies_5","few_enemies_6","few_enemies_7","few_enemies_8","few_enemies_9","few_enemies_10","few_enemies_11","few_enemies_12","few_enemies_13","few_enemies_14","few_enemies_15","few_enemies_16","few_enemies_17","few_enemies_18","few_enemies_19","few_enemies_20","few_enemies_21","few_enemies_22","few_enemies_23"];
 private _randomSide         = EAST;
 private _randomFaction      = 5;
 private _activationDistance = 400;
+
+private _fewEnemyMarkers            = ["few_enemies_1" ,"few_enemies_2" ,"few_enemies_3" ,"few_enemies_4" ,"few_enemies_5" ,"few_enemies_6" ,"few_enemies_7" ,"few_enemies_8" ,"few_enemies_9" ,"few_enemies_10"];
+_fewEnemyMarkers = _fewEnemyMarkers + ["few_enemies_11","few_enemies_12","few_enemies_13","few_enemies_14","few_enemies_15","few_enemies_16","few_enemies_17","few_enemies_18","few_enemies_19","few_enemies_20"];
+_fewEnemyMarkers = _fewEnemyMarkers + ["few_enemies_21","few_enemies_22","few_enemies_23","few_enemies_24","few_enemies_25","few_enemies_26","few_enemies_27","few_enemies_28","few_enemies_29","few_enemies_30"];
+_fewEnemyMarkers = _fewEnemyMarkers + ["few_enemies_31","few_enemies_32"/*,"few_enemies_23","few_enemies_44","few_enemies_25","few_enemies_66","few_enemies_67","few_enemies_28","few_enemies_29","few_enemies_30"*/];
 
 // Aliados
 [_civilMarkers,[0,4,100],[4,1,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,CIVILIAN,true]] call EOS_Spawn;
@@ -109,8 +113,8 @@ private _activationDistance = 400;
 [_fewEnemyMarkers,[0,3,100],[6,1,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
 
 // Potencia
-[["Potencia_1"],[0,2,100],[15,3,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
-[["Potencia_2"],[0,4,100],[6,2,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,EAST,false]] call EOS_Spawn;
+[["Potencia_1"],[0,2,100],[15,3,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,independent,false]] call EOS_Spawn;
+[["Potencia_2"],[0,4,100],[6,2,100],[0,0,0],[0,0],[0],[0,0,00],[5,1,_activationDistance,independent,false]] call EOS_Spawn;
 
 _unknownSide = [EAST,EAST,EAST,EAST,CIVILIAN];
 private _angle = 100;
@@ -118,6 +122,7 @@ private _enemyMarkers          = [ "Bosques_1", "Bosques_2", "Bosques_3" ,"Bosqu
 _enemyMarkers =  _enemyMarkers + ["Bosques_11","Bosques_12","Bosques_13","Bosques_14","Bosques_15","Bosques_16","Bosques_17","Bosques_18","Bosques_19","Bosques_20"];
 _enemyMarkers =  _enemyMarkers + ["Bosques_21","Bosques_22","Bosques_23","Bosques_24","Bosques_25","Bosques_26","Bosques_27","Bosques_28","Bosques_29","Bosques_30"];
 _enemyMarkers =  _enemyMarkers + ["Bosques_31","Bosques_32","Bosques_33","Bosques_34","Bosques_35","Bosques_36","Bosques_37","Bosques_38","Bosques_39","Bosques_40"];
+_enemyMarkers =  _enemyMarkers + ["Bosques_41","Bosques_42","Bosques_43"/*,"Bosques_34","Bosques_35","Bosques_36","Bosques_37","Bosques_38","Bosques_39","Bosques_40"*/];
 
 // Bosque
 {

@@ -6,7 +6,10 @@
 
 params ["_playerUnit","_functionName"];
 
-if (isNil "MIV_CALLED_FUNCTIONS") exitWith { ["WPC0:",_playerUnit,_functionName,"MIV_CALLED_FUNCTIONS es Nil"] call MIV_fnc_Log; };
+if (isNil "MIV_CALLED_FUNCTIONS") exitWith {
+    ["WPC0:",_playerUnit,_functionName,"MIV_CALLED_FUNCTIONS es Nil"] call MIV_fnc_Log;
+    false
+};
 
 private _playerUID      = getPlayerUID _playerUnit;
 private _searchForUID   = MIV_CALLED_FUNCTIONS select {_playerUID in _x};

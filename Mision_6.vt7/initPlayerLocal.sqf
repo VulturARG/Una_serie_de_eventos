@@ -1,6 +1,6 @@
 //TODO revisar script entrada repetida
 // GPS en Mapa
-//nul = [] execVM 'scripts\GPS_II.sqf';
+nul = [] execVM 'scripts\GPS_II.sqf';
 
 /*******************************************************************************
                              Realizado por |ArgA|MIV
@@ -22,7 +22,7 @@ player removeItem "ACE_DAGR";
 
 
 // GPS en Mapa
-nul = [] execVM 'scripts\GPS_II.sqf';
+//nul = [] execVM 'scripts\GPS_II.sqf';
 
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹
