@@ -17,8 +17,7 @@ _Nro_Jugadores = call MIV_fnc_countAlivePlayers;
 //_markers,_waves,_jugadores,_angle
 //["",0,_Nro_Jugadores,90] execVM "scripts\eos\OpenMe.sqf";
 
-
-execVM "scripts\screenOrder.sqf";
+["scripts\screenOrder.sqf"] remoteExec ["BIS_fnc_execVM", 0, false];
 
 sleep 120;
 west setFriend [resistance, 0];
