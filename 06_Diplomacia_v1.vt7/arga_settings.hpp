@@ -12,13 +12,13 @@ IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberi
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+//INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
+//INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
 
-//INTRO_PERSONALIZADA = 0;
-//INTRO = 0;
+INTRO_PERSONALIZADA = 0;
+INTRO = 0;
 
 MAX_DIST_VISION = 2000;
 MIN_DIST_VISION =  800;                             // Distancia de visión reducida por marcador
