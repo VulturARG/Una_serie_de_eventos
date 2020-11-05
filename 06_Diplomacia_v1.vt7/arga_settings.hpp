@@ -12,17 +12,17 @@ IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberi
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-//INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-//INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
+INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
 
-INTRO_PERSONALIZADA = 0;
-INTRO = 0;
+//INTRO_PERSONALIZADA = 0;
+//INTRO = 0;
 
 MAX_DIST_VISION = 2000;
-MIN_DIST_VISION =  800;                             // Distancia de visión reducida por marcador
-EQUIPAMIENTO_PERSONALIZADO = 1;                     // Equipamiento guardado en arsenal virtual. 1: Permite, 0: No Permite.
+MIN_DIST_VISION =  1300;                            // Distancia de visión reducida por marcador
+EQUIPAMIENTO_PERSONALIZADO = 0;                     // Equipamiento guardado en arsenal virtual. 1: Permite, 0: No Permite.
 COMPUTADORA_ARTILLERIA = 1;                         // Computadora artilleria. Habilita: 1. Desabilita: 0.
 ROL_AUTOMATICO = 1;                                 // 1: Habilita la carga de rol al entrar a la misión por descripción de rol. 0: Desabilita
                                                     // Para verificar que los roles estan bien escritos activar todas las IAs y entrar
@@ -66,16 +66,16 @@ BRIEFING
 */
 BRIEFING = 1;                                       // 1: Muestra, 0: No muestra
 CARACTER = "Oficial";
-HORARIO = "0600 hs.";
-FECHA = "05/10/2020";
+HORARIO = "1100 hs.";
+FECHA = "05/11/2020";
 CLIMA = "Despejado";
 UBICACION = "Virolahti";
-SITUACION = ["Nuestro sector operacional se calmó tras un tenso y efectivo primer despliegue, las tareas de patrullas y el ejercer como una policía militar local es la tarea diaria.", "Recientemente, múltiples civiles denunciaron asaltos y avistamientos constantes de guerrilla en los bosques y caminos al Norte de la R.N. 18. Para evitar la propagación de esta célula guerrillera se nos ordenó iniciar una operación de limpieza. ArgA que patrullará el sector marcado en mapa de Oeste a Este hasta el LZ de recogida Hotel Zulu.", "Helicópteros de la Fuerza Internacional dejaron a ArgA en los puntos Lima Yankee (Yaguar 1 y 2), Lima Charlie (Cóndor) y Lima Mike (Y3 y Comandancia)."];
-SITUACION_HISTORICA = ["La República de Viro, es un territorio estratégico cuya parte continental posee abundantes recursos naturales y a su vez contiene una serie de islas ubicadas estratégicamente. Debido a la diversidad geográfica y los cambios políticos nunca consolidó un sentimiento nacional único.","Actualmente el estado atraviesa una tensa calma después de la guerra civil que aconteció hace más de 5 años atrás en una situación que fue aprovechada por su vecino del norte, Duesia, una potencia regional. Una antigua provincia de Duesia, que desde la caída de la V.P.C.C. bajo administración de Viro, limítrofe a su anterior nación y con mayoría étnica de esta potencia fue donde se encendió la mecha de la guerra civil. Se sospecha que era apoyada estrechamente con armas y provisiones por Duesia. Se cree que nunca cesó ese apoyo. Una coalición internacional puso fin a la guerra civil y desde entonces mantiene presencia en todo el país para evitar que la historia se repita.","ArgA ha sido recientemente desplegado en la subprefectura de Virolahti, zona donde comenzó la guerra civil, sin embargo, ha permanecido relativamente calmada los últimos tiempos pese a la permisividad del mando anterior las de fuerzas internacionales."];
-EXTRACTO_INTELIGENCIA = ["Existen en el sector civiles armados. No todos son hostiles. Es posible que miembros de la guerrilla se rendirán sin pelear. Algunos son civiles neutrales que han decidido patrullar la zona por justicia propia."];
-OBJETIVOS = ["Peinar toda la franja asignada, fotografiar cualquier armamento y destruirlo, arrestar todo personal armado.", "Reglas de Combate:","Los civiles cercanos a nuestros Limas son víctimas de la violencia guerrillera, por lo cual son aliados a nuestra causa.","Todo civil armado dentro del sector debe ser considerado hostil solamente si abre fuego sin provocación contra ArgA. Disparar en presencia de civiles, aunque sea al aire o en otra dirección puede ser considerado una provocación. No disparar en presencia de civiles bajo ninguna circunstancia si estos no disparan primero.", "No disparar o responder fuego de fuerzas regulares del país limítrofe. Aunque se encuentren en territorio de Viro."];
-RECURSOS = ["Aparecemos armados y listos para el combate."];
-ENEMIGOS = ["Milicanos armados"];
+SITUACION = ["Los diplomáticos de Viro llegaron al sector fronterizo a las 0900, tras 2 horas no se han presentado los diplomáticos Duecios. Temiendo lo peor se solicitó a las fuerzas internacionales próximas (ArgA) brindar soporte a lo largo de los cruces Alfa y Charlie.", "Debemos garantizar la seguridad personal a los diplomáticos de Viro en Cruce Bravo. Ante alguna necesidad se dispuso un puesto seguro de parte de fuerzas locales en Portsson, desde donde fuerzas navales podrían extraerlos.","ArgA se encuentra en un convoy en marca de la R.N. 13 a pocos metros del Cruce Bravo."];
+SITUACION_HISTORICA = ["La República de Viro es un territorio que posee abundantes recursos naturales y contiene una serie de islas ubicadas estratégicamente. Duesia, una potencia regional, pretende recuperar su antigua provincia bajo administración actual de Viro. Se cree que apoyó movimientos guerrilleros a en el pasado.", "Una coalición internacional mantiene presencia en todo el país para evitar una escalada de conflicto. ArgA es parte de la misma y desde su llegada realizó tareas para desmantelar las células guerrilleras.", "En las últimas operaciones se apresó población Duesia entre las filas guerrilleras. El gobierno de Viro denunció que son activos enviados por los Duecios. En contraparte el gobierno Duecio denuncia una maniobra para desacreditar su reclamación histórica. La tensión incrementa mientras se bloquean pasos fronterizos y se militarizan sus proximidades. Con perspectiva de no estallar un conflicto armado, Viro solicitó una reunión diplomática en un edificio de oficinas en el Cruce Bravo, del lado Duecio."];
+EXTRACTO_INTELIGENCIA = ["Movilización masiva de tropas Duecias en puestos avanzados a lo largo de la frontera con Viro. Reportes de 1 Brigada de Infantería mecanizada y elementos de fuerzas especiales en la base aérea Duesia próxima a Virojohki.", "Cruces menores de frontera cerrados por los Duecios [X]."];
+OBJETIVOS = ["Reforzar las tropas de seguridad de los diplomáticos en torno al edificio de reunión en Cruce Bravo.", "Reforzar las tropas en los Cruces Alfa y Charlie.","Reglas de Combate:","No disparar sin provocación previa.","Sólo traspasar la frontera en el punto Bravo sin salir de los complejos de cruce internacional.", "Apresar a cualquier civil que transgreda la zona de seguridad fronteriza y entregarlo a las fuerzas locales."];
+RECURSOS = ["Aparecemos armados y listos para el combate.", "Disponemos de radios y equipo adicional en los vehículos.", "1 Pandur II.", "1 M113.", "5 Humvees artillados M2.", "2 Humvees artillados Mk19.", "2 Humvees ambulancia.", "2 Humvees desarmados.", "1 Mercedes para comandancia."];
+ENEMIGOS = ["Desconocido"];
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Borrado de IAs enemigas muertas y vehículos destruidos */
