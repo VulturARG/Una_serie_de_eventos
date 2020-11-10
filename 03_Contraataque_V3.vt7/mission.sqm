@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={961.62549,35.351322,3033.1885};
+		pos[]={902.40753,135.18961,3113.5825};
 		dir[]={0.79490179,-0.6034286,-0.065197162};
 		up[]={0.60143602,0.79738218,-0.049328297};
 		aside[]={-0.081746243,-1.837976e-006,-0.99678504};
@@ -23279,6 +23279,7 @@ class Mission
 				angles[]={0,3.4144225,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				fuel=0.079999998;
@@ -23286,7 +23287,7 @@ class Mission
 			};
 			id=377;
 			type="rhsgref_cdf_b_gaz66_repair";
-			atlOffset=0.28999996;
+			atlOffset=0.03891468;
 			class CustomAttributes
 			{
 				class Attribute0
