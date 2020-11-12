@@ -132,7 +132,7 @@ private _enemyMarkers          = [ "Bosques_1", "Bosques_2", "Bosques_3" ,"Bosqu
 {
   _randomSide = _unknownSide call BIS_fnc_selectRandom;
   _randomFaction = if (_randomSide == EAST) then { 5 } else { 7 };
-  [[_x],[3,1,250+random 150],[0,2,500],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[_randomFaction,1,_randomSide,true,false],[10,1,300,false,false],_angle] call Bastion_Spawn;
+  [[_x],[3,2,250+random 150],[0,2,500],[0,1500],[0,1,1500],[0,3,1500,600],[0,3,300,5000],[_randomFaction,1,_randomSide,true,false],[10,1,300,false,false],_angle] call Bastion_Spawn;
   //["MARKER:", _x,"SIDE:",_randomSide,_randomFaction] call MIV_fnc_log;
 } forEach _enemyMarkers;
 
