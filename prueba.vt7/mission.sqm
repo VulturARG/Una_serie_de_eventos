@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=18;
+		nextID=20;
 	};
 	class Camera
 	{
@@ -99249,7 +99249,7 @@ class Mission
 			colorName="ColorEAST";
 			a=500;
 			b=350;
-			angle=228.8107;
+			angle=228.81068;
 			id=1248;
 			atlOffset=-1.2266617;
 		};
@@ -99536,7 +99536,7 @@ class Mission
 			colorName="ColorOrange";
 			a=200;
 			b=350;
-			angle=223.40669;
+			angle=223.40668;
 			id=1269;
 			atlOffset=-11.210772;
 		};

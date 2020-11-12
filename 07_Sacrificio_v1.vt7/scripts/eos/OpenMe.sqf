@@ -93,7 +93,7 @@ _fewEnemyMarkers = _fewEnemyMarkers + ["few_enemies_21","few_enemies_22","few_en
 _fewEnemyMarkers = _fewEnemyMarkers + ["few_enemies_31","few_enemies_32"/*,"few_enemies_23","few_enemies_44","few_enemies_25","few_enemies_66","few_enemies_67","few_enemies_28","few_enemies_29","few_enemies_30"*/];
 
 private _powerMarkers         = ["Potencia_1" ,"Potencia_2" ,"Potencia_3" ,"Potencia_4" ,"Potencia_5" ,"Potencia_6" ,"Potencia_7" ,"Potencia_8" ,"Potencia_9" ,"Potencia_10"];
-_powerMarkers = _powerMarkers + ["Potencia_11","Potencia_12","Potencia_13","Potencia_14","Potencia_15","Potencia_16","Potencia_17"/*,"Potencia_18","Potencia_19","Potencia_20"*/];
+_powerMarkers = _powerMarkers + ["Potencia_11","Potencia_12","Potencia_13","Potencia_14","Potencia_15","Potencia_16","Potencia_17","Potencia_18","Potencia_19"/*,"Potencia_20"*/];
 
 // Aliados
 //[_civilMarkers,[0,4,100],[4,1,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,CIVILIAN,true]] call EOS_Spawn;
@@ -113,7 +113,7 @@ _powerMarkers = _powerMarkers + ["Potencia_11","Potencia_12","Potencia_13","Pote
 [_enemyMarkers,[1,3,100],[4,3,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,EAST,false]] call EOS_Spawn;
 
 //Sectores pequeños a proteger
-[_fewEnemyMarkers,[0,3,100],[6,1,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,EAST,false]] call EOS_Spawn;
+[_fewEnemyMarkers,[0,3,100],[10,2,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,EAST,false]] call EOS_Spawn;
 
 // Potencia
 //[["Potencia_1"],[0,2,100],[15,3,100],[0,0,0],[0,0],[0],[0,0,00],[7,1,_activationDistance,independent,false]] call EOS_Spawn;

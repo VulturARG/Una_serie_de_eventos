@@ -2,8 +2,8 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-TEMPLATE_VERSION     = "0.9.11";
-TEMPLATE_LAST_UPDATE = "09-11-2020";
+TEMPLATE_VERSION     = "0.9.12";
+TEMPLATE_LAST_UPDATE = "2020-11-12";                // Escribir la fecha en formato AAAA-M-D sin ceros en el mes o el día
 
 /* Log system */
 DEBUG = 1;                                          // 1: Habilita el modo debug, 0: Desabilita.
@@ -27,6 +27,8 @@ FIXED_CHANNEL_NAME  = ["AEREO","INTERNA MANDO","COMANDANCIA","CONVOY","MEDICOS"]
 RADIO_CHANNEL_SETUP = [["lider",[["ACRE_PRC117F",6],["ACRE_PRC152",5],["ACRE_PRC343",5]]],["sub_lider",[["ACRE_PRC117F",6],["ACRE_PRC152",5],["ACRE_PRC343",5]]],["lider_peloton@condor",[["ACRE_PRC117F",6],["ACRE_PRC152",7],["ACRE_PRC343",5]]], ["lider_escuadra_1@condor",[["ACRE_PRC152",7],["ACRE_PRC343",1]]],["lider_escuadra_2@condor",[["ACRE_PRC152",7],["ACRE_PRC343",2]]], ["lider_peloton@yaguar",[["ACRE_PRC117F",6],["ACRE_PRC152",8],["ACRE_PRC343",5]]], ["lider_escuadra_1@yaguar",[["ACRE_PRC152",8],["ACRE_PRC343",11]]], ["lider_escuadra_2@yaguar",[["ACRE_PRC152",8],["ACRE_PRC343",12]]], ["lider_escuadra_3@yaguar",[["ACRE_PRC152",8],["ACRE_PRC343",13]]],["piloto",[["ACRE_PRC117F",6],["ACRE_PRC152",4],["ACRE_PRC343",5]]],["medico",[["ACRE_PRC152",10],["ACRE_PRC343",10]]],["medico_combate",[["ACRE_PRC152",10],["ACRE_PRC343",10]]],["enfermero",[["ACRE_PRC152",10],["ACRE_PRC343",10]]]];
 
 ROLES_NEEDING_PLATOON = ["lider_peloton","lider_escuadra_1","lider_escuadra_2","lider_escuadra_3","sublider_escuadra_1","sublider_escuadra_2","sublider_escuadra_3"];
+
+REVIEWER_UID = ["76561198026915573", "76561198091139370", "76561198030188168", "76561198010777357"];
 
 ////////////////////////////////////////////////////////////////////////////////
 
