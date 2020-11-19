@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2033;
+		nextID=2031;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16286.229,1075.5154,8484.8389};
-		dir[]={0.088188775,0.98888248,-0.11972513};
-		up[]={-0.58647585,0.14869893,0.7962001};
-		aside[]={-0.80515134,1.4901161e-008,-0.59306926};
+		pos[]={16439.678,164.90843,8611.3486};
+		dir[]={0.66215938,-0.61639732,-0.4261961};
+		up[]={0.51833528,0.7874195,-0.33362386};
+		aside[]={-0.54124135,1.3038516e-007,-0.84089941};
 	};
 };
 binarizationWanted=0;
@@ -46350,7 +46350,7 @@ class Mission
 			alpha=0;
 			a=500;
 			b=350;
-			angle=229.14375;
+			angle=229.14377;
 			id=1680;
 			atlOffset=-1.0527534;
 		};
@@ -53367,17 +53367,354 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16498.418,116.04545,8569.1729};
-				angles[]={6.1245303,0,0.058267377};
+				position[]={16495.893,116.3578,8564.1641};
 			};
-			id=2031;
-			type="ModuleSmoke_F";
+			id=2029;
+			type="ModuleEffectsSmoke_F";
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ModuleSmoke_F_Repeat";
-					expression="_this setVariable ['Repeat',_value,true];";
+					property="ModuleEffectsSmoke_F_ParticleLifeTime";
+					expression="_this setVariable ['ParticleLifeTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=50;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleEffectsSmoke_F_ParticleLifting";
+					expression="_this setVariable ['ParticleLifting',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleEffectsSmoke_F_ColorAlpha";
+					expression="_this setVariable ['ColorAlpha',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleEffectsSmoke_F_ColorBlue";
+					expression="_this setVariable ['ColorBlue',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.80000001;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleEffectsSmoke_F_Timeout";
+					expression="_this setVariable ['Timeout',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=300;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleEffectsSmoke_F_Expansion";
+					expression="_this setVariable ['Expansion',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.69999999;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleEffectsSmoke_F_ColorRed";
+					expression="_this setVariable ['ColorRed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.80000001;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleEffectsSmoke_F_ParticleDensity";
+					expression="_this setVariable ['ParticleDensity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleEffectsSmoke_F_ColorGreen";
+					expression="_this setVariable ['ColorGreen',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.30000001;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleEffectsSmoke_F_EffectSize";
+					expression="_this setVariable ['EffectSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleEffectsSmoke_F_ParticleSpeed";
+					expression="_this setVariable ['ParticleSpeed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="ModuleEffectsSmoke_F_ParticleSize";
+					expression="_this setVariable ['ParticleSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="ModuleEffectsSmoke_F_WindEffect";
+					expression="_this setVariable ['WindEffect',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=13;
+			};
+		};
+		class Item262
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16527.039,120.69402,8569.5859};
+			};
+			id=2030;
+			type="ModuleEffectsSmoke_F";
+			atlOffset=0.86305237;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleEffectsSmoke_F_ParticleLifeTime";
+					expression="_this setVariable ['ParticleLifeTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=50;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleEffectsSmoke_F_ParticleLifting";
+					expression="_this setVariable ['ParticleLifting',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleEffectsSmoke_F_ColorAlpha";
+					expression="_this setVariable ['ColorAlpha',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleEffectsSmoke_F_ColorBlue";
+					expression="_this setVariable ['ColorBlue',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleEffectsSmoke_F_Timeout";
+					expression="_this setVariable ['Timeout',_value,true];";
 					class Value
 					{
 						class data
@@ -53393,10 +53730,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute5
 				{
-					property="ModuleSmoke_F_Type";
-					expression="_this setVariable ['Type',_value,true];";
+					property="ModuleEffectsSmoke_F_Expansion";
+					expression="_this setVariable ['Expansion',_value,true];";
 					class Value
 					{
 						class data
@@ -53405,42 +53742,159 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"SCALAR"
 								};
 							};
-							value="SmokeShellPurple";
+							value=1;
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute6
+				{
+					property="ModuleEffectsSmoke_F_ColorRed";
+					expression="_this setVariable ['ColorRed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleEffectsSmoke_F_ParticleDensity";
+					expression="_this setVariable ['ParticleDensity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleEffectsSmoke_F_ColorGreen";
+					expression="_this setVariable ['ColorGreen',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleEffectsSmoke_F_EffectSize";
+					expression="_this setVariable ['EffectSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleEffectsSmoke_F_ParticleSpeed";
+					expression="_this setVariable ['ParticleSpeed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="ModuleEffectsSmoke_F_ParticleSize";
+					expression="_this setVariable ['ParticleSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="ModuleEffectsSmoke_F_WindEffect";
+					expression="_this setVariable ['WindEffect',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=13;
 			};
-		};
-		class Item262
-		{
-			dataType="Trigger";
-			position[]={16500.234,3123.4082,8632.0215};
-			class Attributes
-			{
-				condition="call{this}";
-				sizeA=500;
-				sizeB=500;
-				sizeC=2000;
-				activationBy="ANYPLAYER";
-			};
-			id=2032;
-			type="EmptyDetectorAreaR250";
-			atlOffset=3000;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=212;
+			nextID=211;
 		};
 		class Links
 		{
-			items=212;
+			items=211;
 			class Item0
 			{
 				linkID=0;
@@ -55546,16 +56000,6 @@ class Mission
 				linkID=210;
 				item0=1994;
 				item1=1989;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item211
-			{
-				linkID=211;
-				item0=2032;
-				item1=2031;
 				class CustomData
 				{
 					type="Sync";
