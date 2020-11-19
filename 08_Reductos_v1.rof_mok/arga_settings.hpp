@@ -2,10 +2,10 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Sacrificio"                           // Colocar nombre de mision
-#define COMPLETE_NAME "Sacrificio v1"               // Nombre y versión de la misión
+#define NAME "Reductos"                           // Colocar nombre de mision
+#define COMPLETE_NAME "Reductos v1"               // Nombre y versión de la misión
 #define IMAGE "imgs\portada_RDC.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
-#define DESCRIPTION "El último sacrificio..."       // Colocar descripcion de la mision entre las comillas
+#define DESCRIPTION "Tomando la iniciativa"       // Colocar descripcion de la mision entre las comillas
 
 AUTHOR = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
 AUTHOR_UID = ["76561198030188168","76561198010777357"];// Colocar entre las comillas el numero que aparece en la lista de abajo. Si son mas de un autor poner con la forma ["nro 1", "nro 2"]
@@ -15,15 +15,15 @@ IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberi
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-//INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-//INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
+INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
 
-INTRO_PERSONALIZADA = 0;
-INTRO = 0;
+//INTRO_PERSONALIZADA = 0;
+//INTRO = 0;
 
-MAX_DIST_VISION = 2000;
+MAX_DIST_VISION = 2500;
 MIN_DIST_VISION =  1300;                            // Distancia de visión reducida por marcador
 EQUIPAMIENTO_PERSONALIZADO = 0;                     // Equipamiento guardado en arsenal virtual. 1: Permite, 0: No Permite.
 COMPUTADORA_ARTILLERIA = 1;                         // Computadora artilleria. Habilita: 1. Desabilita: 0.
@@ -35,7 +35,7 @@ TIPO_VN = "ACE_NVG_Wide";                           // Tipo de la visión noctur
 HALO = 1;                                           // 1: Guarda en contenido de la mochila y pone un paracaidas en la unidad al inicio de la misión. Al tocar tierra se vuelve a poner la mochila automáticamente. 0: Desactiva
 HALO_ALTURA_MINIMA_ACTIVACION = 1000;               // Altura en metros mínima que se le pone un paracaidas si HALO esta activado. Todas las unidades por debajo de esa altura no reciben paracaidas al inicio
 
-INSIGNIA_AUTOMATICA = 0;                            // Añade insignias por pelotón o médicas. 1: Añade, 0: No Añade
+INSIGNIA_AUTOMATICA = 1;                            // Añade insignias por pelotón o médicas. 1: Añade, 0: No Añade
 INSIGNIA_IR = 0;                                    // Establece si las insignias son IR (1) o normales (0).
 
 SETUP_PERSONALIZADO_RADIOS = 1;                     // Activa el setup de las radios de ACRE2. 1: activado, 0: desactivado
@@ -71,16 +71,16 @@ BRIEFING
 */
 BRIEFING = 1;                                       // 1: Muestra, 0: No muestra
 CARACTER = "Oficial";
-HORARIO = "0800 hs.";
-FECHA = "12/11/2020";
+HORARIO = "0730 hs.";
+FECHA = "25/11/2020";
 CLIMA = "Despejado";
-UBICACION = "Virolahti";
-SITUACION = ["Se ha derribado un transporte aéreo de personal y reemplazado el mismo por uno propio sin levantar sospechas. El mismo dejó al equipo ArgA en la base aérea improvisada en el aeropuerto duecio Visby, y despegó nuevamente.","Nos encontramos vestidos de técnicos y soldados Duecios, armados con la pistola reglamentaria. Los ingenieros y algunos granaderos han traído explosivos disimulados en sus pertenencias. Bajo esta ropa tenemos nuestro uniforme de ArgA para no ser juzgados como espías, en caso de ser capturados.","Debemos capturar el arsenal de la base, la torre de control y el radar, al capturarlos colocar explosivos sin levantar sospechas."];
-SITUACION_HISTORICA = ["La semana pasada Duecia llevó a cabo una invasión a gran escala del territorio que reclama en Viro. Fue contenida con grandes pérdidas a pocos kilómetros de la frontera. Ha trasladado gran parte de sus blindados, helicópteros y aviones de combate a la zona. Su pretexto por la invasión es que, con apoyo de la Fuerza Internacional, insurgentes de Viro atacaban su territorio, por lo cual fue necesario crear una “zona de seguridad”, pese a que se habían capturado elementos duecios en el territorio de Viro, lo cual demuestra la gran mentira. Ha declarado un bloqueo aéreo y marítimo de Viro para impedir el ingreso de nuevas armas a la zona.","La Fuerza Internacional no estaba preparada para una guerra convencional, ya que su tarea original era más que nada policial. Sin un pronto refuerzo, los Duecios ganarán pronto.","No hay disponible portaaviones cerca para romper el bloqueo antes del ataque final Duecio.","Hay que destruir las unidades del enemigo antes que las distribuya sobre el terreno, aunque esto sea una misión sin retorno.","Ha llegado la hora de hacer el último sacrificio. Nos honra que todo ArgA se haya presentado como voluntarios."];
-EXTRACTO_INTELIGENCIA = ["Gran concentración de blindados, helicópteros y aviones en la base aérea.","No hay gran concentración de tropas en la base aérea Visby.","Movilización masiva de tropas Duecias en el territorio capturado.","Patrullas insurgentes en toda la zona capturada, principalmente en caminos secundarios y poblaciones.","Elementos blindados a lo largo de las rutas y poblaciones capturadas."];
-OBJETIVOS = ["Capturar el arsenal y colocar explosivos.","Capturar la torre de control y colocar explosivos.","Colocar explosivos en todo vehículo blindado y aéreo que se encuentre en la base.","Colocar explosivos en el radar al W de la base.","Detonar los explosivos.","Regresar al territorio aliado en Viro al otro lado de la tierra de nadie marcada en mapa.","Reglas de Combate:","No disparar antes de la detonación. Las elementos de Duecia deben ser arrestados sin despertar sospechas, ser cautelosos en las comunicaciones.","El personal de ArgA debe tener uniforme o ropa de técnico Duecio cuando esté realizando las tareas encubiertas.","Los elementos de ArgA deben rearmarse en el arsenal. No abandonar el mismo con el uniforme ArgA a la vista antes de las detonaciones."];
-RECURSOS = ["Solo tenemos pistolas y radios. Los ingenieros tienen explosivos","Cajas de armado rápido en el arsenal enemigo"];
-ENEMIGOS = ["Ejercito Duecio","Posibles insurgentes en zona ocupada"];
+UBICACION = "Península de Kyntire, Duesia.";
+SITUACION = [""];
+SITUACION_HISTORICA = ["La infiltración de las fuerzas ArgA en la base Visby, logró la destrucción de la mayor parte del equipamiento e instalaciones de la misma, dejándola inoperable por un largo período. Esto estabilizó el frente en las posiciones del primer día. Inteligencia estima que Duesia intentará recuperar la iniciativa con una campaña de bombardeo.","Con la llegada de una pequeña flota de destructores de las Fuerzas internacionales, se ideó un plan que permita alcanzar la principal base aérea desde la cual Duesia realiza su campaña de bombardeo y forzarla a realizar un armisticio. Debido a nuestros múltiples éxitos se nos asignó la tarea de ser el equipo que genere la brecha en la península continental Duesia."];
+EXTRACTO_INTELIGENCIA = ["Se prevé que las fuerzas defensoras son reservas o personal recientemente enlistado.","La detonación de torres de radar o antenas de radio, combinado con defensa aérea de los destructores, asegurará que la fuerza aérea duecia se abstenga de apoyar a sus tropas.","Es posible la llegada de tropas duecias terrestres en refuerzo"];
+OBJETIVOS = ["Capturar las bases Alfa y Bravo para generar un frente en la invasión.","Cóndor:","Asegurar y destruir el puesto de artillería y AA DELTA 158059","Yaguar 1/2:","Destruir los morteros en Charlie y Asegurar reductos industriales cercanos.","Asegurar población Southend","Yaguar 3:","Infiltrarse en la Isla Sanda al Sierra-Echo y destruir cualquier puesto de comunicaciones o radar Duecio."];
+RECURSOS = ["En Destructor Valor:","Arsenal","2 AAV7","1 UH-60M previsto para apoyo tardío.","3 Minisubmarinos"];
+ENEMIGOS = ["Ejercito Duecio"];
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Borrado de IAs enemigas muertas y vehículos destruidos */

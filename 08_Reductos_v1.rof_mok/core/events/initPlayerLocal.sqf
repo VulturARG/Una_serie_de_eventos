@@ -86,9 +86,8 @@ if (_disableBluforIA) then {
   }foreach allUnits;
 };
 
-["_enableHALO",_enableHALO] call MIV_fnc_log;
 if (_enableHALO) then {
-  execVM "core\scripts\halo.sqf";
+  execVM  "core\scripts\halo.sqf";
 };
 
 if(!(hasInterface || isDedicated)) then {
