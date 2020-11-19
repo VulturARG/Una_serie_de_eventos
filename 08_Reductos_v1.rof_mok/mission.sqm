@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2002;
+		nextID=2004;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=88;
+		nextID=95;
 	};
 	class Camera
 	{
-		pos[]={16461.043,13472.482,8631.3223};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={16745.686,160.43121,8583.4033};
+		dir[]={-0.91979825,-0.39126319,-0.029922094};
+		up[]={-0.39106199,0.92027527,-0.012721911};
+		aside[]={-0.032513455,-3.1321542e-007,0.99947613};
 	};
 };
 binarizationWanted=0;
@@ -670,7 +670,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=260;
+		items=261;
 		class Item0
 		{
 			dataType="Object";
@@ -45342,7 +45342,7 @@ class Mission
 			colorName="ColorGUER";
 			a=500;
 			b=350;
-			angle=229.14407;
+			angle=229.14398;
 			id=1680;
 			atlOffset=-1.0527534;
 		};
@@ -51086,6 +51086,80 @@ class Mission
 			id=1999;
 			type="Logic";
 			atlOffset=60.246876;
+		};
+		class Item260
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16740.523,5152.2456,8585.0283};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						description="granadero@halo";
+						isPlayer=1;
+					};
+					id=2003;
+					type="B_support_GMG_F";
+					atlOffset=5000;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2002;
+			atlOffset=5000;
 		};
 	};
 	class Connections

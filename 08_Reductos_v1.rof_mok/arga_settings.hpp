@@ -15,13 +15,13 @@ IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberi
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+//INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
+//INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
 
-//INTRO_PERSONALIZADA = 0;
-//INTRO = 0;
+INTRO_PERSONALIZADA = 0;
+INTRO = 0;
 
 MAX_DIST_VISION = 2000;
 MIN_DIST_VISION =  1300;                            // Distancia de visión reducida por marcador
@@ -32,6 +32,8 @@ ROL_AUTOMATICO = 1;                                 // 1: Habilita la carga de r
 GPS = 0;                                            // Agrega GPS vanilla en rol automático o caja. 1: agrega, 0: remueve
 VISION_NOCTURNA = 0;                                // Agrega visión nocturna panorámica en rol automático o caja. 1: agrega, 0: remueve
 TIPO_VN = "ACE_NVG_Wide";                           // Tipo de la visión nocturna que se va a agregar en rol automático o caja.
+HALO = 1;                                           // 1: Guarda en contenido de la mochila y pone un paracaidas en la unidad al inicio de la misión. Al tocar tierra se vuelve a poner la mochila automáticamente. 0: Desactiva
+HALO_ALTURA_MINIMA_ACTIVACION = 1000;               // Altura en metros mínima que se le pone un paracaidas si HALO esta activado. Todas las unidades por debajo de esa altura no reciben paracaidas al inicio
 
 INSIGNIA_AUTOMATICA = 0;                            // Añade insignias por pelotón o médicas. 1: Añade, 0: No Añade
 INSIGNIA_IR = 0;                                    // Establece si las insignias son IR (1) o normales (0).

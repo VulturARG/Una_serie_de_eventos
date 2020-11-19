@@ -19,9 +19,6 @@ player removeItem "ACE_DAGR";
 // GPS en Mapa
 [] execVM 'scripts\GPS_II.sqf';
 
-// Pone paracaidas y recupera la mochila en tierra
-execVM "scripts\paratrooper.sqf";
-
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹
 *******************************************************************************/
