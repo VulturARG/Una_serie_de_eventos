@@ -37,40 +37,40 @@ if(_customSkillsIA) then {
 
 // Deshabilita el movimiento de la IA para todas las IA que 
 // esten en el mismo grupo que un jugador humano
-if (_disableGroupIA) then {
-    {
-        private _group = (group _x);
-        {
-          if (!isPlayer _x) then {
-            _x disableAI "MOVE";
-            _x action ["SwitchWeapon", _x, _x, 100];
-            // _x enableSimulationGlobal false;
-            // _x hideObjectGlobal true;
-          };
-        } forEach units _group;     
-    } forEach allPlayers;
-};
+// if (_disableGroupIA) then {
+//     {
+//         private _group = (group _x);
+//         {
+//           if (!isPlayer _x) then {
+//             _x disableAI "MOVE";
+//             _x action ["SwitchWeapon", _x, _x, 100];
+//             // _x enableSimulationGlobal false;
+//             // _x hideObjectGlobal true;
+//           };
+//         } forEach units _group;     
+//     } forEach allPlayers;
+// };
 
-if (_disableBluforIA) then {
-  {
-    if(side _x == west && !isPlayer _x) then {
-      _x disableAI "MOVE";
-      _x action ["SwitchWeapon", _x, _x, 100];
-      // _x enableSimulationGlobal false;
-      // _x hideObjectGlobal true;
-    };
-  } foreach allUnits;
-};
+// if (_disableBluforIA) then {
+//   {
+//     if(side _x == west && !isPlayer _x) then {
+//       _x disableAI "MOVE";
+//       _x action ["SwitchWeapon", _x, _x, 100];
+//       // _x enableSimulationGlobal false;
+//       // _x hideObjectGlobal true;
+//     };
+//   } foreach allUnits;
+// };
 
-execVM "core\scripts\init_objs_server.sqf";
+// execVM "core\scripts\init_objs_server.sqf";
 
-execVM "core\scripts\db\init_log_system.sqf";
+// execVM "core\scripts\db\init_log_system.sqf";
 
-execVM "core\scripts\init_garbage_collector.sqf";
+// execVM "core\scripts\init_garbage_collector.sqf";
 
-if (!isDedicated) then { execVM "core\scripts\check_roles.sqf" };
+// if (!isDedicated) then { execVM "core\scripts\check_roles.sqf" };
 
-execVM "core\scripts\show_fps.sqf";
+// execVM "core\scripts\show_fps.sqf";
 
 /*******************************************************************************
                           Realizado por |ArgA|MIV

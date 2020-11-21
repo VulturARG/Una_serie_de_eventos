@@ -19,7 +19,8 @@ _unit addPrimaryWeaponItem "ACE_20Rnd_762x51_Mk316_Mod_0_Mag";
 _unit addWeapon "rhsusf_weap_glock17g4";
 _unit addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
 
-_unit addWeapon "Rangefinder";
+_unit addMagazine "Laserbatteries";
+_unit addWeapon "Laserdesignator_01_khk_F";
 
 //_unit addItemToVest "ACE_DAGR";
 _unit addItemToVest "ACRE_PRC152";
