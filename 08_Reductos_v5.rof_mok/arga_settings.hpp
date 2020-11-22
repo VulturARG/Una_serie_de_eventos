@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Reductos"                           // Colocar nombre de mision
-#define COMPLETE_NAME "Reductos v1"               // Nombre y versión de la misión
+#define COMPLETE_NAME "Reductos v5"               // Nombre y versión de la misión
 #define IMAGE "imgs\portada_RDC.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "Tomando la iniciativa"       // Colocar descripcion de la mision entre las comillas
 
@@ -27,18 +27,18 @@ MAX_DIST_VISION = 2500;
 MIN_DIST_VISION =  1300;                            // Distancia de visión reducida por marcador
 EQUIPAMIENTO_PERSONALIZADO = 0;                     // Equipamiento guardado en arsenal virtual. 1: Permite, 0: No Permite.
 COMPUTADORA_ARTILLERIA = 1;                         // Computadora artilleria. Habilita: 1. Desabilita: 0.
-ROL_AUTOMATICO = 1;                                 // 1: Habilita la carga de rol al entrar a la misión por descripción de rol. 0: Desabilita
+ROL_AUTOMATICO = 0;                                 // 1: Habilita la carga de rol al entrar a la misión por descripción de rol. 0: Desabilita
                                                     // Para verificar que los roles estan bien escritos activar todas las IAs y entrar
 GPS = 0;                                            // Agrega GPS vanilla en rol automático o caja. 1: agrega, 0: remueve
 VISION_NOCTURNA = 0;                                // Agrega visión nocturna panorámica en rol automático o caja. 1: agrega, 0: remueve
 TIPO_VN = "ACE_NVG_Wide";                           // Tipo de la visión nocturna que se va a agregar en rol automático o caja.
-HALO = 1;                                           // 1: Guarda en contenido de la mochila y pone un paracaidas en la unidad al inicio de la misión. Al tocar tierra se vuelve a poner la mochila automáticamente. 0: Desactiva
+HALO = 0;                                           // 1: Guarda en contenido de la mochila y pone un paracaidas en la unidad al inicio de la misión. Al tocar tierra se vuelve a poner la mochila automáticamente. 0: Desactiva
 HALO_ALTURA_MINIMA_ACTIVACION = 1000;               // Altura en metros mínima que se le pone un paracaidas si HALO esta activado. Todas las unidades por debajo de esa altura no reciben paracaidas al inicio
 
 INSIGNIA_AUTOMATICA = 1;                            // Añade insignias por pelotón o médicas. 1: Añade, 0: No Añade
 INSIGNIA_IR = 0;                                    // Establece si las insignias son IR (1) o normales (0).
 
-SETUP_PERSONALIZADO_RADIOS = 1;                     // Activa el setup de las radios de ACRE2. 1: activado, 0: desactivado
+SETUP_PERSONALIZADO_RADIOS = 0;                     // Activa el setup de las radios de ACRE2. 1: activado, 0: desactivado
 
 
 /* 
