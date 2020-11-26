@@ -15,13 +15,13 @@ IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberi
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-//INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-//INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
+INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
 
-INTRO_PERSONALIZADA = 0;
-INTRO = 0;
+//INTRO_PERSONALIZADA = 0;
+//INTRO = 0;
 
 MAX_DIST_VISION = 2500;
 MIN_DIST_VISION =  1300;                            // Distancia de visión reducida por marcador
@@ -76,10 +76,10 @@ FECHA = "25/11/2020";
 CLIMA = "Despejado";
 UBICACION = "Península de Kyntire, Duesia.";
 SITUACION_HISTORICA = ["La infiltración de las fuerzas ArgA en la base Visby, logró la destrucción de la mayor parte del equipamiento e instalaciones de la misma, dejándola inoperable por un largo período. Esto estabilizó el frente en las posiciones del primer día. Inteligencia estima que Duesia intentará recuperar la iniciativa con una campaña de bombardeo.","Con la llegada de una pequeña flota de destructores de las Fuerzas internacionales, se ideó un plan que permita alcanzar la principal base aérea desde la cual Duesia realiza su campaña de bombardeo y forzarla a realizar un armisticio. Debido a nuestros múltiples éxitos se nos asignó la tarea de ser el equipo que genere la brecha en la península continental Duesia."];
-SITUACION = [""];
-EXTRACTO_INTELIGENCIA = [""];
-OBJETIVOS = [""];
-RECURSOS = [""];
+SITUACION = ["Arga fue reforzado en Alfa y ya controla esta importante base, pero debe ampliar el frente. Por esta razón debe cumplir el resto de los objetivos previamente establecidos, asegurar tanto la población de Southend como la base Bravo.","Debido al tiempo transcurrido el enemigo ya dispone de refuerzos mecanizados y se encuentra mejor atrincherado. Para nivelar la situación Alto mando internacional realizará un bombardeo en Bravo próximo a nuestra aproximación."];
+EXTRACTO_INTELIGENCIA = ["El enemigo todavía posee pequeños AA en su retaguardia, disponemos de un área operacional considerablemente limpia próxima a nuestros objetivos.","Refuerzos móviles ya entre las tropas enemigas, precaución contra blindados ligeros."];
+OBJETIVOS = ["Capturar la base Duecia Bravo.","Asegurar población Southend.","Asegurar reductos industriales cercanos a los objetivos anteriores."];
+RECURSOS = ["En Alfa:","Arsenal.","2 Pandur II.","2 Polaris Dagor Desarmados.","1 UH-60M Artillado.","1 UH-60M Desarmado."];
 ENEMIGOS = ["Ejercito Duecio"];
 ////////////////////////////////////////////////////////////////////////////////
 
