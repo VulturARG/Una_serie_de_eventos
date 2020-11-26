@@ -2,10 +2,10 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Reductos"                           // Colocar nombre de mision
-#define COMPLETE_NAME "Reductos v5"               // Nombre y versión de la misión
+#define NAME "Brecha Incompleta"                           // Colocar nombre de mision
+#define COMPLETE_NAME "Brecha Incompleta v5"               // Nombre y versión de la misión
 #define IMAGE "imgs\portada_RDC.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
-#define DESCRIPTION "Tomando la iniciativa"       // Colocar descripcion de la mision entre las comillas
+#define DESCRIPTION "Falta un poco menos..."       // Colocar descripcion de la mision entre las comillas
 
 AUTHOR = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
 AUTHOR_UID = ["76561198030188168","76561198010777357"];// Colocar entre las comillas el numero que aparece en la lista de abajo. Si son mas de un autor poner con la forma ["nro 1", "nro 2"]
@@ -15,19 +15,19 @@ IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberi
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+//INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
+//INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
 
-//INTRO_PERSONALIZADA = 0;
-//INTRO = 0;
+INTRO_PERSONALIZADA = 0;
+INTRO = 0;
 
 MAX_DIST_VISION = 2500;
 MIN_DIST_VISION =  1300;                            // Distancia de visión reducida por marcador
 EQUIPAMIENTO_PERSONALIZADO = 0;                     // Equipamiento guardado en arsenal virtual. 1: Permite, 0: No Permite.
 COMPUTADORA_ARTILLERIA = 1;                         // Computadora artilleria. Habilita: 1. Desabilita: 0.
-ROL_AUTOMATICO = 0;                                 // 1: Habilita la carga de rol al entrar a la misión por descripción de rol. 0: Desabilita
+ROL_AUTOMATICO = 1;                                 // 1: Habilita la carga de rol al entrar a la misión por descripción de rol. 0: Desabilita
                                                     // Para verificar que los roles estan bien escritos activar todas las IAs y entrar
 GPS = 0;                                            // Agrega GPS vanilla en rol automático o caja. 1: agrega, 0: remueve
 VISION_NOCTURNA = 0;                                // Agrega visión nocturna panorámica en rol automático o caja. 1: agrega, 0: remueve
@@ -71,15 +71,15 @@ BRIEFING
 */
 BRIEFING = 1;                                       // 1: Muestra, 0: No muestra
 CARACTER = "Oficial";
-HORARIO = "0730 hs.";
+HORARIO = "1130 hs.";
 FECHA = "25/11/2020";
 CLIMA = "Despejado";
 UBICACION = "Península de Kyntire, Duesia.";
-SITUACION = [""];
 SITUACION_HISTORICA = ["La infiltración de las fuerzas ArgA en la base Visby, logró la destrucción de la mayor parte del equipamiento e instalaciones de la misma, dejándola inoperable por un largo período. Esto estabilizó el frente en las posiciones del primer día. Inteligencia estima que Duesia intentará recuperar la iniciativa con una campaña de bombardeo.","Con la llegada de una pequeña flota de destructores de las Fuerzas internacionales, se ideó un plan que permita alcanzar la principal base aérea desde la cual Duesia realiza su campaña de bombardeo y forzarla a realizar un armisticio. Debido a nuestros múltiples éxitos se nos asignó la tarea de ser el equipo que genere la brecha en la península continental Duesia."];
-EXTRACTO_INTELIGENCIA = ["Se prevé que las fuerzas defensoras son reservas o personal recientemente enlistado.","La detonación de torres de radar o antenas de radio, combinado con defensa aérea de los destructores, asegurará que la fuerza aérea duecia se abstenga de apoyar a sus tropas.","Es posible la llegada de tropas duecias terrestres en refuerzo"];
-OBJETIVOS = ["Capturar las bases Alfa y Bravo para generar un frente en la invasión.","Cóndor:","Asegurar y destruir el puesto de artillería y AA DELTA 158059","Yaguar 1/2:","Destruir los morteros en Charlie y Asegurar reductos industriales cercanos.","Asegurar población Southend","Yaguar 3:","Infiltrarse en la Isla Sanda al Sierra-Echo y destruir cualquier puesto de comunicaciones o radar Duecio."];
-RECURSOS = ["En Destructor Valor:","Arsenal","2 AAV7","1 UH-60M previsto para apoyo tardío.","3 Minisubmarinos"];
+SITUACION = [""];
+EXTRACTO_INTELIGENCIA = [""];
+OBJETIVOS = [""];
+RECURSOS = [""];
 ENEMIGOS = ["Ejercito Duecio"];
 ////////////////////////////////////////////////////////////////////////////////
 

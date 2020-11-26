@@ -78,23 +78,23 @@ EOS_KILLCOUNTER=false;		// Counts killed units
 // 6: Independientes
 // 7: Civiles
 
-private _activationDistanceFew = 400;
+private _activationDistanceFew = 700;
 private _activationDistancePower = 600;
-private _activationDistancePatrol = 500;
+private _activationDistancePatrol = 700;
 
 // Potencia
 private _powerMarkers         = ["Potencia_1" ,"Potencia_2" ,"Potencia_3" ,"Potencia_4" ,"Potencia_5" ,"Potencia_6" ,"Potencia_7" ,"Potencia_8" ,"Potencia_9" ,"Potencia_10"];
-_powerMarkers = _powerMarkers + ["Potencia_11","Potencia_12","Potencia_13","Potencia_14","Potencia_15","Potencia_16"/*,"Potencia_17","Potencia_18","Potencia_19","Potencia_20"*/];
+_powerMarkers = _powerMarkers + ["Potencia_11"/*,"Potencia_12","Potencia_13","Potencia_14","Potencia_15","Potencia_16","Potencia_17","Potencia_18","Potencia_19","Potencia_20"*/];
 
-[_powerMarkers,[1,3,100],[4,3,100],[0,0,0],[0,0],[0],[0,0,00],[6,1,_activationDistancePower,independent,false]] call EOS_Spawn;
+[_powerMarkers,[2,3,100],[4,3,100],[0,0,0],[0,0],[0],[0,0,00],[6,1,_activationDistancePower,independent,false]] call EOS_Spawn;
 
-private _powerPatrol          = ["Potenciapatrol_1" ,"Potenciapatrol_2" ,"Potenciapatrol_3" ,"Potenciapatrol_4" ,"Potenciapatrol_5" ,"Potenciapatrol_6" ,"Potenciapatrol_7" ,"Potenciapatrol_8" ,"Potenciapatrol_9" ,"Potenciapatrol_10"];
-_powerPatrol = _powerPatrol   + ["Potenciapatrol_11","Potenciapatrol_12"/*,"Potenciapatrol_13","Potenciapatrol_14","Potenciapatrol_15","Potenciapatrol_16","Potenciapatrol_17","Potenciapatrol_18","Potenciapatrol_19","Potenciapatrol_20"*/];
+private _powerPatrol          = ["Potenciapatrol_1" ,"Potenciapatrol_2" ,"Potenciapatrol_3" ,"Potenciapatrol_4" ,"Potenciapatrol_5" ,"Potenciapatrol_6" ,"Potenciapatrol_7" /*,"Potenciapatrol_8" ,"Potenciapatrol_9" ,"Potenciapatrol_10"*/];
+//_powerPatrol = _powerPatrol   + ["Potenciapatrol_11","Potenciapatrol_12"/*,"Potenciapatrol_13","Potenciapatrol_14","Potenciapatrol_15","Potenciapatrol_16","Potenciapatrol_17","Potenciapatrol_18","Potenciapatrol_19","Potenciapatrol_20"*/];
 
-[_powerPatrol,[0,4,100],[7,3,100],[0,0,0],[0,0],[0],[0,0,00],[6,1,_activationDistancePatrol,independent,false]] call EOS_Spawn;
+[_powerPatrol,[0,4,100],[6,3,100],[0,0,0],[0,0],[0],[0,0,00],[6,1,_activationDistancePatrol,independent,false]] call EOS_Spawn;
 
-private _potenciafew          = ["Potenciafew_1" ,"Potenciafew_2" ,"Potenciafew_3" ,"Potenciafew_4" ,"Potenciafew_5" ,"Potenciafew_6" ,"Potenciafew_7" ,"Potenciafew_8" ,"Potenciafew_9" ,"Potenciafew_10"];
-_potenciafew   = _potenciafew + ["Potenciafew_11","Potenciafew_12","Potenciafew_13","Potenciafew_14","Potenciafew_15","Potenciafew_16"/*,"Potenciafew_17","Potenciafew_18","Potenciafew_19","Potenciafew_20"*/];
+private _potenciafew          = ["Potenciafew_1" ,"Potenciafew_2" ,"Potenciafew_3" ,"Potenciafew_4" ,"Potenciafew_5" /*,"Potenciafew_6" ,"Potenciafew_7" ,"Potenciafew_8" ,"Potenciafew_9" ,"Potenciafew_10"*/];
+//_potenciafew   = _potenciafew + ["Potenciafew_11","Potenciafew_12","Potenciafew_13","Potenciafew_14","Potenciafew_15","Potenciafew_16"/*,"Potenciafew_17","Potenciafew_18","Potenciafew_19","Potenciafew_20"*/];
 
 [_potenciafew,[0,0,100],[6,2,100],[0,0,0],[0,0],[0],[0,0,00],[6,1,_activationDistanceFew,independent,false]] call EOS_Spawn;
 
