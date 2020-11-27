@@ -2,10 +2,10 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Brecha Incompleta"                           // Colocar nombre de mision
-#define COMPLETE_NAME "Brecha Incompleta v5"               // Nombre y versión de la misión
-#define IMAGE "imgs\portada_RDC.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
-#define DESCRIPTION "Falta un poco menos..."       // Colocar descripcion de la mision entre las comillas
+#define NAME "Brecha Incompleta"                    // Colocar nombre de mision
+#define COMPLETE_NAME "Brecha Incompleta v1"        // Nombre y versión de la misión
+#define IMAGE "imgs\portada_BIC.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
+#define DESCRIPTION "Falta un poco menos..."        // Colocar descripcion de la mision entre las comillas
 
 AUTHOR = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
 AUTHOR_UID = ["76561198030188168","76561198010777357"];// Colocar entre las comillas el numero que aparece en la lista de abajo. Si son mas de un autor poner con la forma ["nro 1", "nro 2"]

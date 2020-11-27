@@ -3,3 +3,4 @@ debug.log
 .vscode
 .history
 campania.code-workspace
+*.pbo
