@@ -30,6 +30,8 @@ for "_x" from 1 to _grpSize do {
 	_unit = [_unit,_unitType] call eos_fnc_infInv;
 };
 
+[_grp] call compile preprocessFileLineNumbers 'scripts\eos\functions\aes_transferGroups.sqf';
+
 _grp
 
 
