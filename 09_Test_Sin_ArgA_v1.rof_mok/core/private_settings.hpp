@@ -53,5 +53,5 @@ _minimun = _x;
 
 } f>
 2020/11/28,  4:10:48   Error Generic error in expression
-2020/11/28,  4:10:48 File mpmissions\__cur_mp.rof_mok\scripts\eos\functions\aes_getHCSmalledUnits.sqf..., line 83
+2020/11/28,  4:10:48 File mpmissions\__cur_mp.rof_mok\scripts\eos\functions\AES_getHCSmalledUnits.sqf..., line 83
 */
