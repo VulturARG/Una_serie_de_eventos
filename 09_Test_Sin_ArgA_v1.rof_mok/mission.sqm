@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2464;
+		nextID=2469;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17090.07,43.070271,6216.1226};
-		dir[]={0.19187202,-0.42243874,-0.88589817};
-		up[]={0.089422055,0.90638578,-0.41287139};
-		aside[]={-0.97737974,-1.4450052e-007,-0.21168356};
+		pos[]={13507.084,42.733715,4891.1685};
+		dir[]={-0.079330675,-0.35125199,0.93293053};
+		up[]={-0.029761398,0.93627781,0.34999767};
+		aside[]={0.99642128,1.253502e-007,0.084727123};
 	};
 };
 binarizationWanted=0;
@@ -69,13 +69,14 @@ addons[]=
 	"A3_Characters_F_Exp_Civil",
 	"A3_Modules_F_Curator_Curator",
 	"rhsusf_c_fmtv",
-	"ace_compat_rhs_usf3"
+	"ace_compat_rhs_usf3",
+	"acfaa_unif"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=33;
+		items=34;
 		class Item0
 		{
 			className="A3_Structures_F_Exp";
@@ -297,6 +298,12 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item33
+		{
+			className="acfaa_unif";
+			name="acfaa_unif";
+			author="FAA mod";
+		};
 	};
 };
 randomSeed=14096304;
@@ -361,7 +368,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=163;
+		items=164;
 		class Item0
 		{
 			dataType="Object";
@@ -12419,6 +12426,36 @@ class Mission
 			id=2463;
 			type="HeadlessClient_F";
 			atlOffset=123.8;
+		};
+		class Item163
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13554.616,12.505658,4956.3965};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=2465;
+					type="UCAC_UNIFORM_MULTICAM";
+					atlOffset=-3.8146973e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2464;
+			atlOffset=-3.8146973e-006;
 		};
 	};
 	class Connections
