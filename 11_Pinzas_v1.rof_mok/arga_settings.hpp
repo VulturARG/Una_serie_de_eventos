@@ -4,7 +4,7 @@
 
 #define NAME "Pinzas"                             // Colocar nombre de mision
 #define COMPLETE_NAME "Pinzas v1"                 // Nombre y versión de la misión
-#define IMAGE "imgs\portada_AIS.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
+#define IMAGE "imgs\portada_PNZ.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "Apretando un poco..."     // Colocar descripcion de la mision entre las comillas
 
 AUTHOR = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
