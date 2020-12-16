@@ -5,7 +5,7 @@
 #define NAME "Fin del Sueño"                        // Colocar nombre de mision
 #define COMPLETE_NAME "Fin del Sueño v1"            // Nombre y versión de la misión
 #define IMAGE "imgs\portada_FDS.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
-#define DESCRIPTION "¿Saldremos de esta?"     // Colocar descripcion de la mision entre las comillas
+#define DESCRIPTION "¿Saldremos de esta?"           // Colocar descripcion de la mision entre las comillas
 
 AUTHOR = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
 AUTHOR_UID = ["76561198030188168","76561198010777357"];// Colocar entre las comillas el numero que aparece en la lista de abajo. Si son mas de un autor poner con la forma ["nro 1", "nro 2"]
