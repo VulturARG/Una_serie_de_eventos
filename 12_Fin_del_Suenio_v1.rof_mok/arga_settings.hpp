@@ -2,10 +2,10 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Pinzas"                             // Colocar nombre de mision
-#define COMPLETE_NAME "Pinzas v1"                 // Nombre y versión de la misión
-#define IMAGE "imgs\portada_PNZ.jpg"              // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
-#define DESCRIPTION "Apretando un poco..."        // Colocar descripcion de la mision entre las comillas
+#define NAME "Fin del Sueño"                        // Colocar nombre de mision
+#define COMPLETE_NAME "Fin del Sueño v1"            // Nombre y versión de la misión
+#define IMAGE "imgs\portada_FDS.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
+#define DESCRIPTION "¿Saldremos de esta?"     // Colocar descripcion de la mision entre las comillas
 
 AUTHOR = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
 AUTHOR_UID = ["76561198030188168","76561198010777357"];// Colocar entre las comillas el numero que aparece en la lista de abajo. Si son mas de un autor poner con la forma ["nro 1", "nro 2"]
@@ -15,13 +15,13 @@ IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberi
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+//INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
                                                     // y en el parametro INTRO la dirección del archivo entre comillas
                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
+//INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
 
-//INTRO_PERSONALIZADA = 0;
-//INTRO = 0;
+INTRO_PERSONALIZADA = 0;
+INTRO = 0;
 
 MAX_DIST_VISION = 2500;
 MIN_DIST_VISION =  1300;                            // Distancia de visión reducida por marcador
@@ -71,16 +71,16 @@ BRIEFING
 */
 BRIEFING = 1;                                       // 1: Muestra, 0: No muestra
 CARACTER = "Oficial";
-HORARIO = "0740 hs.";
-FECHA = "29/11/2020";
+HORARIO = "0810 hs.";
+FECHA = "26/11/2020";
 CLIMA = "Despejado";
 UBICACION = "Península de Kyntire, Duesia.";
-SITUACION_HISTORICA = ["Duesia aprovechó la retirada de nuestros buques para traer un destructor que custodie la bahía del lago de Campbeltown. Cercando la bahía, los duecios cuentan con varios puestos e incluso una base de logística donde se acopia la mayoría del material para la Base Aérea. Se detectó el movimiento de los mayores AA al perímetro próximo de la base aérea y al frente al norte de Southend.","ArgA continúa siendo la mayor fuerza internacional en tierra. Las fuerzas internacionales desplegaron una línea de suministros aérea, hacia Southend. Reforzando la posición y alistándose para un posible avance frontal. Se intenta hacer creer a las tropas Duecias que llevarán a cabo un ataque frontal hacia el norte."];
-SITUACION = ["La tarea de ArgA consistirá en anular la ventaja Duesia y explotar la debilidad al norte de la bahía del lago de Campbeltown, de manera terrestre se incursionará por el flanco Echo del frente enemigo hasta el extremo sur de la bahía despejando todo puesto Duecio en el camino y sin poder recibir apoyo de aéreo hasta anular los AA enemigos.","Para evitar que la fuerza terrestre reciba un contraataque Cóndor, ubicado en Alfa, debe maniobrar simultáneamente hacia el norte. Donde deberá eliminar las fuerzas de reserva en la Base Hotel, limpiar cualquier posible destacamento en Peninver y continuar su avance hacia el sur. Su objetivo final será despejar los complejos en Juliet y destruir las torres de comunicación cercanas.","Un tercer equipo ya se encuentra próximo a la isla Davaar, donde deberá asegurar la misma, anulando las comunicaciones y los complejos de artillería. Su segunda tarea será infiltrarse desde la popa en el destructor duecio, alcanzar el puente de mando y anular todas las operaciones en el mismo."];
-EXTRACTO_INTELIGENCIA = ["AA de Duesia con áreas de acción marcadas con trama en mapa.","Fuerza de respuesta con vehículos de transporte en Base Hotel.","El destructor Duesio no cuenta con munición para sus AA de medio y largo alcance."];
-OBJETIVOS = ["Por ruta costera Norte:","Asegurar la Base Hotel y despejar la población cercana y continuar hacia Juliet.","Controlar los 2 complejos del punto Juliet.","Destruir torres de comunicaciones cercanas a Juliet.","Por ruta costera Sur:","Abrir paso por la ruta despejando los complejos Charlie y Delta.","Controlar la Base Oscar.","Destruir o abatir personal en AA de las bases para liberar el espacio aéreo.","En isla Davaar:","Asegurar complejo del faro.","Despejar las posiciones de artillería en área roja próximo a 195 169.","Destruir torre de comunicaciones.","Abandonar la isla e infiltrarse en el destructor duecio en la bahía."];
-RECURSOS = ["En Alfa:","Mercedes Comandancia.","Arsenal y Puesto Logístico en LZ.","2 UH-60M.","2 AH-1Z.","Punto Y1/2","2 Pandur II.","Camión Logístico con arsenal médico.","Punto Y3:","3 Mini Submarinos."];
-ENEMIGOS = ["Múltiple infantería.","Presencia de blindados ligeros y pesados.","No se estima apoyo aéreo enemigo."];
+SITUACION_HISTORICA = [""];
+SITUACION = [""];
+EXTRACTO_INTELIGENCIA = [""];
+OBJETIVOS = [""];
+RECURSOS = [""];
+ENEMIGOS = [""];
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Borrado de IAs enemigas muertas y vehículos destruidos */
