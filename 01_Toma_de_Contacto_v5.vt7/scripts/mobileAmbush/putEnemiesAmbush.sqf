@@ -1,6 +1,7 @@
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹
 *******************************************************************************/
+
 AMBUSH_enemiesPosition = {
 	params ["_spawnPosition","_direction","_spawnDistance","_angle","_desviationAngle"];
 
