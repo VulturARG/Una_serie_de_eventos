@@ -2,10 +2,10 @@
                           Realizado por |ArgA|MIV
 *******************************************************************************/
 
-#define NAME "Fin del Sueño"                        // Colocar nombre de mision
-#define COMPLETE_NAME "Fin del Sueño v2"            // Nombre y versión de la misión
+#define NAME "Evacuación"                           // Colocar nombre de mision
+#define COMPLETE_NAME "Evacuación v2"               // Nombre y versión de la misión
 #define IMAGE "imgs\portada_FDS.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
-#define DESCRIPTION "¿Saldremos de esta?"           // Colocar descripcion de la mision entre las comillas
+#define DESCRIPTION "La culpa de esto es de JuanMa" // Colocar descripcion de la mision entre las comillas
 
 AUTHOR = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
 AUTHOR_UID = ["76561198030188168","76561198010777357"];// Colocar entre las comillas el numero que aparece en la lista de abajo. Si son mas de un autor poner con la forma ["nro 1", "nro 2"]
@@ -13,21 +13,21 @@ AUTHOR_UID = ["76561198030188168","76561198010777357"];// Colocar entre las comi
 
 IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberian estar en
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
-ES_CAMPANIA = 1;                                    // tamaño logo: 323px x 323px
+ES_CAMPANIA = 0;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
-                                                    // y en el parametro INTRO la dirección del archivo entre comillas
-                                                    // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
+// INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+//                                                     // y en el parametro INTRO la dirección del archivo entre comillas
+//                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
+// INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
 
-//INTRO_PERSONALIZADA = 0;
-//INTRO = 0;
+INTRO_PERSONALIZADA = 0;
+INTRO = 0;
 
 MAX_DIST_VISION = 2700;
 MIN_DIST_VISION =  1000;                            // Distancia de visión reducida por marcador
 EQUIPAMIENTO_PERSONALIZADO = 0;                     // Equipamiento guardado en arsenal virtual. 1: Permite, 0: No Permite.
 COMPUTADORA_ARTILLERIA = 1;                         // Computadora artilleria. Habilita: 1. Desabilita: 0.
-ROL_AUTOMATICO = 1;                                 // 1: Habilita la carga de rol al entrar a la misión por descripción de rol. 0: Desabilita
+ROL_AUTOMATICO = 0;                                 // 1: Habilita la carga de rol al entrar a la misión por descripción de rol. 0: Desabilita
                                                     // Para verificar que los roles estan bien escritos activar todas las IAs y entrar
 GPS = 0;                                            // Agrega GPS vanilla en rol automático o caja. 1: agrega, 0: remueve
 VISION_NOCTURNA = 0;                                // Agrega visión nocturna panorámica en rol automático o caja. 1: agrega, 0: remueve
@@ -89,7 +89,7 @@ RB_TIEMPO_ESPERA_HOMBRES = 120;                     // Tiempo en segundos de esp
 RB_TIEMPO_ESPERA_VEHICULOS = 0;                     // Tiempo en segundos de espera para eliminar vehículos enemigos. 0 Desactiva el borrado de vehículos
 RB_TIEMPO_ESPERA_BLINDADOS = 0;                     // Tiempo en segundos de espera para eliminar blindados enemigos. 0 Desactiva el borrado de blindados
 RB_TIEMPO_ESPERA_AEREOS = 0;                        // Tiempo en segundos de espera para eliminar aereos enemigos. 0 Desactiva el borrado de aereos
-RB_DISTANCIA_JUGADORES = 50;                         // Distancia en metros a los jugadores a partir de la cual se borra. 0 desactiva el borrado por distancia
+RB_DISTANCIA_JUGADORES = 0;                         // Distancia en metros a los jugadores a partir de la cual se borra. 0 desactiva el borrado por distancia
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Camuflaje */

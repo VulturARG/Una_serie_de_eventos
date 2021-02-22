@@ -34,6 +34,7 @@ _callObject addAction [
 			} forEach (playableUnits inAreaArray _startTrigger);
 
 		} forEach _teleport_data;
+		[[2021,7,10,18,0]] remoteExec ["setDate"];
 		
 	}, [_teleport_data, _startTrigger], 1.5, true, true, "", "true", 50, false, "", ""
 ];

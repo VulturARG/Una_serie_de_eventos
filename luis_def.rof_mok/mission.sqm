@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3688.1726,414.42813,4426.5664};
-		dir[]={-0.23559138,-0.42276809,-0.8752141};
-		up[]={-0.10993749,0.90610647,-0.40841937};
-		aside[]={-0.96573043,3.4203549e-007,0.25996509};
+		pos[]={3676.6885,414.42813,4426.4927};
+		dir[]={0.80305576,-0.41682124,-0.42614219};
+		up[]={0.36836374,0.90885264,-0.19547132};
+		aside[]={-0.46880361,4.1856765e-007,-0.88342726};
 	};
 };
 binarizationWanted=0;
@@ -68,13 +68,19 @@ addons[]=
 	"A3_Characters_F",
 	"CUP_Editor_A1_Roads_Config",
 	"A3_Characters_F_Exp_Civil",
+	"A3_Weapons_F",
+	"ace_parachute",
+	"A3_Characters_F_Heads",
+	"A3_Characters_F_Orange_Facewear",
+	"ace_goggles",
+	"A3_Characters_F_Exp",
 	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=35;
+		items=38;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -290,6 +296,27 @@ class AddonsMetaData
 			url="https://www.arma3.com";
 		};
 		class Item34
+		{
+			className="ace_parachute";
+			name="ACE3 - Parachute";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item35
+		{
+			className="A3_Characters_F_Orange";
+			name="Arma 3 Orange - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item36
+		{
+			className="ace_goggles";
+			name="ACE3 - Goggles";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item37
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
@@ -667,9 +694,9 @@ class Mission
 		rainForced=1;
 		wavesForced=1;
 		windForced=1;
-		year=2019;
-		day=1;
-		hour=18;
+		year=2021;
+		month=7;
+		hour=12;
 		minute=0;
 		startFogBase=50;
 		forecastFogBase=50;
@@ -769,7 +796,7 @@ class Mission
 			type="mil_arrow2";
 			colorName="ColorRed";
 			alpha=0.71602845;
-			angle=228.50769;
+			angle=228.50764;
 			id=56;
 		};
 		class Item7
@@ -2600,7 +2627,7 @@ class Mission
 			colorName="ColorWEST";
 			a=100;
 			b=50;
-			angle=109.99998;
+			angle=109.99996;
 			id=204;
 			atlOffset=-0.00036621094;
 		};
@@ -7834,7 +7861,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={3674.196,407.61075,4411.1812};
-			angle=0.32546878;
+			angle=0.32546875;
 			class Attributes
 			{
 				name="teleport_a_charlie_alfa";
@@ -8078,6 +8105,22 @@ class Mission
 						name="admin_2";
 						description="fusilero #nc@Admin";
 						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Rangefinder";
+							};
+							class uniform
+							{
+								typeName="U_C_Man_casual_3_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							goggles="G_Shades_Blue";
+						};
 					};
 					id=789;
 					type="C_Man_casual_1_F";
@@ -8140,6 +8183,22 @@ class Mission
 						name="admin_1";
 						description="fusilero #nc@Admin";
 						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Rangefinder";
+							};
+							class uniform
+							{
+								typeName="U_C_Man_casual_3_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							goggles="G_Shades_Blue";
+						};
 					};
 					id=790;
 					type="C_Man_casual_3_F";
