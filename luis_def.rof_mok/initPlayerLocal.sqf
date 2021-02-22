@@ -19,6 +19,9 @@ player removeItem "ACE_DAGR";
 // GPS en Mapa
 [] execVM 'scripts\GPS_II.sqf';
 
+// Inicio addaction teletransportacion
+execVM "scripts\teleport\teleport_inicio.sqf";
+
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Cbo¹
 *******************************************************************************/

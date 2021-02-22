@@ -13,6 +13,7 @@ class CfgFunctions {
 class CfgSounds {
 	sounds[] = {};
   #include "core\sounds.hpp"
+  #include "scripts\teleport\sounds.hpp"
 };
 
 #include "core\post_description.hpp"
