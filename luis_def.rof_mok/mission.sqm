@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=793;
+		nextID=794;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=10;
+		nextID=11;
 	};
 	class Camera
 	{
@@ -705,7 +705,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=333;
+		items=334;
 		class Item0
 		{
 			dataType="Marker";
@@ -751,15 +751,16 @@ class Mission
 		class Item3
 		{
 			dataType="Marker";
-			position[]={5497.0679,344.70499,6043.4248};
+			position[]={5497,344.70499,6043};
 			name="charlie_alfa";
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorWEST";
 			a=100;
 			b=50;
+			angle=30;
 			id=49;
-			atlOffset=-6.1125183;
+			atlOffset=-6.1583252;
 		};
 		class Item4
 		{
@@ -796,7 +797,7 @@ class Mission
 			type="mil_arrow2";
 			colorName="ColorRed";
 			alpha=0.71602845;
-			angle=228.50764;
+			angle=228.50763;
 			id=56;
 		};
 		class Item7
@@ -8434,6 +8435,22 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item333
+		{
+			dataType="Trigger";
+			position[]={5497,350.86331,6043};
+			angle=0.52359879;
+			class Attributes
+			{
+				name="charlie_alfa_trigger";
+				condition="call{this}";
+				onActivation="call{[""charlie_alfa"",3,0,190] execVM ""scripts\AES\OpenMe.sqf"";}";
+				sizeA=100;
+				activationBy="ANYPLAYER";
+			};
+			id=793;
+			type="EmptyDetector";
 		};
 	};
 	class Connections
