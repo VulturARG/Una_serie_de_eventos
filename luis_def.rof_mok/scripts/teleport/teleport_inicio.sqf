@@ -11,15 +11,15 @@
 //     objeto al que se agrega el addAction
 // ];
 
-private teleport_data = [
+private _teleport_data = [
     [
-        [startTrigger,"Alfa"],
-        [startTrigger_2,"Bravo"]
+        [teleport_a_delta_alfa,"delta_alfa"],
+        [teleport_a_charlie_alfa,"charlie_alfa"]
     ],
-    callObject
+    mastil
 ];
 
-teleport_data execVM "scripts\teleport\teleport.sqf";
+_teleport_data execVM "scripts\teleport\teleport.sqf";
 
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Sgt
