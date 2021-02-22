@@ -79,7 +79,7 @@ null=
 */
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-params ["_marker",["_waves",0],["_players",1],["_angle",360]];
+params ["_marker",["_waves",0],["_players",1],["_angle",360],["_distance",0]];
 
 Launch              = compile preprocessFileLineNumbers "scripts\AES\core\launch.sqf";
 Bastion_Redirect_WP = compile preprocessFileLineNumbers "scripts\AES\core\b_redirijoUnidades.sqf";
@@ -108,12 +108,13 @@ private _initial_delay       = 1;
 private _delay_between_waves = 120;
 
 _waves = 2;
+_distance = if (_distance == 0) then { 300 } else { _distance };
 
 [
     "playerDefend",
-    ["marker_0"],
+    _marker,
     [
-      ["patrol"        ,5,300,3],
+      ["patrol"        ,5,_distance,3],
       ["light vehicle" ,0,400,3],
       ["armor"         ,0,650],
       ["attack chopper",0,700],
@@ -122,8 +123,8 @@ _waves = 2;
       ["halo"          ,0,100,2,300]
     ],
     [5,1,_AES_FACCION,false,false,true],
-    [1,_waves,_delay_between_waves,false,false],
-    360
+    [_initial_delay,_waves,_delay_between_waves,false,false],
+    _angle
 ] call Launch;
 
 

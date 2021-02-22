@@ -14,6 +14,8 @@ _callObject addAction [
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		_arguments params ["_teleport_data","_startTrigger"];
 		
+		hint "Transporte en camino";
+		
 		{
 			_x params["_startTrigger","_destinationMarker"];
 
@@ -35,7 +37,7 @@ _callObject addAction [
 
 		} forEach _teleport_data;
 		[[2021,7,10,18,0]] remoteExec ["setDate"];
-		
+
 	}, [_teleport_data, _startTrigger], 1.5, true, true, "", "true", 50, false, "", ""
 ];
 

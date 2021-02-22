@@ -1,5 +1,5 @@
 /*******************************************************************************
-                          Realizado por |ArgA|Vultur|Cbo¹
+                          Realizado por |ArgA|Vultur|Sgt
 *******************************************************************************/
 
 private _playersNumber          = 0;
@@ -15,3 +15,6 @@ _playersNumber = count _humanPlayers;
 
 [_markers,_waves,_playersNumber,_angle] execVM "scripts\AES\OpenMe.sqf";
 
+/*******************************************************************************
+                          Realizado por |ArgA|Vultur|Sgt
+*******************************************************************************/

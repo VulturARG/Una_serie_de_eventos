@@ -8,6 +8,8 @@ params["_startTrigger"];
 
 if (count ([player] inAreaArray _startTrigger) > 0) then {
 
+    hint "";
+    
     titleCut ["", "BLACK FADED", 100];
 
     sleep 2;
