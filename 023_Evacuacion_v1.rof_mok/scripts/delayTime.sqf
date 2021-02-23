@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 private _initialTime = time;
-private _inicioDelay =   60; //TODO poner en 600
+private _inicioDelay =  600;
 private _bravoDelay  = 2460;
 private _baseDelay   = 4320;
 private _finalDelay  = 7380;
