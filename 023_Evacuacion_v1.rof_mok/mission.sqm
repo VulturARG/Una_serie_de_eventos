@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=22;
+		nextID=24;
 	};
 	class Camera
 	{
 		pos[]={4412.3989,333.39618,4548.5352};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
-sourceName="023_Emboscada_v1";
+sourceName="023_Evacuacion_v1";
 addons[]=
 {
 	"A3_Ui_F",
@@ -698,7 +698,7 @@ class CustomAttributes
 							"BOOL"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -826,7 +826,7 @@ class Mission
 			type="mil_arrow2";
 			colorName="ColorRed";
 			alpha=0.71602845;
-			angle=228.50702;
+			angle=228.50699;
 			id=56;
 		};
 		class Item7
@@ -8173,7 +8173,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7635.8472,105.12019,3900.262};
-			angle=0.95993084;
+			angle=0.95993078;
 			class Attributes
 			{
 				name="delta_alfa_trigger";
