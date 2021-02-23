@@ -16,7 +16,7 @@ private _teleport_data = [
         [teleport_a_delta_alfa,"delta_alfa"],
         [teleport_a_charlie_alfa,"charlie_alfa"]
     ],
-    mastil
+    VUL_MASTIL
 ];
 
 _teleport_data execVM "scripts\teleport\teleport.sqf";

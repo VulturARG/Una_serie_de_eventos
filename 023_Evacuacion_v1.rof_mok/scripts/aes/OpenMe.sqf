@@ -4,43 +4,43 @@
 /* AES based in EOS 1.98 by BangaBob
 
 GROUP SIZES
- 0 = 1
- 1 = 2,4
- 2 = 4,8
- 3 = 8,12
- 4 = 12,16
- 5 = 16,20
+    0 = 1
+    1 = 2,4
+    2 = 4,8
+    3 = 8,12
+    4 = 12,16
+    5 = 16,20
 
 EXAMPLE CALL - AES
 
  
 null=
 [
-  ["M1","M2","M3"],
-  [
+    ["M1","M2","M3"],
+    [
     [HOUSE GROUPS,SIZE OF GROUPS,PROBABILITY],
     [PATROL GROUPS,SIZE OF GROUPS,PROBABILITY],
     [LIGHT VEHICLES,SIZE OF CARGO,PROBABILITY],
     [ARMOURED VEHICLES,PROBABILITY],
     [STATIC VEHICLES,PROBABILITY],
     [HELICOPTERS,SIZE OF HELICOPTER CARGO,PROBABILITY]
-  ],
-  [FACTION,MARKERTYPE,DISTANCE,SIDE,HEIGHTLIMIT,hint_DEBUG,BIS_fnc_logFormat_DEBUG]
+    ],
+    [FACTION,MARKERTYPE,DISTANCE,SIDE,HEIGHTLIMIT,hint_DEBUG,BIS_fnc_logFormat_DEBUG]
 ] call EOS_Spawn;
 
 //EXAMPLE Defend a position
 
 null=
 [
-  ["type"],            <- Must be playerAttack or playerDefend. playerAttack: the player attacks a position. playerDefend: the player defends a position
-  ["M1","M2","M3"],
-  [
-    ["type",quantity,spawn distance (m), (number of units in each group,(jump height meters))], <---Must go a comma if there is another element
-    [...]  <-- Last element without comma
-  ],
-  [FACTION,MARKERTYPE,SIDE,HEIGHTLIMIT,hint_DEBUG,BIS_fnc_logFormat_DEBUG],
-  [INITIAL PAUSE, NUMBER OF WAVES, DELAY BETWEEN WAVES, INTEGRATE EOS, SHOW HINTS],
-  angle       <-- Last element without comma
+    ["type"],            <- Must be playerAttack or playerDefend. playerAttack: the player attacks a position. playerDefend: the player defends a position
+    ["M1","M2","M3"],
+    [
+        ["type",quantity,spawn distance (m), (number of units in each group,(jump height meters))], <---Must go a comma if there is another element
+        [...]  <-- Last element without comma
+    ],
+    [FACTION,MARKERTYPE,SIDE,HEIGHTLIMIT,hint_DEBUG,BIS_fnc_logFormat_DEBUG],
+    [INITIAL PAUSE, NUMBER OF WAVES, DELAY BETWEEN WAVES, INTEGRATE EOS, SHOW HINTS],
+    angle       <-- Last element without comma
 ] call Bastion_Spawn;
 
 Armor and Attack chopper have no units number of units in each group.
@@ -49,31 +49,31 @@ Only Para chopper and HALO jump have jump height
 Example:
 null=
 [
-  "playerDefend",
-  ["M1","M2","M3"],
-  [
-    ["patrol",3,500,2],       <---Must go a comma if there is another element, and so on
-    ["light vehicle",2,800,2], 
-    ["armor",1,650],
-    ["attack chopper",0,700],    <-- The unit does not appear if its type is not set or if it is done with zero units.
-    ["cargo chopper",3,500,2],
-    ["para chopper",1,600,100],
-    ["halo",3,100,3000]       <-- Last element without comma
-  ],
-  [FACTION,MARKERTYPE,SIDE,HEIGHTLIMIT,hint_DEBUG,debugLog],
-  [INITIAL PAUSE, NUMBER OF WAVES, DELAY BETWEEN WAVES, INTEGRATE EOS, SHOW HINTS],
-  angle    <-- Last element without comma
+    "playerDefend",
+    ["M1","M2","M3"],
+    [
+        ["patrol",3,500,2],       <---Must go a comma if there is another element, and so on
+        ["light vehicle",2,800,2], 
+        ["armor",1,650],
+        ["attack chopper",0,700],    <-- The unit does not appear if its type is not set or if it is done with zero units.
+        ["cargo chopper",3,500,2],
+        ["para chopper",1,600,100],
+        ["halo",3,100,3000]       <-- Last element without comma
+    ],
+    [FACTION,MARKERTYPE,SIDE,HEIGHTLIMIT,hint_DEBUG,debugLog],
+    [INITIAL PAUSE, NUMBER OF WAVES, DELAY BETWEEN WAVES, INTEGRATE EOS, SHOW HINTS],
+    angle    <-- Last element without comma
 ] call Bastion_Spawn;
 
 //EXAMPLE CALL - REDIRECT WP BASTION
 //Borra todos los WP de las unidades del bando y luego crea otros
 
 [
-  ["M1","M2","M3"], //Marcadores _angle donde redirigir las unidades
-  [["E1",% redirigido,"ND"],["E2",% redirigido,"ND"]],  // ["E1"] -> Nombre de las unidades parcialmente redirigidas. Puede ser vacio
+    ["M1","M2","M3"], //Marcadores _angle donde redirigir las unidades
+    [["E1",% redirigido,"ND"],["E2",% redirigido,"ND"]],  // ["E1"] -> Nombre de las unidades parcialmente redirigidas. Puede ser vacio
                                                         // % redirigido [0 _angle 100] -> % del grupo que se redirige al nuevo WP
                                                         // ["ND"] -> Nombre del marcador que será el nuevo destino de las unidades remanentes (opcional)
-  [Bando]                                               // Bando
+    [Bando]                                               // Bando
 ] call Redirect_WP_Bastion_Spawn;
 
 */
@@ -86,7 +86,7 @@ Bastion_Redirect_WP = compile preprocessFileLineNumbers "scripts\AES\core\b_redi
 
 call compile preprocessFileLineNumbers "scripts\AES\aes_settings.sqf";
 
-execVM "scripts\AES\core\spawn_fnc.sqf";
+call compile preprocessFileLineNumbers "scripts\AES\core\spawn_fnc.sqf";
 
 onplayerConnected {[] execVM "scripts\AES\Functions\EOS_Markers.sqf";};
 
@@ -104,8 +104,8 @@ AES_DAMAGE_MULTIPLIER = 1;	// 1 is default
 AES_KILLCOUNTER = false;		// Counts killed units
 
 private _AES_FACCION         = EAST;
-private _initial_delay       = 1; //400
-private _delay_between_waves = 120; //700
+private _initial_delay       = 1;
+private _delay_between_waves = 540;
 
 _distance = if (_distance == 0) then { 900 } else { _distance };
 //ALFA 900, BRAVO 750, BASE 900
@@ -113,20 +113,20 @@ _distance = if (_distance == 0) then { 900 } else { _distance };
     "playerDefend",
     _marker,
     [
-      ["patrol"        ,9,_distance,2],
-      ["light vehicle" ,0,400,3],
-      ["armor"         ,0,650],
-      ["attack chopper",0,700],
-      ["cargo chopper" ,0,500,1],
-      ["para chopper"  ,0,600,5,100],
-      ["halo"          ,0,100,2,300]
+        ["patrol"        ,9,_distance,2],
+        ["light vehicle" ,0,400,3],
+        ["armor"         ,0,650],
+        ["attack chopper",0,700],
+        ["cargo chopper" ,0,500,1],
+        ["para chopper"  ,0,600,5,100],
+        ["halo"          ,0,100,2,300]
     ],
-    [5,1,_AES_FACCION,false,false,true],
+    [5,1,_AES_FACCION,false,true,true],
     [_initial_delay,_waves,_delay_between_waves,false,false],
     _angle
 ] call Launch;
 
-
+/*
 if (_players > 10 && _players <= 15) then {
 
 };

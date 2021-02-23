@@ -18,11 +18,13 @@ AES_deleteUnits    = compile preprocessFileLineNumbers "scripts\AES\functions\AE
 AES_spawnUnits     = compile preprocessFileLineNumbers "scripts\AES\core\AES_spawnUnits.sqf";
 AES_setWaypoint    = compile preprocessFileLineNumbers "scripts\AES\functions\AES_setWaypoint.sqf";
 
-private ["_pause","_eosZone","_hints","_side"];
+private ["_pause","_eosZone","_hints","_side","_watingTime","_counter"];
 private ["_enemyFaction"];
 
 _settings params["_faction","_markerType","_side",["_heightLimit",false],["_debug",false],["_debugLog",false]];
 _basSettings params["_pause","_waves","_timeout","_eosZone",["_hints",false]];
+
+//["[AES_log]","_timeout", _timeout] call AES_log;
 
 // TODO Refactor this///////////////////////////////////
 if (_side==EAST) then {_enemyFaction="east";};        //
@@ -42,7 +44,7 @@ if (_pause > 0 and !_initialLaunch) then {
 	waitUntil { 
 		if (_hints) then {hint format ["Attack ETA : %1",(_pause - _counter)];};
 		sleep 1;
-		_counter = _counter +1;
+		_counter = _counter + 1;
 		time > _watingTime
 	};
 	if (_debugLog) then {[[_marker,"Wave", _waves,"Fin_Espera_Inicial","-",_side]] call AES_log;};
@@ -83,6 +85,7 @@ if (_waves >= 1) then {
 			};
 			_waves=0;
 		};
+		//["[AES_log]","_watingTime", _watingTime] call AES_log;
 		time > _watingTime
 	};
 	if (_debugLog) then { [[_marker,"Wave", _waves,"Fin_Espera_proximo_ataque","-",_side]] call AES_log;};

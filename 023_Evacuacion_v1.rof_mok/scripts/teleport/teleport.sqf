@@ -39,7 +39,9 @@ if (hasInterface && (getPlayerUID player in _authorizedUID)) then {
 				} forEach (playableUnits inAreaArray _startTrigger);
 
 			} forEach _teleport_data;
-			[[2021,7,10,18,0]] remoteExec ["setDate"];
+			[[2021,8,22,18,48]] remoteExec ["setDate"];
+			[[], "scripts\delayTime.sqf"] remoteExec ["BIS_fnc_execVM", 0, false];
+			removeAllActions VUL_MASTIL;
 
 		}, [_teleport_data, _startTrigger], 1.5, true, true, "", "true", 50, false, "", ""
 	];
