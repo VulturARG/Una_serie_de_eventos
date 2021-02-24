@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=851;
+		nextID=852;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=24;
+		nextID=27;
 	};
 	class Camera
 	{
-		pos[]={4412.3989,333.39618,4548.5352};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={3715.927,442.15131,4424.5073};
+		dir[]={-0.68798977,-0.64549106,-0.33167967};
+		up[]={-0.58144796,0.76376784,-0.28031591};
+		aside[]={-0.4342677,1.4901161e-008,0.9007839};
 	};
 };
 binarizationWanted=0;
@@ -79,13 +79,14 @@ addons[]=
 	"ace_interaction",
 	"ace_dragging",
 	"A3_Static_F_Mortar_01",
-	"ace_mk6mortar"
+	"ace_mk6mortar",
+	"A3_Props_F_Exp_Commercial_Market"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=41;
+		items=42;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -350,6 +351,13 @@ class AddonsMetaData
 			name="ACE3 - Mk6 Mortar";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item41
+		{
+			className="A3_Props_F_Exp";
+			name="Arma 3 Apex - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -725,8 +733,8 @@ class Mission
 		year=2021;
 		month=8;
 		day=22;
-		hour=14;
-		minute=-30;
+		hour=21;
+		minute=-20;
 		startFogBase=50;
 		forecastFogBase=50;
 		startFogDecay=0.02;
@@ -734,7 +742,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=356;
+		items=357;
 		class Item0
 		{
 			dataType="Marker";
@@ -826,7 +834,7 @@ class Mission
 			type="mil_arrow2";
 			colorName="ColorRed";
 			alpha=0.71602845;
-			angle=228.50699;
+			angle=228.50693;
 			id=56;
 		};
 		class Item7
@@ -8173,11 +8181,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7635.8472,105.12019,3900.262};
-			angle=0.95993078;
+			angle=0.9599309;
 			class Attributes
 			{
 				name="delta_alfa_trigger";
-				condition="call{this&& VUL_ALFA}";
+				condition="call{this && VUL_ALFA}";
 				onActivation="call{[[""delta_alfa""],3,0,190,700] execVM ""scripts\AES\OpenMe.sqf""; }";
 				sizeA=300;
 				sizeB=200;
@@ -8194,7 +8202,7 @@ class Mission
 			class Attributes
 			{
 				name="delta_bravo_trigger";
-				condition="call{this}";
+				condition="call{this && VUL_DELTA_BRAVO}";
 				onActivation="call{[[""delta_bravo""],2,0,150,500] execVM ""scripts\AES\OpenMe.sqf"";}";
 				sizeA=300;
 				sizeB=200;
@@ -10182,6 +10190,23 @@ class Mission
 			};
 			id=850;
 			type="EmptyDetectorAreaR250";
+		};
+		class Item356
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3688.4966,407.55887,4414.2642};
+				angles[]={0.099664383,0.27347669,6.2465348};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this execVM 'core\scripts\init_box_roles.sqf';}";
+			};
+			id=851;
+			type="Land_WoodenCrate_01_F";
 		};
 	};
 	class Connections
