@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=27;
+		nextID=28;
 	};
 	class Camera
 	{
 		pos[]={3715.927,442.15131,4424.5073};
-		dir[]={-0.68798977,-0.64549106,-0.33167967};
-		up[]={-0.58144796,0.76376784,-0.28031591};
-		aside[]={-0.4342677,1.4901161e-008,0.9007839};
+		dir[]={-0.68798983,-0.64549106,-0.33167949};
+		up[]={-0.58144802,0.76376784,-0.28031573};
+		aside[]={-0.4342674,-1.4901161e-008,0.90078402};
 	};
 };
 binarizationWanted=0;
@@ -733,8 +733,8 @@ class Mission
 		year=2021;
 		month=8;
 		day=22;
-		hour=21;
-		minute=-20;
+		hour=13;
+		minute=-19;
 		startFogBase=50;
 		forecastFogBase=50;
 		startFogDecay=0.02;
@@ -834,7 +834,7 @@ class Mission
 			type="mil_arrow2";
 			colorName="ColorRed";
 			alpha=0.71602845;
-			angle=228.50693;
+			angle=228.5069;
 			id=56;
 		};
 		class Item7
@@ -8181,7 +8181,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7635.8472,105.12019,3900.262};
-			angle=0.9599309;
+			angle=0.95993078;
 			class Attributes
 			{
 				name="delta_alfa_trigger";
