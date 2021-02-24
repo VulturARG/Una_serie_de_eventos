@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15;
+		nextID=18;
 	};
 	class Camera
 	{
-		pos[]={3693.21,416.93201,4438.5381};
-		dir[]={-0.75482166,-0.43960613,-0.48687679};
-		up[]={-0.36945286,0.89817089,-0.23830523};
-		aside[]={-0.54206502,-5.7803118e-007,0.84037948};
+		pos[]={3698.5593,416.93201,4412.7554};
+		dir[]={0.18103263,-0.59244531,-0.78500682};
+		up[]={0.13313122,0.8056106,-0.57729328};
+		aside[]={-0.97442448,-7.4505806e-009,-0.22471479};
 	};
 };
 binarizationWanted=0;
@@ -1040,7 +1040,7 @@ class Mission
 			type="mil_arrow2";
 			colorName="ColorRed";
 			alpha=0.71602845;
-			angle=228.50755;
+			angle=228.50742;
 			id=56;
 		};
 		class Item3
@@ -2419,13 +2419,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3696.2029,407.76572,4406.7271};
-				angles[]={0.036650803,0.05561471,6.2398777};
+				position[]={3696.2031,407.76572,4406.7271};
+				angles[]={0.036651913,0.05560619,6.2398839};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{this setVehicleAmmo 0.0; this addAction[""Recargar bengalas en mortero"",{{mortero_2 addmagazine ""8Rnd_82mm_Mo_Flare_white""} forEach [1,2,3,4];},[],1.5,true,true,"""",""true"",3];}";
 			};
 			id=160;
 			type="Box_NATO_Ammo_F";
@@ -2458,17 +2459,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3696.0208,407.82187,4405.4102};
-				angles[]={0.036650803,0.05561471,6.2398777};
+				position[]={3696.0212,407.82187,4405.4102};
+				angles[]={0.036651913,0.05560619,6.2398839};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{this setVehicleAmmo 0.0; this addAction[""Recargar HE en mortero"",{{mortero_2 addmagazine ""8Rnd_82mm_Mo_shells""} forEach [1,2,3,4];},[],1.5,true,true,"""",""true"",3];}";
 			};
 			id=164;
 			type="Box_NATO_Support_F";
-			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3551,6 +3552,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{this addEventHandler [""Fired"",{private [""_al_flare""]; _al_flare = _this select 6;[[_al_flare],""scripts\AL_flare_fix\al_flare_enhance.sqf""] remoteExec [""execVM"",0,true]}];}";
+				name="mortero_2";
 			};
 			id=358;
 			type="RHS_M252_USMC_D";
@@ -7988,7 +7991,7 @@ class Mission
 			colorName="ColorEAST";
 			a=300;
 			b=90;
-			angle=226.58499;
+			angle=226.58485;
 			id=933;
 			atlOffset=-5.4267273;
 		};
@@ -8002,7 +8005,7 @@ class Mission
 			colorName="ColorEAST";
 			a=275;
 			b=80;
-			angle=225.30396;
+			angle=225.30382;
 			id=934;
 			atlOffset=-2.3302917;
 		};
@@ -33409,6 +33412,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorWEST";
+			alpha=0;
 			a=300;
 			b=200;
 			angle=69.999992;
@@ -33423,6 +33427,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorWEST";
+			alpha=0;
 			a=300;
 			b=200;
 			angle=90;
@@ -33437,6 +33442,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorWEST";
+			alpha=0;
 			a=300;
 			b=200;
 			angle=54.999981;
@@ -33451,6 +33457,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorWEST";
+			alpha=0;
 			a=300;
 			b=200;
 			angle=15;
@@ -33465,6 +33472,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorWEST";
+			alpha=0;
 			a=300;
 			b=200;
 			angle=30;
