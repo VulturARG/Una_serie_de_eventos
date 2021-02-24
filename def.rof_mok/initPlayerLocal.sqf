@@ -1,0 +1,27 @@
+/*******************************************************************************
+                             Realizado por |ArgA|MIV
+*******************************************************************************/
+
+call compile preprocessFileLineNumbers "core\events\initPlayerLocal.sqf";
+
+/*******************************************************************************
+                             Realizado por |ArgA|MIV
+*******************************************************************************/
+/*******************************************************************************
+                          Realizado por |ArgA|Vultur|Cbo¹
+*******************************************************************************/
+// Quito el DARG y el microDARG del inventario de los jugadores
+player removeItem "ACE_DAGR";
+//player removeItem "ACE_microDAGR";
+
+//player addItemToUniform "ACE_Flashlight_XL50";
+
+// GPS en Mapa
+[] execVM 'scripts\GPS_II.sqf';
+
+// Inicio addaction teletransportacion
+execVM "scripts\teleport\teleport_inicio.sqf";
+
+/*******************************************************************************
+                          Realizado por |ArgA|Vultur|Cbo¹
+*******************************************************************************/
