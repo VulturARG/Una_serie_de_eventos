@@ -4,7 +4,7 @@
 
 #define NAME "Evacuación"                           // Colocar nombre de mision
 #define COMPLETE_NAME "Evacuación v2"               // Nombre y versión de la misión
-#define IMAGE "imgs\portada.jpg"                // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
+#define IMAGE "imgs\portada.jpg"                    // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "La culpa de esto es de JuanMa" // Colocar descripcion de la mision entre las comillas
 
 AUTHOR = "Shaggy - Vultur";                         // Editor (Pone tu nombre)
@@ -15,13 +15,13 @@ IMG_LOGO = "imgs\logoArgA.jpg";                     // Nota: Las imagenes deberi
 COLOR_AUTOR = "#76a8f7";                            // formato .paa y en proporcion 2x1 (1024x512)
 ES_CAMPANIA = 0;                                    // tamaño logo: 323px x 323px
 NOMBRE_CAMPANIA = "Una Serie de Eventos...";
-// INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
-//                                                     // y en el parametro INTRO la dirección del archivo entre comillas
-//                                                     // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
-// INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
+INTRO_PERSONALIZADA = 1;                            // 1 Si la deseas cargar una intro personalizada (propia)
+                                                    // y en el parametro INTRO la dirección del archivo entre comillas
+                                                    // EJ. INTRO_PERSONALIZADA = 1; INTRO = "scripts\intro_propia.sqf";
+INTRO = "scripts\intro_campania.sqf";               // Intros: 1 y 2. Para desactivar: 0
 
-INTRO_PERSONALIZADA = 0;
-INTRO = 0;
+// INTRO_PERSONALIZADA = 0;
+// INTRO = 0;
 
 MAX_DIST_VISION = 2700;
 MIN_DIST_VISION =  1000;                            // Distancia de visión reducida por marcador
@@ -70,17 +70,16 @@ BRIEFING
     Ejemplo: ["Primer parrafo", "Segundo parrafo"] 
 */
 BRIEFING = 1;                                       // 1: Muestra, 0: No muestra
-CARACTER = "Oficial";
-HORARIO = "1848 hs.";
-FECHA = "30/11/2020";
-CLIMA = "Despejado";
+HORARIO = "1848";
+FECHA = "22/08/2021";
+CLIMA = "Niebla Leve";
 UBICACION = "Península de Kyntire, Duesia.";
-SITUACION_HISTORICA = [""];
-SITUACION = [""];
-EXTRACTO_INTELIGENCIA = [""];
-OBJETIVOS = [""];
-RECURSOS = [""];
-ENEMIGOS = [""];
+SITUACION_HISTORICA = ["Después del fallido intento de las fuerzas de Duecia de conquistar Viro la Fuerza internacional mantuvo una fuerza de paz en el territorio Duecio capturado. La pérdida de la guerra ha ocasionado graves descontentos entre la población especialmente en los veteranos de la campaña. La economía Duecia no ha salido bien parada por esta aventura. Fuerzas irregulares se han formado en la zona, al parecer con la complicidad de las fuerzas regulares.", ""];
+SITUACION = ["Se ha dado la orden de evacuación de la península que ocupamos actualmente. Los Duecios no nos lo van a poner fácil. Se han montado 3 posiciones defensivas  y sectores minados en el anillo ALFA. Dos de ellas (CHARLIE y DELTA) serán defendidas por ArgA. La posición INDIA será defendida por otro componente de la fuerza internacional. Un segundo anillo BRAVO completa el perímetro defensivo. Las posiciones fueron montadas de improviso o aprovechando fortificaciones antiguas. Se debe mantener presencia en los puntos asignados, se dispone de libertad para reforzar la proximidad de los mismos.", "El mando de la Fuerza Internacional nos dará órdenes de acuerdo a la evolución de la evacuación. Se deberá proteger la evacuación de la base MIKE TANGO hasta recibir la orden de evacuar a los puntos ROMEO HOTEL, donde nos dejarán un Helicóptero CH-53, o ROMEO BRAVO donde dispondremos de múltiples navíos.", ""];
+EXTRACTO_INTELIGENCIA = ["NO LEER EN EL BRIEFING: Aparecemos en la base MIKE TANGO para lectura de briefing y equipamiento. Seremos desplegados en las posiciones CHARLIE ALFA y DELTA ALFA automáticamente mediante un comando que dará un líder de misión. "];
+OBJETIVOS = ["Defender: las posiciones designadas por la fuerza internacional.", "Evacuar: la península tras orden de mando internacional por los puntos ROMEO."];
+RECURSOS = ["1 Mortero en MIKE TANGO.", "Múltiples cajas de municiones o medicas en los puntos defensivos.", "2 Unimogs en punto Evac. para repliegue de DELTA ALFA con el combustible justo.", "Todos los elementos estan armados en MIKE TANGO a la espera de despliegue"];
+ENEMIGOS = ["Infanteria veterana Duecia fuertemente armada", "Posibles VCI"];
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Borrado de IAs enemigas muertas y vehículos destruidos */

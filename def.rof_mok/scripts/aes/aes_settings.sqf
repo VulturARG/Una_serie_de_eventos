@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 // Change regular troop equipmets (AES_setEquipment.sqf)
-CHANGE_EQUIPMENT = false;
+CHANGE_EQUIPMENT = true;
 ////////////////////////////////////////////////////////////////////////////////
 
 // Sleep between groups creation
