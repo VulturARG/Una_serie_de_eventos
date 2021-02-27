@@ -3,8 +3,8 @@
 *******************************************************************************/
 
 private _initialTime = time;
-private _inicioDelay =  6;
-private _bravoDelay  = 30; // 3060
+private _inicioDelay =  600;
+private _bravoDelay  = 3060; 
 private _baseDelay   = 4930;
 private _finalDelay  = 8290;
 
