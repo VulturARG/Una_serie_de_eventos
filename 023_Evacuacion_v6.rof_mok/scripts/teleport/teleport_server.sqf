@@ -2,9 +2,7 @@
                           Realizado por |ArgA|Vultur|Sgt
 *******************************************************************************/
 
-params ["_target", "_teleport_data", "_callObject","_time"];
-
-[_target] remoteExec ["removeAllActions", 0, false];
+params ["_teleport_data", [ "_time",[] ], [ "_scriptTarget",""] ];
 
 {
 	_x params["_startTrigger","_destinationMarker"];
@@ -27,14 +25,13 @@ params ["_target", "_teleport_data", "_callObject","_time"];
 
 } forEach _teleport_data;
 
-setDate _time;
+if (count _time > 0) then { 
+	setDate _time;	
+};
 
-execVM "scripts\delayTime.sqf";
-
-
-
-
-
+if (count _scriptTarget > 0) then {
+	execVM _scriptTarget;
+};
 
 /*******************************************************************************
                           Realizado por |ArgA|Vultur|Sgt
