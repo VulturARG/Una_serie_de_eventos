@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=45;
+		nextID=49;
 	};
 	class Camera
 	{
@@ -1149,7 +1149,7 @@ class Mission
 			type="mil_arrow2";
 			colorName="ColorRed";
 			alpha=0.71602845;
-			angle=228.50694;
+			angle=228.5069;
 			id=56;
 		};
 		class Item3
@@ -7964,7 +7964,7 @@ class Mission
 			colorName="ColorEAST";
 			a=300;
 			b=90;
-			angle=226.58438;
+			angle=226.58434;
 			id=933;
 			atlOffset=-5.4267273;
 		};

@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 #define NAME "Evacuación"                           // Colocar nombre de mision
-#define COMPLETE_NAME "Evacuación v5"               // Nombre y versión de la misión
+#define COMPLETE_NAME "Evacuación v6"               // Nombre y versión de la misión
 #define IMAGE "imgs\portada.jpg"                    // Colocar nombre y extension de la imagen de portada, ej "imgs\portada.jpg"
 #define DESCRIPTION "La culpa de esto es de JuanMa" // Colocar descripcion de la mision entre las comillas
 
